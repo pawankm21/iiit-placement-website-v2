@@ -16,7 +16,7 @@ export default function BaseLayout({ children }) {
         />
       </Head>
             <BaseNavbar/>
-          <Container>{children}</Container>
+      <Container className={styles.main}>{children}</Container>
           <BaseFooter/>
     </div>
   );

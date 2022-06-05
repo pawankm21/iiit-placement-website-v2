@@ -1,0 +1,19 @@
+.footerText {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+.image {
+  max-width: 100px;
+  min-width: 50px;
+}
+.footerIcon {
+  width: 0.8rem;
+  margin-right: 0.2rem;
+}
+.footerLink{
+  color:white;
+  transition: all 0.1s ease-in-out;
+}
+.footerLink:hover{
+  color:#198754;
+}

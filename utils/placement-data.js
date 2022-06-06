@@ -29,7 +29,7 @@ export const BAR_DATA_2022 = {
 };
 export const PIE_DATA_2022 = {
   options: {
-    responsive: true,
+
     maintainAspectRatio: false,
     plugins: {
       legend: {

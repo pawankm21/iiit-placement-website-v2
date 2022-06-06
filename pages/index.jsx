@@ -59,13 +59,13 @@ export default function Home() {
             {" "}
             <Bar {...BAR_DATA_2022} />
           </div>
-          <div className="col">
-            <Pie {...PIE_DATA_2022} height={100} />
+          <div className="col p-2">
+            <Pie {...PIE_DATA_2022}  />
           </div>
         </Container>
         <Container as="div" className="my-5">
           <h1>No. of Campus Recruiters</h1>
-          <Bar {...PAST_RECRUITERS} />
+          <Bar {...PAST_RECRUITERS} className="p-md-2" />
         </Container>
       </div>
     </div>

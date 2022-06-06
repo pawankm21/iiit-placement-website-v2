@@ -1,4 +1,4 @@
-import { Carousel, Container } from "react-bootstrap";
+import { Carousel, Container,Image } from "react-bootstrap";
 import getLastPlacementYear from "../utils/utils";
 import styles from "../styles/index.module.css";
 import { Bar,Pie } from "react-chartjs-2";
@@ -40,10 +40,11 @@ export default function Home() {
       <Carousel as="div">
         {carouselImages.map((image, index) => (
           <Carousel.Item key={image.src}>
-            <img
+            <Image
               src={image.src}
               className={styles.carouselImage}
               alt={image.alt}
+              layout="fill"
             />
             <Carousel.Caption className="bg-dark">
               <h1>{image.caption ? image.caption : null}</h1>

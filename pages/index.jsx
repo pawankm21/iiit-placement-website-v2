@@ -1,8 +1,12 @@
-import { Carousel, Container,Image } from "react-bootstrap";
+import { Carousel, Container, Image } from "react-bootstrap";
 import getLastPlacementYear from "../utils/utils";
 import styles from "../styles/index.module.css";
-import { Bar,Pie } from "react-chartjs-2";
-import { BAR_DATA_2022, PAST_RECRUITERS, PIE_DATA_2022 } from "../utils/placement-data";
+import { Bar, Pie } from "react-chartjs-2";
+import {
+  BAR_DATA_2022,
+  PAST_RECRUITERS,
+  PIE_DATA_2022,
+} from "../utils/placement-data";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -11,7 +15,7 @@ import {
   Title,
   Tooltip,
   Legend,
-  ArcElement
+  ArcElement,
 } from "chart.js";
 ChartJS.register(
   CategoryScale,
@@ -60,7 +64,7 @@ export default function Home() {
             <Bar {...BAR_DATA_2022} />
           </div>
           <div className="col p-2">
-            <Pie {...PIE_DATA_2022}  />
+            <Pie {...PIE_DATA_2022} />
           </div>
         </Container>
         <Container as="div" className="my-5">

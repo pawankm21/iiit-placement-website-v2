@@ -15,9 +15,9 @@ export default function BaseLayout({ children }) {
           content="Placement website for IIIT Bhubaneswar"
         />
       </Head>
-            <BaseNavbar/>
+      <BaseNavbar />
       <Container className={styles.main}>{children}</Container>
-          <BaseFooter/>
+      <BaseFooter />
     </div>
   );
 }

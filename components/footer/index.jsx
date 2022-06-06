@@ -10,7 +10,7 @@ export default function BaseFooter() {
     <div className="bg-black text-white w-100">
       <Container className="p-5">
         <div className="row ">
-          <div className="col-md-3 text-start">
+          <div className="col-lg-3 text-start">
             <div className={styles.image}>
               <Image
                 src={logo}
@@ -33,9 +33,9 @@ export default function BaseFooter() {
               </h6>
             </Container>
           </div>
-          <div className="col-md-9  text-center">
+          <div className="col-lg-9  text-center">
             <div className="row gap-5">
-              <div className="col-md-4 col  text-start">
+              <div className="col-lg-4 col  text-start">
                 <h5 className="border-bottom border-success py-1 border-2">
                   Quick Links
                 </h5>
@@ -67,7 +67,7 @@ export default function BaseFooter() {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-3  text-start">
+              <div className="col-lg-3  text-start">
                 <h5 className="border-bottom border-success py-1 border-2">
                   IIIT Bhubaneswar
                 </h5>
@@ -94,7 +94,7 @@ export default function BaseFooter() {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-3  text-start">
+              <div className="col-lg-3  text-start">
                 <h5 className="border-bottom border-success py-1 border-2">
                   Find us on
                 </h5>

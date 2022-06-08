@@ -1,8 +1,8 @@
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import BaseLayout from "../layout/baseLayout";
 import SSRProvider from "react-bootstrap/SSRProvider";
-function MyApp({ Component, pageProps }) {
+import BaseLayout from "../layout/baseLayout";
+export default function MyApp({ Component, pageProps }) {
   return (
     <SSRProvider>
       <BaseLayout>
@@ -11,5 +11,3 @@ function MyApp({ Component, pageProps }) {
     </SSRProvider>
   );
 }
-
-export default MyApp;

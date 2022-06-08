@@ -1,19 +1,32 @@
-import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
-import Link from "next/link";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import Image from "next/image";
 import logo from "../../public/logo.png";
+import { useState, useEffect } from "react";
 export default function BaseNavbar() {
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    window.onscroll = function () {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+  }, []);
   return (
     <Navbar
       collapseOnSelect
       expand="lg"
-      bg="light"
+      bg="white"
       variant="light"
       sticky="top"
-      className="shadow"
+      className={`${scrolled ? "shadow" : ""}`}
     >
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <div
             style={{
               maxWidth: "500px",
@@ -32,35 +45,37 @@ export default function BaseNavbar() {
           <div className="w-100">
             <Nav className="justify-content-end">
               <Nav.Item>
-                <Nav.Link>Home</Nav.Link>
+                <Nav.Link href="/">Home</Nav.Link>
               </Nav.Item>
               <NavDropdown title="Placements">
-                <NavDropdown.Item href="/placements/">
+                <NavDropdown.Item href="/recruiters">
                   Our Recruiters
                 </NavDropdown.Item>
-                <NavDropdown.Item href="">Placement Record</NavDropdown.Item>
+                <NavDropdown.Item href="/placements">
+                  Placement statistics
+                </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Info">
-                <NavDropdown.Item href="">
+                <NavDropdown.Item href="/mandatory-disclosure">
                   Mandatory Disclosure
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/placements/">
+                <NavDropdown.Item href="/placements">
                   Information Brochure
                 </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="For Recruiters">
-                <NavDropdown.Item href="/placements/">
+                <NavDropdown.Item href="/placements">
                   Why Recruit From IIIT-Bh?
                 </NavDropdown.Item>
-                <NavDropdown.Item href="">
+                <NavDropdown.Item href="/procedure">
                   Recruitment Procedure
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item>Apply Here</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="About IIIT-bh">
-                <NavDropdown.Item href="/">Academics</NavDropdown.Item>
-                <NavDropdown.Item href="/">
+                <NavDropdown.Item href="/academics">Academics</NavDropdown.Item>
+                <NavDropdown.Item href="/achievements">
                   Student Achievements
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/">Collaborations</NavDropdown.Item>

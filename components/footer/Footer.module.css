@@ -13,6 +13,8 @@
 .footerLink{
   color:white;
   transition: all 0.1s ease-in-out;
+  display: flex;
+  place-items: center;
 }
 .footerLink:hover{
   color:#198754;

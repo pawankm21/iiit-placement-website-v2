@@ -41,9 +41,11 @@ export default function BaseFooter() {
                 </h5>
                 <ul className="mt-3">
                   <li>
-                    <a className={styles.footerLink}>
-                      Click Here-Download JAF for Recruiters
-                    </a>
+                    <Link href={``}>
+                      <a className={styles.footerLink}>
+                        Click Here-Download JAF for Recruiters
+                      </a>
+                    </Link>
                   </li>
                   <li>
                     <Link href={``}>
@@ -98,35 +100,43 @@ export default function BaseFooter() {
                 <h5 className="border-bottom border-success py-1 border-2">
                   Find us on
                 </h5>
-                <p className="mt-3">Director&apos;s Blog</p>
-                <Link href={""}>
-                  <a className="link-light d-flex gap-2">
-                    {" "}
-                    <Image
-                      src="/icons/twitter.svg"
-                      alt="Twitter"
-                      width={20}
-                      height={20}
-                      layout="fixed"
-                      className="align-middle"
-                    />
-                    Twitter
-                  </a>
-                </Link>{" "}
-                <Link href={""}>
-                  <a className="link-light d-flex gap-2">
-                    {" "}
-                    <Image
-                      src="/icons/facebook.svg"
-                      alt="facebook"
-                      width={20}
-                      height={20}
-                      layout="fixed"
-                      className="align-middle"
-                    />
-                    Facebook
-                  </a>
-                </Link>
+                <p className="mt-3">
+                  <Link href="">
+                    <a className={styles.footerLink}>Director&apos;s Blog</a>
+                  </Link>
+                </p>
+                <p>
+                  <Link href={""}>
+                    <a className={styles.footerLink}>
+                      {" "}
+                      <Image
+                        src="/icons/twitter.svg"
+                        alt="Twitter"
+                        width={20}
+                        height={20}
+                        layout="fixed"
+                        className="align-middle"
+                      />
+                      Twitter
+                    </a>
+                  </Link>{" "}
+                </p>
+                <p>
+                  <Link href={""}>
+                    <a className={styles.footerLink}>
+                      {" "}
+                      <Image
+                        src="/icons/facebook.svg"
+                        alt="facebook"
+                        width={20}
+                        height={20}
+                        layout="fixed"
+                        className="align-middle"
+                      />
+                      Facebook
+                    </a>
+                  </Link>
+                </p>
               </div>
             </div>
           </div>

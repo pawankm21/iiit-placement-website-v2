@@ -45,18 +45,7 @@ export default function Home({ data }) {
   // setPlacementData(data);
   return (
     <div className="mx-auto mt-4">
-      <Carousel as="div">
-        {carouselImages.map((image, index) => (
-          <Carousel.Item key={image.src}>
-            <Image
-              src={image.src}
-              className={styles.carouselImage}
-              alt={image.alt}
-              layout="fill"
-            />
-          </Carousel.Item>
-        ))}
-      </Carousel>
+    
       <div className="mt-5">
         <h1>Placement Highlights {getLastPlacementYear()} Batch</h1>
         <Container className="row align-middle mb-5">

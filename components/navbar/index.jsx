@@ -20,10 +20,9 @@ export default function BaseNavbar() {
     <Navbar
       collapseOnSelect
       expand="lg"
-      bg="white"
       variant="light"
       sticky="top"
-      className={`${scrolled ? "shadow" : ""}`}
+      className={`${scrolled ? "shadow bg-light" : "bg-secondary bg-gradient bg-opacity-25"}`}
     >
       <Container>
         <Navbar.Brand href="/">
@@ -48,7 +47,7 @@ export default function BaseNavbar() {
                 <Nav.Link href="/">Home</Nav.Link>
               </Nav.Item>
               <NavDropdown title="Placements">
-                <NavDropdown.Item href="/recruiters">
+                <NavDropdown.Item href="/placements/recruiters">
                   Our Recruiters
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/placements">

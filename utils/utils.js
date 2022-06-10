@@ -130,7 +130,7 @@ export function getPlacementPieChartByYear(data, year) {
           label: "Number of Students Placed",
           backgroundColor: [
             COLORS.BLUE,
-            COLORS.GREEN,
+            COLORS.LIGHT_GREEN,
             COLORS.ORANGE,
             COLORS.PURPLE,
             COLORS.YELLOW,

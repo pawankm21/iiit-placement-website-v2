@@ -1,6 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
 import Container from "react-bootstrap/Container";
-import ListGroup from "react-bootstrap/ListGroup";
 import Image from "react-bootstrap/Image";
 import {
   getLastPlacementYear,
@@ -8,7 +7,6 @@ import {
   getPlacementPieChartByYear,
   getNumberOfRecruitersBarGraph,
 } from "../utils/utils";
-import styles from "../styles/index.module.css";
 import { Bar, Pie } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -63,8 +61,8 @@ export default function Home({ data }) {
           </div>
           <div className="col-12 col-md-6 p-5 text-center">
             <Carousel>
-              {carouselImages.map((image,index) => (
-                <Carousel.Item key={`${image.src+index}`}>
+              {carouselImages.map((image, index) => (
+                <Carousel.Item key={`${image.src + index}`}>
                   <Image
                     className="d-block w-100"
                     src={image.src}
@@ -87,7 +85,7 @@ export default function Home({ data }) {
           </div>
         </Container>
         <Container as="div" className="row my-5">
-          <h1>Director's Note</h1>
+          <h1>Director&apos;s Note</h1>
           <div className="col-md-4 col-12"></div>
           <div className="col-md-8 col-12">
             <p>

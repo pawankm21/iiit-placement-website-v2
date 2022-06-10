@@ -22,9 +22,9 @@ export default function BaseFooter() {
               <h6 className="text-uppercase fw-bold my-2">
                 Institute{"'"}s Address :
               </h6>
-              <h6>
-                IIIT BHUBANESWAR, GOTHAPATNA, PO: MALIPADA
-                <p>BHUBANESWAR - 751 003. INDIA</p>
+              <h6 className=" text-capitalize ">
+                IIIT Bhubaneswar, Gothapatna, Po: Malipada
+                <p>Bhubaneswar - 751 003. INDIA</p>
                 <p className="d-flex align-items-center">
                   {" "}
                   <PhoneIcon className={styles.footerIcon} /> Phone:
@@ -41,29 +41,29 @@ export default function BaseFooter() {
                 </h5>
                 <ul className="mt-3">
                   <li>
-                    <Link href={``}>
+                    <Link href={`/`}>
                       <a className={styles.footerLink}>
                         Click Here-Download JAF for Recruiters
                       </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href={``}>
+                    <Link href={`/`}>
                       <a className={styles.footerLink}>Information Brochure</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href={``}>
+                    <Link href={`/`}>
                       <a className={styles.footerLink}>Placement Reports</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href={``}>
+                    <Link href={`/`}>
                       <a className={styles.footerLink}>Gallery</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href={``}>
+                    <Link href={`/`}>
                       <a className={styles.footerLink}>Contact Us</a>
                     </Link>
                   </li>
@@ -75,22 +75,22 @@ export default function BaseFooter() {
                 </h5>
                 <ul className="mt-3">
                   <li>
-                    <Link href={``}>
+                    <Link href={`/`}>
                       <a className={styles.footerLink}>IIIT Homepage</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href={``}>
+                    <Link href={`/`}>
                       <a className={styles.footerLink}>About IIIT-Bh</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href={``}>
+                    <Link href={`/`}>
                       <a className={styles.footerLink}>Alumni Network</a>
                     </Link>
                   </li>{" "}
                   <li>
-                    <Link href={``}>
+                    <Link href={`/`}>
                       <a className={styles.footerLink}>IIIT-Bh contacts</a>
                     </Link>
                   </li>
@@ -101,12 +101,12 @@ export default function BaseFooter() {
                   Find us on
                 </h5>
                 <p className="mt-3">
-                  <Link href="">
+                  <Link href="/">
                     <a className={styles.footerLink}>Director&apos;s Blog</a>
                   </Link>
                 </p>
                 <p>
-                  <Link href={""}>
+                  <Link href={"/"}>
                     <a className={styles.footerLink}>
                       {" "}
                       <Image
@@ -119,10 +119,10 @@ export default function BaseFooter() {
                       />
                       Twitter
                     </a>
-                  </Link>{" "}
+                  </Link>{"/ "}
                 </p>
                 <p>
-                  <Link href={""}>
+                  <Link href={"/"}>
                     <a className={styles.footerLink}>
                       {" "}
                       <Image

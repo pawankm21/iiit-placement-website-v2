@@ -188,3 +188,25 @@ export function getNumberOfRecruitersBarGraph(data) {
   };
   return barGraph;
 }
+export function getBreadCrumbs(route) {
+  const breadCrumbs = [];
+  const routeArray = route.split("/");
+  if (routeArray[routeArray.length - 1] === "") {
+    routeArray.pop();
+  }
+
+  for (let i = 0; i < routeArray.length; i++) {
+    if (routeArray[i] === "") {
+      breadCrumbs.push({
+        name: "Home",
+        route: "/",
+      });
+    } else {
+      breadCrumbs.push({
+        name: routeArray[i],
+        route: routeArray.slice(0, i + 1).join("/"),
+      });
+    }
+  }
+  return breadCrumbs;
+}

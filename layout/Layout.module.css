@@ -15,3 +15,21 @@
 .bgOrange{
   background-color: #FC9324;
 }
+.breadcrumbItem {
+  text-decoration: none !important;
+  font-weight: bold;
+  color: #447a2b!important;
+  
+}
+.breadcrumbItem:hover {
+  color: #67ac56!important;
+}
+.breadcrumbItem > a{
+  font-weight: bold;
+  color: #e89e4e!important;
+  text-decoration: underline !important;
+}
+.breadcrumbItem > a:hover{
+  color: #ffffff!important;
+  text-decoration: none !important;
+}

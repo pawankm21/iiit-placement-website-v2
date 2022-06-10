@@ -8,10 +8,7 @@
   min-height: 50vh;
   margin-top: 2rem;
 }
-.imageWrapper {
-  box-sizing: content-box;
-  width: 100%;
-}
+
 .bgOrange{
   background-color: #FC9324;
 }

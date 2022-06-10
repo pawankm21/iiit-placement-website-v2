@@ -24,7 +24,7 @@ export default function BaseLayout(props) {
       </Head>
       <BaseNavbar />
       <div className={styles.imageWrapper}>
-        <div className={`row ${styles.bgOrange}`}>
+        <div className={`d-flex ${styles.bgOrange}`}>
           <div className="col-lg-5 my-lg-0 my-4 col-md-6 col-12 d-md-flex  align-items-center justify-content-center d-none ">
             <div className="p-md-4 p-1  text-capitalize rounded-start bg-dark shadow-lg rounded-pill text-light w-100 ">
               {" "}

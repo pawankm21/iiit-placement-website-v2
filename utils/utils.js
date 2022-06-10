@@ -210,3 +210,35 @@ export function getBreadCrumbs(route) {
   }
   return breadCrumbs;
 }
+
+export function getData(fs, path, excelToJson) {
+   var data = {};
+   const EXCEL_PATHS = [];
+   fs.readdirSync("./excel", { withFileTypes: true }).forEach((file) => {
+     if (file.name.endsWith(".xlsx")) {
+       EXCEL_PATHS.push(file.name);
+     }
+   });
+   EXCEL_PATHS.forEach((excelPath) => {
+     const dir = path.resolve("./excel/" + excelPath);
+     const excelData = excelToJson({
+       sourceFile: dir,
+       columnToKey: {
+         "*": "{{columnHeader}}",
+       },
+     });
+     excelData[`${excelPath.split(".")[0]}`] = excelData.Sheet1;
+     delete excelData.Sheet1;
+     data = { ...data, ...excelData };
+   });
+  return data;
+}
+export function getImages(fs) {
+   var IMAGE_PATHS = [];
+   fs.readdirSync("./public/company", {
+     withFileTypes: true,
+   }).forEach((file) => {
+     IMAGE_PATHS.push("/company/" + file.name);
+   });
+   return IMAGE_PATHS;
+}

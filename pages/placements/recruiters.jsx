@@ -1,10 +1,9 @@
 import Container from "react-bootstrap/Container";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
+import { getImages } from "../../utils/utils";
 export default function Recruiters({ images }) {
   return (
     <Container>
-      
       <h1>Our Recruiters</h1>
       <div className="row justify-content-center ">
         {images.map((image, index) => (
@@ -26,11 +25,11 @@ export default function Recruiters({ images }) {
   );
 }
 export async function getServerSideProps(context) {
-  const images = await fetch("http://localhost:3000/api/images");
-  const imageJSON = await images.json();
+  const fs = require("fs");
+
   return {
     props: {
-      images: imageJSON,
+      images: getImages(fs),
     },
   };
 }

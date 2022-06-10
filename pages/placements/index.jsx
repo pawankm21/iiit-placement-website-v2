@@ -1,5 +1,6 @@
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
+import { getData } from "../../utils/utils";
 import PlacementStatistics from "../../components/placement-statistics";
 export default function Placements({ data }) {
   const NAV_LINKS = Object.keys(data);
@@ -20,12 +21,15 @@ export default function Placements({ data }) {
     </div>
   );
 }
+
 export async function getServerSideProps(context) {
-  const data = await fetch("http://localhost:3000/api/data");
-  const dataJSON = await data.json();
+  const path = require("path");
+  const fs = require("fs");
+  const excelToJson = require("convert-excel-to-json");
+
   return {
     props: {
-      data: dataJSON,
+      data: getData(fs, path, excelToJson),
     },
   };
 }

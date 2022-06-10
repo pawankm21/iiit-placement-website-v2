@@ -6,6 +6,7 @@ import {
   placementBarGraphByYear,
   getPlacementPieChartByYear,
   getNumberOfRecruitersBarGraph,
+  getData,
 } from "../utils/utils";
 import { Bar, Pie } from "react-chartjs-2";
 import {
@@ -204,11 +205,13 @@ export default function Home({ data }) {
 }
 
 export async function getServerSideProps(context) {
-  const data = await fetch("http://localhost:3000/api/data");
-  const dataJSON = await data.json();
+  const path = require("path");
+  const fs = require("fs");
+  const excelToJson = require("convert-excel-to-json");
+
   return {
     props: {
-      data: dataJSON,
+      data: getData(fs, path, excelToJson),
     },
   };
 }

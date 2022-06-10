@@ -24,7 +24,7 @@ export default function Recruiters({ images }) {
     </Container>
   );
 }
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const fs = require("fs");
 
   return {

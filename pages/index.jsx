@@ -204,7 +204,7 @@ export default function Home({ data }) {
   );
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const path = require("path");
   const fs = require("fs");
   const excelToJson = require("convert-excel-to-json");

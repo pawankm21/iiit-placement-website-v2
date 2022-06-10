@@ -1,5 +1,5 @@
 .footerText {
-  font-size: 1rem;
+  font-size: 0.85rem;
   line-height: 1.2rem;
 }
 .image {
@@ -9,6 +9,7 @@
 .footerIcon {
   width: 0.8rem;
   margin-right: 0.2rem;
+  place-self: center;
 }
 .footerLink{
   color:white;

@@ -14,7 +14,7 @@ export default function BaseLayout(props) {
     <div className={styles.layout}>
       <Head>
         <title>IIIT Bhubaneswar Placements</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icons/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
@@ -25,14 +25,14 @@ export default function BaseLayout(props) {
       <BaseNavbar />
       <div className={styles.imageWrapper}>
         <div className={`row ${styles.bgOrange}`}>
-          <div className="col-lg-5 my-lg-0 my-4 col-md-6 col-12 d-flex  align-items-center justify-content-center ">
-            <div className="p-md-4 p-1  text-capitalize rounded-start bg-dark shadow-lg rounded-pill text-light w-100">
+          <div className="col-lg-5 my-lg-0 my-4 col-md-6 col-12 d-md-flex  align-items-center justify-content-center d-none ">
+            <div className="p-md-4 p-1  text-capitalize rounded-start bg-dark shadow-lg rounded-pill text-light w-100 ">
               {" "}
               <h2 className="fw-bolder ms-5">Placements</h2>
               <div className="ms-5 d-flex gap-2">
                 {breadCrumb.map((item, index) => {
                   return (
-                    <div className={styles.breadcrumbItem}>
+                    <div className={styles.breadcrumbItem} key={item.route+index} >
                       {` |  `}
                       <Link
                         key={index}
@@ -42,9 +42,7 @@ export default function BaseLayout(props) {
                           underline: "none",
                         }}
                       >
-                        
-                          {item.name}
-
+                        {item.name}
                       </Link>
                     </div>
                   );

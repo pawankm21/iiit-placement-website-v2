@@ -1,5 +1,6 @@
 import Carousel from "react-bootstrap/Carousel";
 import Container from "react-bootstrap/Container";
+import ListGroup from "react-bootstrap/ListGroup";
 import Image from "react-bootstrap/Image";
 import {
   getLastPlacementYear,
@@ -30,25 +31,78 @@ ChartJS.register(
 );
 const carouselImages = [
   {
-    src: "/carousel/1.jpg",
+    src: "/tpcell/1.jpg",
     alt: "Placement",
-    caption: "IIIT Bhubaneswar",
+    caption: "Placement Cell 2016-2017",
   },
   {
-    src: "/carousel/2.jpg",
+    src: "/tpcell/3.jpg",
     alt: "Placement",
+    caption: "Placement Cell 2017-2018",
   },
 ];
 
 export default function Home({ data }) {
-  // const [_, setPlacementData] = useData();
-  // setPlacementData(data);
   return (
-    <div className="mx-auto mt-4">
-    
+    <div className="mx-auto mt-5">
       <div className="mt-5">
-        <h1>Placement Highlights {getLastPlacementYear()} Batch</h1>
-        <Container className="row align-middle mb-5">
+        <Container as="div" className="row my-5">
+          <h1>About Us</h1>
+          <div className="col-md-6  col-12 ">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus, iste sed odit debitis amet natus animi mollitia fuga
+              tenetur obcaecati praesentium, consectetur ex rerum, modi commodi
+              ullam sunt asperiores corrupti! Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Laboriosam impedit animi veritatis!
+              Rerum doloribus impedit sit dolor cupiditate asperiores magni
+              soluta quaerat est tenetur accusantium, voluptatem assumenda,
+              beatae sapiente earum. Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit.
+            </p>
+          </div>
+          <div className="col-12 col-md-6 p-5 text-center">
+            <Carousel>
+              {carouselImages.map((image) => (
+                <Carousel.Item>
+                  <Image
+                    className="d-block w-100"
+                    src={image.src}
+                    alt={image.alt}
+                    width={500}
+                    height={300}
+                    layout="responsive"
+                    lazyLoad={true}
+                    style={{
+                      objectFit: "cover",
+                      objectPosition: "center",
+                    }}
+                  />
+
+                  <Carousel.Caption>
+                    <p>{image.caption}</p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          </div>
+        </Container>
+        <Container as="div" className="row my-5">
+          <h1>Director's Note</h1>
+          <div className="col-md-4 col-12"></div>
+          <div className="col-md-8 col-12">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus, iste sed odit debitis amet natus animi mollitia fuga
+              tenetur obcaecati praesentium, consectetur ex rerum, modi commodi
+              ullam sunt asperiores corrupti! Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Laboriosam impedit animi veritatis!
+              Rerum doloribus impedit sit dolor cupiditate asperiores magni
+            </p>
+          </div>
+        </Container>
+        <Container as="div" className="row align-middle my-5">
+          <h1>Placement Highlights {getLastPlacementYear()} Batch</h1>
           <div className="col">
             {" "}
             <Bar {...placementBarGraphByYear(data, 2022)} />

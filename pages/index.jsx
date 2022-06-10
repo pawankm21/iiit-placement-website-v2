@@ -115,6 +115,101 @@ export default function Home({ data }) {
           <h1>No. of Campus Recruiters</h1>
           <Bar {...getNumberOfRecruitersBarGraph(data)} className="p-md-2" />
         </Container>
+        <Container as="div" className="my-5">
+          <h1>Top Recruiters</h1>
+          <div className="row">
+            <div className="col">
+              <Image
+                src="/company/amazon.png"
+                alt="Amazon"
+                width={100}
+                height={100}
+                layout="responsive"
+                lazyLoad={true}
+              ></Image>
+            </div>
+            <div className="col">
+              <Image
+                src="/company/baker-hughes.png"
+                alt="Amazon"
+                width={100}
+                height={100}
+                layout="responsive"
+                lazyLoad={true}
+              ></Image>
+            </div>
+            <div className="col">
+              <Image
+                src="/company/juspay.png"
+                alt="Amazon"
+                width={100}
+                height={100}
+                layout="responsive"
+                lazyLoad={true}
+              ></Image>
+            </div>
+            <div className="col">
+              <Image
+                src="/company/tekion.png"
+                alt="Amazon"
+                width={100}
+                height={100}
+                layout="responsive"
+                lazyLoad={true}
+              ></Image>
+            </div>
+            <div className="col">
+              <Image
+                src="/company/ukg.png"
+                alt="Amazon"
+                width={100}
+                height={100}
+                layout="responsive"
+                lazyLoad={true}
+              ></Image>
+            </div>
+            <div className="col">
+              <Image
+                src="/company/turtlemint.png"
+                alt="Amazon"
+                width={100}
+                height={100}
+                layout="responsive"
+                lazyLoad={true}
+              ></Image>
+            </div>
+            <div className="col">
+              <Image
+                src="/company/valuelabs.png"
+                alt="Amazon"
+                width={100}
+                height={100}
+                layout="responsive"
+                lazyLoad={true}
+              ></Image>
+            </div>
+            <div className="col">
+              <Image
+                src="/company/siemens.png"
+                alt="Amazon"
+                width={100}
+                height={100}
+                layout="responsive"
+                lazyLoad={true}
+              ></Image>
+            </div>
+            <div className="col">
+              <Image
+                src="/company/optum.png"
+                alt="Amazon"
+                width={100}
+                height={100}
+                layout="responsive"
+                lazyLoad={true}
+              ></Image>
+            </div>
+          </div>
+        </Container>
       </div>
     </div>
   );

@@ -32,7 +32,10 @@ export default function BaseLayout(props) {
               <div className="ms-5 d-flex gap-2">
                 {breadCrumb.map((item, index) => {
                   return (
-                    <div className={styles.breadcrumbItem} key={item.route+index} >
+                    <div
+                      className={styles.breadcrumbItem}
+                      key={`${item.route} ${index}`}
+                    >
                       {` |  `}
                       <Link
                         key={index}

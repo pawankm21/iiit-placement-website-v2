@@ -63,8 +63,8 @@ export default function Home({ data }) {
           </div>
           <div className="col-12 col-md-6 p-5 text-center">
             <Carousel>
-              {carouselImages.map((image) => (
-                <Carousel.Item>
+              {carouselImages.map((image,index) => (
+                <Carousel.Item key={`${image.src+index}`}>
                   <Image
                     className="d-block w-100"
                     src={image.src}
@@ -72,7 +72,6 @@ export default function Home({ data }) {
                     width={500}
                     height={300}
                     layout="responsive"
-                    lazyLoad={true}
                     style={{
                       objectFit: "cover",
                       objectPosition: "center",
@@ -125,7 +124,6 @@ export default function Home({ data }) {
                 width={100}
                 height={100}
                 layout="responsive"
-                lazyLoad={true}
               ></Image>
             </div>
             <div className="col">
@@ -135,7 +133,6 @@ export default function Home({ data }) {
                 width={100}
                 height={100}
                 layout="responsive"
-                lazyLoad={true}
               ></Image>
             </div>
             <div className="col">
@@ -145,7 +142,6 @@ export default function Home({ data }) {
                 width={100}
                 height={100}
                 layout="responsive"
-                lazyLoad={true}
               ></Image>
             </div>
             <div className="col">
@@ -155,7 +151,6 @@ export default function Home({ data }) {
                 width={100}
                 height={100}
                 layout="responsive"
-                lazyLoad={true}
               ></Image>
             </div>
             <div className="col">
@@ -165,7 +160,6 @@ export default function Home({ data }) {
                 width={100}
                 height={100}
                 layout="responsive"
-                lazyLoad={true}
               ></Image>
             </div>
             <div className="col">
@@ -175,7 +169,6 @@ export default function Home({ data }) {
                 width={100}
                 height={100}
                 layout="responsive"
-                lazyLoad={true}
               ></Image>
             </div>
             <div className="col">
@@ -185,7 +178,6 @@ export default function Home({ data }) {
                 width={100}
                 height={100}
                 layout="responsive"
-                lazyLoad={true}
               ></Image>
             </div>
             <div className="col">
@@ -195,7 +187,6 @@ export default function Home({ data }) {
                 width={100}
                 height={100}
                 layout="responsive"
-                lazyLoad={true}
               ></Image>
             </div>
             <div className="col">
@@ -205,8 +196,7 @@ export default function Home({ data }) {
                 width={100}
                 height={100}
                 layout="responsive"
-                lazyLoad={true}
-              ></Image>
+              />
             </div>
           </div>
         </Container>

@@ -45,29 +45,32 @@ export default function BaseFooter() {
                 </h5>
                 <ul className="mt-3">
                   <li>
-                    <Link href={`/`}>
+                    <Link
+                      href={`/jaf.doc`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <a className={styles.footerLink}>
                         Click Here-Download JAF for Recruiters
                       </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href={`/`}>
+                    <Link
+                      href={`/ib.pdf`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <a className={styles.footerLink}>Information Brochure</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href={`/`}>
+                    <Link href={`/placements`}>
                       <a className={styles.footerLink}>Placement Reports</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href={`/`}>
-                      <a className={styles.footerLink}>Gallery</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={`/`}>
+                    <Link href={`/contact`}>
                       <a className={styles.footerLink}>Contact Us</a>
                     </Link>
                   </li>
@@ -79,38 +82,30 @@ export default function BaseFooter() {
                 </h5>
                 <ul className="mt-3">
                   <li>
-                    <Link href={`/`}>
+                    <Link href={`https://www.iiit-bh.ac.in/`}>
                       <a className={styles.footerLink}>IIIT Homepage</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href={`/`}>
+                    <Link href={`https://www.iiit-bh.ac.in/university/about`}>
                       <a className={styles.footerLink}>About IIIT-Bh</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href={`/`}>
+                    <Link
+                      href={`https://sites.google.com/iiit-bh.ac.in/alumni`}
+                    >
                       <a className={styles.footerLink}>Alumni Network</a>
                     </Link>
                   </li>{" "}
-                  <li>
-                    <Link href={`/`}>
-                      <a className={styles.footerLink}>IIIT-Bh contacts</a>
-                    </Link>
-                  </li>
                 </ul>
               </div>
               <div className="col-lg-3  text-start">
                 <h5 className="border-bottom border-success py-1 border-2">
                   Find us on
                 </h5>
-                <p className="mt-3">
-                  <Link href="/">
-                    <a className={styles.footerLink}>Director&apos;s Blog</a>
-                  </Link>
-                </p>
                 <p>
-                  <Link href={"/"}>
+                  <Link href={"https://twitter.com/IIIT_Bh"}>
                     <a className={styles.footerLink}>
                       {" "}
                       <Image
@@ -119,14 +114,13 @@ export default function BaseFooter() {
                         width={20}
                         height={20}
                         layout="fixed"
-      
                       />
                       Twitter
                     </a>
                   </Link>
                 </p>
                 <p>
-                  <Link href={"/"}>
+                  <Link href={"https://www.facebook.com/iiit.bhubaneswar/"}>
                     <a className={styles.footerLink}>
                       {" "}
                       <Image
@@ -135,7 +129,6 @@ export default function BaseFooter() {
                         width={20}
                         height={20}
                         layout="fixed"
-            
                       />
                       Facebook
                     </a>
@@ -155,11 +148,17 @@ export default function BaseFooter() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div className="mx-5 fst-italic  text-secondary">
+      <div className="mx-5 fst-italic  text-secondary py-2">
         <h6 className={styles.footerText}>
           Maintained By : Placement cell, IIIT
         </h6>
-        <h6 className={styles.footerText}>Developed by : Pawan Kumar Mishra</h6>
+        <h6 className={styles.footerText}>
+          <Link href="https://www.linkedin.com/in/pawan-kumar-mishra/">
+            <a className="text-secondary">
+              Developed by : Pawan Kumar Mishra
+            </a>
+          </Link>
+        </h6>
       </div>
     </div>
   );

@@ -118,12 +118,12 @@ export default function Home({ data }) {
         </Container>
         <Container as="div" className="row align-middle my-5">
           <h1>Placement Highlights {getLastPlacementYear()} Batch</h1>
-          <div className="col">
+          <div className="col-lg-6">
             {" "}
             <Bar {...placementBarGraphByYear(data, 2022)} />
           </div>
-          <div className="col">
-            <Pie {...getPlacementPieChartByYear(data, 2022)} />
+          <div className="col-lg-6">
+            <Pie {...getPlacementPieChartByYear(data, 2022)} className="w-100" />
           </div>
         </Container>
         <Container className="d-flex">

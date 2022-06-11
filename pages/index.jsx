@@ -35,12 +35,12 @@ const carouselImages = [
   {
     src: "/tpcell/1.jpeg",
     alt: "Placement",
-    caption: "Placement Cell 2022",
+    caption: `Placement Cell 2022`,
   },
   {
     src: "/tpcell/professor_incharge.jpeg",
     alt: "Professor Incharge",
-    caption: "Prof. In-Charge T&P Cell, Dr Subrata Kumar Mohanty",
+    caption: `Dr Subrata Kumar Mohanty, Prof. In-Charge T&P Cell`,
   },
 ];
 
@@ -79,8 +79,12 @@ export default function Home({ data }) {
                     }}
                   />
 
-                  <Carousel.Caption className="bg-dark bg-opacity-50 px-2 rounded-3 fw-semibold">
-                    <p>{image.caption}</p>
+                  <Carousel.Caption className="   p-1 bg-dark bg-opacity-50 px-lg-2 rounded-3 fw-semibold"
+                    style={{
+                    fontSize: "0.8rem",
+                  }}
+                  >
+                    {image.caption}
                   </Carousel.Caption>
                 </Carousel.Item>
               ))}

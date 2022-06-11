@@ -3,7 +3,7 @@ import Tab from "react-bootstrap/Tab";
 import { getData } from "../../utils/utils";
 import PlacementStatistics from "../../components/placement-statistics";
 export default function Placements({ data }) {
-  const NAV_LINKS = Object.keys(data);
+  const NAV_LINKS = Object.keys(data).reverse();
   return (
     <div className="pt-5 w-100 h-100">
       <h1>Past Statistics</h1>

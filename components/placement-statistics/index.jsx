@@ -36,7 +36,7 @@ export default function PlacementStatistics({ data, year }) {
           <Pie {...getPlacementPieChartByYear(data, year)} />
         </div>
       </Container>
-      <Table striped bordered hover>
+      <Table striped bordered hover responsive>
         <thead>
           {Object.keys(data[year][0]).map((key, index) => (
             <th key={index}>{key}</th>

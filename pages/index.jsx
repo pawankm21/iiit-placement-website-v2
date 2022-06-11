@@ -1,6 +1,8 @@
 import Carousel from "react-bootstrap/Carousel";
 import Container from "react-bootstrap/Container";
-import Image from "react-bootstrap/Image";
+import Image from "next/image";
+import Link from "next/link";
+import Button from "react-bootstrap/Button";
 import {
   getLastPlacementYear,
   placementBarGraphByYear,
@@ -19,6 +21,7 @@ import {
   Legend,
   ArcElement,
 } from "chart.js";
+import { ChevronDoubleRightIcon } from "@heroicons/react/solid";
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -30,14 +33,14 @@ ChartJS.register(
 );
 const carouselImages = [
   {
-    src: "/tpcell/1.jpg",
+    src: "/tpcell/1.jpeg",
     alt: "Placement",
-    caption: "Placement Cell 2016-2017",
+    caption: "Placement Cell 2022",
   },
   {
-    src: "/tpcell/3.jpg",
-    alt: "Placement",
-    caption: "Placement Cell 2017-2018",
+    src: "/tpcell/professor_incharge.jpeg",
+    alt: "Professor Incharge",
+    caption: "Prof. In-Charge T&P Cell, Dr Subrata Kumar Mohanty",
   },
 ];
 
@@ -46,8 +49,8 @@ export default function Home({ data }) {
     <div className="mx-auto mt-5">
       <div className="mt-5">
         <Container as="div" className="row my-5">
-          <h1>About Us</h1>
-          <div className="col-md-6  col-12 ">
+          <div className="col-md-8  col-12 ">
+            <h1>About Us</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Repellendus, iste sed odit debitis amet natus animi mollitia fuga
@@ -60,7 +63,7 @@ export default function Home({ data }) {
               adipisicing elit.
             </p>
           </div>
-          <div className="col-12 col-md-6 p-5 text-center">
+          <div className="col-12 col-md-4 text-center">
             <Carousel>
               {carouselImages.map((image, index) => (
                 <Carousel.Item key={`${image.src + index}`}>
@@ -68,16 +71,15 @@ export default function Home({ data }) {
                     className="d-block w-100"
                     src={image.src}
                     alt={image.alt}
-                    width={500}
-                    height={300}
-                    layout="responsive"
+                    width={900}
+                    height={600}
                     style={{
                       objectFit: "cover",
                       objectPosition: "center",
                     }}
                   />
 
-                  <Carousel.Caption>
+                  <Carousel.Caption className="bg-dark bg-opacity-50 px-2 rounded-3 fw-semibold">
                     <p>{image.caption}</p>
                   </Carousel.Caption>
                 </Carousel.Item>
@@ -86,9 +88,20 @@ export default function Home({ data }) {
           </div>
         </Container>
         <Container as="div" className="row my-5">
-          <h1>Director&apos;s Note</h1>
-          <div className="col-md-4 col-12"></div>
-          <div className="col-md-8 col-12">
+          <h1>Registrar&apos;s Message</h1>
+          <div className="col-md-6 col-12">
+            <Image
+              src="/tpcell/registrar.jpeg"
+              alt="Registrar"
+              width={900}
+              height={400}
+              style={{
+                objectFit: "cover",
+                objectPosition: "center",
+              }}
+            />
+          </div>
+          <div className="col-md-6 col-12">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Repellendus, iste sed odit debitis amet natus animi mollitia fuga
@@ -109,93 +122,99 @@ export default function Home({ data }) {
             <Pie {...getPlacementPieChartByYear(data, 2022)} />
           </div>
         </Container>
-        <Container as="div" className="my-5">
-          <h1>No. of Campus Recruiters</h1>
-          <Bar {...getNumberOfRecruitersBarGraph(data)} className="p-md-2" />
+        <Container className="d-flex">
+          <Button className="btn-lg text-dark btn-info mx-auto ">
+            <Link href="/placements">
+              <span className="text-dark fw-bold">
+                View more{" "}
+                <ChevronDoubleRightIcon
+                  style={{
+                    color: "black",
+                    width: "1.5rem",
+                    height: "1.5rem",
+                    marginLeft: "0.5rem",
+                    display: "inline-block",
+                  }}
+                />{" "}
+              </span>
+            </Link>
+          </Button>
+        </Container>
+        <Container as="div" className="my-5 px-md-5">
+          <h1>No. of Campus Recruiters over the years</h1>
+          <div className="px-lg-5 mx-lg-5">
+            <Bar {...getNumberOfRecruitersBarGraph(data)} className="px-md-5" />
+          </div>
         </Container>
         <Container as="div" className="my-5">
           <h1>Top Recruiters</h1>
           <div className="row">
-            <div className="col">
+            <div className="col-3 col-lg-auto">
               <Image
                 src="/company/amazon.png"
                 alt="Amazon"
                 width={100}
                 height={100}
-                layout="responsive"
               ></Image>
             </div>
-            <div className="col">
+            <div className="col-3 col-lg-auto">
               <Image
                 src="/company/baker-hughes.png"
-                alt="Amazon"
+                alt=""
                 width={100}
                 height={100}
-                layout="responsive"
               ></Image>
             </div>
-            <div className="col">
+            <div className="col-3 col-lg-auto">
               <Image
                 src="/company/juspay.png"
-                alt="Amazon"
+                alt=""
                 width={100}
                 height={100}
-                layout="responsive"
               ></Image>
             </div>
-            <div className="col">
+            <div className="col-3 col-lg-auto">
               <Image
                 src="/company/tekion.png"
-                alt="Amazon"
+                alt=""
                 width={100}
                 height={100}
-                layout="responsive"
               ></Image>
             </div>
-            <div className="col">
+            <div className="col-3 col-lg-auto">
               <Image
                 src="/company/ukg.png"
-                alt="Amazon"
+                alt=""
                 width={100}
                 height={100}
-                layout="responsive"
               ></Image>
             </div>
-            <div className="col">
+            <div className="col-3 col-lg-auto">
               <Image
                 src="/company/turtlemint.png"
-                alt="Amazon"
+                alt=""
                 width={100}
                 height={100}
-                layout="responsive"
               ></Image>
             </div>
-            <div className="col">
+            <div className="col-3 col-lg-auto">
               <Image
                 src="/company/valuelabs.png"
-                alt="Amazon"
+                alt=""
                 width={100}
                 height={100}
-                layout="responsive"
               ></Image>
             </div>
-            <div className="col">
+            <div className="col-3 col-lg-auto">
               <Image
                 src="/company/siemens.png"
-                alt="Amazon"
+                alt=""
                 width={100}
                 height={100}
-                layout="responsive"
               ></Image>
             </div>
-            <div className="col">
-              <Image
-                src="/company/optum.png"
-                alt="Amazon"
-                width={100}
-                height={100}
-                layout="responsive"
-              />
+            <div className="col-3 col-lg-auto">
+              <Image src="/company/optum.png" alt="" width={100} height={100} />
             </div>
           </div>
         </Container>

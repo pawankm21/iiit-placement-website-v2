@@ -82,7 +82,7 @@ export function placementBarGraphByYear(data, year) {
         },
         title: {
           display: true,
-          text: `Placements ${year}`,
+          text: `Maximum and minimum CTC offered in ${year}`,
         },
       },
     },
@@ -119,7 +119,7 @@ export function getPlacementPieChartByYear(data, year) {
         },
         title: {
           display: true,
-          text: "Number of Offers",
+          text: "Number of Offers recieved by the branches in " + year,
         },
       },
     },
@@ -210,7 +210,6 @@ export function getBreadCrumbs(route) {
   }
   return breadCrumbs;
 }
-
 export function getData(fs, path, excelToJson) {
    var data = {};
    const EXCEL_PATHS = [];

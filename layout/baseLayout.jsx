@@ -26,9 +26,9 @@ export default function BaseLayout(props) {
       <div className={styles.imageWrapper}>
         <div className={`d-flex ${styles.bgOrange}`}>
           <div className="col-lg-5 my-lg-0 my-4 col-md-6 col-12 d-md-flex  align-items-center justify-content-center d-none ">
-            <div className="p-md-4 p-1  text-capitalize rounded-start bg-dark shadow-lg rounded-pill text-light w-100 ">
+            <div className="p-md-4 p-  text-capitalize rounded-full bg-dark shadow-lg rounded-pill text-light w-75 ">
               {" "}
-              <h2 className="fw-bolder ms-5">Placements</h2>
+              <h2 className="fw-bold ms-5"> <strong className="text-success">IIIT-Bh</strong>ubaneswar Placements</h2>
               <div className="ms-5 d-flex gap-2">
                 {breadCrumb.map((item, index) => {
                   return (

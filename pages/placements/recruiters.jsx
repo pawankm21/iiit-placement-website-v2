@@ -13,10 +13,9 @@ export default function Recruiters({ images }) {
               width={200}
               height={150}
               layout="responsive"
-              style={{
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
+              alt="Recruiter"
+              placeholder="blur"
+              blurDataURL={image}
             />
           </div>
         ))}

@@ -49,8 +49,8 @@ export default function Home({ data }) {
     <div className="mx-auto mt-5">
       <div className="mt-5">
         <Container as="div" className="row my-5">
-          <div className="col-md-8  col-12 ">
             <h1>About Us</h1>
+          <div className="col-md-8  col-12 ">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Repellendus, iste sed odit debitis amet natus animi mollitia fuga

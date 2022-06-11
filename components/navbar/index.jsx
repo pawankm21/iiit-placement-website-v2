@@ -37,6 +37,8 @@ export default function BaseNavbar() {
             <Image
               src={logo}
               objectFit="contain"
+              placeholder="blur"
+              blurDataURL={logo}
               alt={"IIIT Bhubaneswar Training and Placement Cell"}
             />
           </div>

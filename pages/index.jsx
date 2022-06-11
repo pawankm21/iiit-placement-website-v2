@@ -73,16 +73,17 @@ export default function Home({ data }) {
                     alt={image.alt}
                     width={900}
                     height={600}
-                    style={{
-                      objectFit: "cover",
-                      objectPosition: "center",
-                    }}
+                    objectFit="cover"
+                    objectPosition="center"
+                    placeholder="blur"
+                    blurDataURL={image.src}
                   />
 
-                  <Carousel.Caption className="   p-1 bg-dark bg-opacity-50 px-lg-2 rounded-3 fw-semibold"
+                  <Carousel.Caption
+                    className="   p-1 bg-dark bg-opacity-50 px-lg-2 rounded-3 fw-semibold"
                     style={{
-                    fontSize: "0.8rem",
-                  }}
+                      fontSize: "0.8rem",
+                    }}
                   >
                     {image.caption}
                   </Carousel.Caption>
@@ -99,10 +100,10 @@ export default function Home({ data }) {
               alt="Registrar"
               width={900}
               height={400}
-              style={{
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
+              placeholder="blur"
+              blurDataURL="/tpcell/registrar.jpeg"
+              objectFit="cover"
+              objectPosition="center"
             />
           </div>
           <div className="col-md-6 col-12">
@@ -123,7 +124,7 @@ export default function Home({ data }) {
             <Bar {...placementBarGraphByYear(data, 2022)} />
           </div>
           <div className="col-lg-6">
-            <Pie {...getPlacementPieChartByYear(data, 2022)} className="w-100" />
+            <Pie {...getPlacementPieChartByYear(data, 2022)} />
           </div>
         </Container>
         <Container className="d-flex">
@@ -152,73 +153,102 @@ export default function Home({ data }) {
         </Container>
         <Container as="div" className="my-5">
           <h1>Top Recruiters</h1>
-          <div className="row">
+          <div className="row justify-content-evenly">
             <div className="col-3 col-lg-auto">
               <Image
                 src="/company/amazon.png"
                 alt="Amazon"
-                width={100}
+                width={200}
                 height={100}
+                placeholder="blur"
+                blurDataURL="/company/amazon.png"
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
               <Image
                 src="/company/baker-hughes.png"
                 alt=""
-                width={100}
+                width={200}
                 height={100}
+                placeholder="blur"
+                blurDataURL="/company/baker-hughes.png"
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
               <Image
                 src="/company/juspay.png"
                 alt=""
-                width={100}
+                width={200}
                 height={100}
+                blurDataURL="/company/juspay.png"
+                placeholder="blur"
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
               <Image
                 src="/company/tekion.png"
                 alt=""
-                width={100}
+                width={200}
                 height={100}
+                placeholder="blur"
+                blurDataURL="/company/tekion.png"
+                objectFit="cover"
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
               <Image
                 src="/company/ukg.png"
                 alt=""
-                width={100}
+                width={200}
                 height={100}
+                placeholder="blur"
+                blurDataURL="/company/ukg.png"
+                objectFit="cover"
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
               <Image
                 src="/company/turtlemint.png"
-                alt=""
-                width={100}
+                alt="turtlemint"
+                width={200}
                 height={100}
+                placeholder="blur"
+                blurDataURL="/company/turtlemint.png"
+                objectFit="cover"
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
               <Image
                 src="/company/valuelabs.png"
-                alt=""
-                width={100}
+                alt="value-labs"
+                width={200}
                 height={100}
+                placeholder="blur"
+                blurDataURL="/company/valuelabs.png"
+                objectFit="cover"
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
               <Image
                 src="/company/siemens.png"
                 alt=""
-                width={100}
+                width={200}
                 height={100}
+                placeholder="blur"
+                blurDataURL="/company/siemens.png"
+                objectFit="cover"
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
-              <Image src="/company/optum.png" alt="" width={100} height={100} />
+              <Image
+                src="/company/optum.png"
+                alt=""
+                width={200}
+                height={100}
+                placeholder="blur"
+                blurDataURL="/company/optum.png"
+                objectFit="cover"
+              />
             </div>
           </div>
         </Container>

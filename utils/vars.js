@@ -4,7 +4,7 @@ export const COLORS = {
   BLUE: "#71B9DC",
   YELLOW: "#FFCF56",
   PURPLE: "#C791E9",
-  LIGHT_GREEN: "#59FF59",
+  LIGHT_GREEN: "#B8E873",
 };
 export const BRANCHES = {
   CSE: "CSE",

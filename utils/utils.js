@@ -112,9 +112,6 @@ export function getPlacementPieChartByYear(data, year) {
   const branches = Object.keys(BRANCHES);
   const pieChart = {
     options: {
-      maintainAspectRatio: false,
-      responsive: true,
-      aspectRatio: 0.5,
       plugins: {
         legend: {
           position: "top",

@@ -60,6 +60,10 @@ export default function BaseLayout(props) {
               height={800}
               layout="responsive"
               priority={true}
+              objectFit="cover"
+              alt="IIIT Bhubaneswar Placements"
+              blurDataURL="/infra/10.jpg"
+              placeholder="blur"
             />
           </div>
         </div>

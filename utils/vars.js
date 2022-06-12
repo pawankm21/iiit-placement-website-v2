@@ -13,3 +13,15 @@ export const BRANCHES = {
   ETC: "ETC",
   EEE: "EEE",
 };
+export const carouselImages = [
+  {
+    src: "/tpcell/1.jpeg",
+    alt: "Placement",
+    caption: `Placement Cell 2022`,
+  },
+  {
+    src: "/tpcell/professor_incharge.jpeg",
+    alt: "Professor Incharge",
+    caption: `Dr Subrata Kumar Mohanty, Prof. In-Charge T&P Cell`,
+  },
+];

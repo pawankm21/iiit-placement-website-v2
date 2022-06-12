@@ -59,31 +59,43 @@ export default function BaseNavbar() {
                 <NavDropdown.Item href="/placements">
                   Placement statistics
                 </NavDropdown.Item>
+                <NavDropdown.Item href="/placements/training">
+                  Training
+                </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Info" className="fw-bold">
-                <NavDropdown.Item href="/mandatory-disclosure">
+                <NavDropdown.Item href="/info/mandatory-disclosure">
                   Mandatory Disclosure
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/ib.pdf" alt="information brochure" target="_blank" rel="noopener noreferrer">
+                <NavDropdown.Item
+                  href="/ib.pdf"
+                  alt="information brochure"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Information Brochure
                 </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="For Recruiters" className="fw-bold">
-                <NavDropdown.Item href="/placements">
+                <NavDropdown.Item href="/for-recruiters/why-recruit-from-us">
                   Why Recruit From IIIT-Bh?
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/procedure">
+                <NavDropdown.Item href="/for-recruiters/recruitment-procedure">
                   Recruitment Procedure
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item>Apply Here</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="About IIIT-bh" className="fw-bold">
-                <NavDropdown.Item href="/academics">Academics</NavDropdown.Item>
-                <NavDropdown.Item href="/achievements">
+                <NavDropdown.Item href="/about/academics">
+                  Academics
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/about/student-achievements">
                   Student Achievements
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/">Collaborations</NavDropdown.Item>
+                <NavDropdown.Item href="/about/collaborations">
+                  Collaborations
+                </NavDropdown.Item>
               </NavDropdown>
               <Nav.Item>
                 <Nav.Link

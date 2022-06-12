@@ -25,10 +25,10 @@ export default function BaseLayout(props) {
       <BaseNavbar />
       <div className={styles.imageWrapper}>
         <div className={`d-flex ${styles.bgOrange}`}>
-          <div className="col-lg-5 my-lg-0 my-4 col-md-6 col-12 d-md-flex  align-items-center justify-content-center d-none ">
-            <div className="p-md-4 p-  text-capitalize rounded-full bg-dark shadow-lg rounded-pill text-light w-75 ">
+          <div className="  align-items-center justify-content-center d-none d-lg-flex  col-lg-6">
+            <div className="p-lg-4 p-2  text-capitalize rounded-full bg-dark shadow-lg rounded-pill text-light   ">
               {" "}
-              <h2 className="fw-bold ms-5"> <strong className="text-success">IIIT-Bh</strong>ubaneswar Placements</h2>
+              <h2 className="fw-bold text-center"> <strong className="text-success">IIIT-Bh</strong>ubaneswar Placements</h2>
               <div className="ms-5 d-flex gap-2">
                 {breadCrumb.map((item, index) => {
                   return (
@@ -53,7 +53,7 @@ export default function BaseLayout(props) {
               </div>
             </div>
           </div>
-          <div className="col-lg-7 col-md-6 col-12">
+          <div className=" col-lg-6  col-12">
             <Image
               src="/infra/10.jpg"
               width={1920}

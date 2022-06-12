@@ -4,14 +4,14 @@ import Link from "next/link";
 export default function Academics() {
   return (
     <Container>
-      <Container class="col-lg-12">
+      <Container className="col-lg-12">
         <Container className="my-5 fw-bolder">
           <h1>Academics </h1>
         </Container>
 
-        <Container class="row">
+        <Container className="row">
           <h2 className="text-success">Courses</h2>
-          <Container class="col-lg-12">
+          <Container className="col-lg-12">
             <h5>B.Tech</h5>
             <p>The B-tech program is divided into five departments:</p>
             <ul>
@@ -28,15 +28,15 @@ export default function Academics() {
               facilities to our undergraduate students where they bring their
               project and research ideas to fruition. Course projects and
               training are given emphasis. The departments have taken up the
-              challenge to attract world class faculty in all areas of this
+              challenge to attract world className faculty in all areas of this
               program. We plan to continue building on the initial momentum and
               to attract the best students and the faculty over the coming
               years.
             </p>
           </Container>
         </Container>
-        <Container class="row">
-          <Container class="col-lg-12">
+        <Container className="row">
+          <Container className="col-lg-12">
             <h5>M.Tech</h5>
             <p>
               The Institute offers M-Tech programme in Computer Science and
@@ -56,8 +56,8 @@ export default function Academics() {
             </p>
           </Container>
         </Container>
-        <Container class="row">
-          <Container class="col-lg-12">
+        <Container className="row">
+          <Container className="col-lg-12">
             <h5>PhD</h5>
             <p>
               The Institute offers doctoral programme in Computer Science and
@@ -76,10 +76,12 @@ export default function Academics() {
           </Container>
         </Container>
       </Container>
-      <Container class="col-lg-12">
-        <h2 className="text-success" id="dept">Departments</h2>
-        <Container class="row">
-          <Container class="col-lg-12">
+      <Container className="col-lg-12">
+        <h2 className="text-success" id="dept">
+          Departments
+        </h2>
+        <Container className="row">
+          <Container className="col-lg-12">
             <h5>Computer Science and Engineering</h5>
             <p>
               This department comprises of undergraduate, postgraduate and
@@ -92,8 +94,8 @@ export default function Academics() {
             <br />
           </Container>
         </Container>
-        <Container class="row">
-          <Container class="col-lg-12">
+        <Container className="row">
+          <Container className="col-lg-12">
             <h5>Information and Technology</h5>
             <p>
               integrating “Computing and Communication”. The branch is
@@ -104,8 +106,8 @@ export default function Academics() {
             </p>
           </Container>
         </Container>
-        <Container class="row">
-          <Container class="col-lg-12">
+        <Container className="row">
+          <Container className="col-lg-12">
             <h5>Computer Engineering</h5>
             <p>
               Computer Engineering embodies the science and technology of
@@ -116,8 +118,8 @@ export default function Academics() {
             </p>
           </Container>
         </Container>
-        <Container class="row">
-          <Container class="col-lg-12">
+        <Container className="row">
+          <Container className="col-lg-12">
             <h5>Electronics and Telecommunication Engineering</h5>
             <p>
               The Department of Electrical and Electronics Engineering enshrines
@@ -128,8 +130,8 @@ export default function Academics() {
             </p>
           </Container>
         </Container>
-        <Container class="row">
-          <Container class="col-lg-12">
+        <Container className="row">
+          <Container className="col-lg-12">
             <h5>Electrical and Electronics Engineering</h5>
             <p>
               The discipline of ETC focuses on the design of underlying hardware

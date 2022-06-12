@@ -4,7 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 export default function StudentAchievements() {
   return (
     <Container>
-      <div class="row">
+      <div className="row">
         <Carousel>
           <Carousel.Item>
             <Carousel.Caption>
@@ -44,7 +44,7 @@ export default function StudentAchievements() {
           </Carousel.Item>
         </Carousel>
 
-        <div class="col-lg-12">
+        <div className="col-lg-12">
           <h3>Student Achivements</h3>
           <ul>
             <p>
@@ -223,11 +223,11 @@ export default function StudentAchievements() {
               <strong>SOA Quiz Wiz</strong>
               <br />
               2015 and 2016 batch students Akash Choudhury and Satwik Raut won
-              the 'SOA Quiz Wiz', a national-level quiz competition among
-              undergraduate students, at the SOA University here on Sunday.A
-              large number of teams, from the State and outside, participated in
-              the gruelling contest of which six teams survived the preliminary
-              round to qualify for the final.
+              the &apos;SOA Quiz Wiz&apos;, a national-level quiz competition
+              among undergraduate students, at the SOA University here on
+              Sunday.A large number of teams, from the State and outside,
+              participated in the gruelling contest of which six teams survived
+              the preliminary round to qualify for the final.
             </li>
             <li>
               <strong>GIMP Contest in IIT Madras</strong>

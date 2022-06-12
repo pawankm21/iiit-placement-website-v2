@@ -154,9 +154,7 @@ export default function BaseFooter() {
         </h6>
         <h6 className={styles.footerText}>
           <Link href="https://www.linkedin.com/in/pawan-kumar-mishra/">
-            <a className="text-secondary">
-              Developed by : Pawan Mishra
-            </a>
+            <a className="text-secondary">Developed by : Pawan Mishra</a>
           </Link>
         </h6>
       </div>

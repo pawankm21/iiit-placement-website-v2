@@ -98,7 +98,7 @@ export default function Academics() {
           <Container className="col-lg-12">
             <h5>Information and Technology</h5>
             <p>
-              integrating “Computing and Communication”. The branch is
+              integrating “Computing and Communication&quot;. The branch is
               facilitated Information Technology branch adds an incisive studies
               in by and experienced group of faculty members and guide the
               students into various academic and project activities.

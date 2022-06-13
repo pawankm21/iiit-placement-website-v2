@@ -111,7 +111,7 @@ export default function StudentAchievements() {
             <li>
               <strong>UnitedbyHCL Hackathon</strong>
               <br />
-              Team named “PLUTOAR”, from IIIT BHUBANESWAR, consisting of Shourya
+              Team named “PLUTOAR&quot;, from IIIT BHUBANESWAR, consisting of Shourya
               Pratap Singh, Ankit Kumar Panda, Susobhit Panigrahi and Ajaya
               Kumar Dash participated. They won the first prize among 13,000
               participants across the world. They were awarded a cash prize of
@@ -121,7 +121,7 @@ export default function StudentAchievements() {
               <strong>Google Summer Code 2017</strong>
               <br />
               Shibasis Patel worked with Tammo Jan Dijkema, Gijs Molenaar under
-              the project “Python-Casacore (Open Astronomy)”. The project was
+              the project “Python-Casacore (Open Astronomy)&quot;. The project was
               about improving the python-Casacore code-base, making it more
               robust and write mox tat and porting its python bindings from
               using: python to pybind11.
@@ -131,12 +131,12 @@ export default function StudentAchievements() {
               <br />
               <ul>
                 <li>
-                  Team “tillwecollpse” with its members Prateek Pattnaik ,Bibhu
+                  Team “tillwecollpse&quot; with its members Prateek Pattnaik ,Bibhu
                   Prasad Pala and Naweed Imroze have participated and
                   recognized.
                 </li>
                 <li>
-                  Another team,”Pseudo_algos” with its members Shubham Rath,
+                  Another team,&quot;Pseudo_algos&quot; with its members Shubham Rath,
                   Aman Gupta and Shivank Tripathy have participated and
                   recognized.
                 </li>
@@ -163,7 +163,7 @@ export default function StudentAchievements() {
               <br />
               Aroonav Mishra worked with Mark Kretschmann and Mamarok in the
               Google Summer of Code-15 under the organisation KDE on the project
-              titled, “Porting of Amarok to Qt5/KF5”.
+              titled, “Porting of Amarok to Qt5/KF5&quot;.
             </li>
             <li>
               <strong>Google Summer of Code 2014</strong>
@@ -173,13 +173,13 @@ export default function StudentAchievements() {
                   Christi in the Google Summer of Code-14 under the organisation
                   Python Software Foundation (SunPy) on the project titled,
                   “Re-Implementation of SunPy WCS as SunPy co-ordinates using
-                  Astropy”.
+                  Astropy&quot;.
                 </li>
                 <li>
                   Subhashish Pradhan worked with Albert Samuel Thibault in the
                   Google Summer of Code-14 under the organisation GNU Project
                   (GNU Hurd) on the project titled, “Porting Valgrind to GNU
-                  Hurd”.
+                  Hurd&quot;.
                 </li>
                 <li>
                   Anirudha Bose worked with Vassil Georgiev Vassilev in the

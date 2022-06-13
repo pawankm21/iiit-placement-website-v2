@@ -24,6 +24,7 @@ export default function Training() {
               layout="responsive"
               placeholder="blur"
               blurDataURL="/tpcell/class3.jpg"
+              alt="Pre-Placement Training"
             />
           </Container>
           <Container className="col-lg-8">
@@ -70,6 +71,7 @@ export default function Training() {
               blurDataURL="/tpcell/class3.jpg"
               width={300}
               height={200}
+              alt="Seminar"
             />
           </Container>
         </Container>
@@ -83,6 +85,7 @@ export default function Training() {
               layout="responsive"
               placeholder="blur"
               blurDataURL="/tpcell/lib-2.jpg"
+              alt="Internship"
             />
           </Container>
           <Container className="col-lg-8">

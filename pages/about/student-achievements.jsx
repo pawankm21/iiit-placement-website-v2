@@ -66,14 +66,14 @@ export default function StudentAchievements() {
             <li>
               <strong>Smart India Hackathon 2019</strong>
               <br />
-              Team "HIMANI" secured the 1st Position under the problem statement
-              of Manipal Health Enterprise in the Smart India Hackathon, 2019
-              organized by Ministry of HRD, AICTE on 2nd - 3rd March, 2019. The
-              winning project idea was "Smart and Optimised Parking Solution for
-              Hospitals". The project received huge appreciation from the judges
-              and its a great innovation and a step forward to the increasing
-              concern of availability of optimised parking spaces in hospitals.{" "}
-              <br />
+              Team &quot;HIMANI&quot; secured the 1st Position under the problem
+              statement of Manipal Health Enterprise in the Smart India
+              Hackathon, 2019 organized by Ministry of HRD, AICTE on 2nd - 3rd
+              March, 2019. The winning project idea was &quot;Smart and
+              Optimised Parking Solution for Hospitals&quot;. The project
+              received huge appreciation from the judges and its a great
+              innovation and a step forward to the increasing concern of
+              availability of optimised parking spaces in hospitals. <br />
               The members of the team were:
               <ul>
                 <li>Sweta Kabi (3rd Yr, ETC)</li>
@@ -87,12 +87,12 @@ export default function StudentAchievements() {
             <li>
               {" "}
               <strong>UtkalHacks 2019</strong>
-              <br /> Team "Marvellous" from IIIT Bhubaneswar secured 2nd
-              Position in the UtkalHacks 2019 organized in Ravenshaw University
-              on 15th-17th March. The winning project idea was "Smart Classroom
-              - Academic Assessment using Sentimental Analysis of Students and
-              Teachers". The project received huge appreciation from the judges
-              for this innovative project.
+              <br /> Team &quot;Marvellous&quot; from IIIT Bhubaneswar secured
+              2nd Position in the UtkalHacks 2019 organized in Ravenshaw
+              University on 15th-17th March. The winning project idea was
+              &quot;Smart Classroom - Academic Assessment using Sentimental
+              Analysis of Students and Teachers&quot;. The project received huge
+              appreciation from the judges for this innovative project.
               <ul>
                 <li>Aditya Prakash (3rd Yr, CE)</li>
                 <li>Soumya Ranjan Mohanty (3rd Yr, CSE)</li>
@@ -111,18 +111,18 @@ export default function StudentAchievements() {
             <li>
               <strong>UnitedbyHCL Hackathon</strong>
               <br />
-              Team named “PLUTOAR&quot;, from IIIT BHUBANESWAR, consisting of Shourya
-              Pratap Singh, Ankit Kumar Panda, Susobhit Panigrahi and Ajaya
-              Kumar Dash participated. They won the first prize among 13,000
-              participants across the world. They were awarded a cash prize of
-              5,000 USD.
+              Team named “PLUTOAR&quot;, from IIIT BHUBANESWAR, consisting of
+              Shourya Pratap Singh, Ankit Kumar Panda, Susobhit Panigrahi and
+              Ajaya Kumar Dash participated. They won the first prize among
+              13,000 participants across the world. They were awarded a cash
+              prize of 5,000 USD.
             </li>
             <li>
               <strong>Google Summer Code 2017</strong>
               <br />
               Shibasis Patel worked with Tammo Jan Dijkema, Gijs Molenaar under
-              the project “Python-Casacore (Open Astronomy)&quot;. The project was
-              about improving the python-Casacore code-base, making it more
+              the project “Python-Casacore (Open Astronomy)&quot;. The project
+              was about improving the python-Casacore code-base, making it more
               robust and write mox tat and porting its python bindings from
               using: python to pybind11.
             </li>
@@ -131,13 +131,13 @@ export default function StudentAchievements() {
               <br />
               <ul>
                 <li>
-                  Team “tillwecollpse&quot; with its members Prateek Pattnaik ,Bibhu
-                  Prasad Pala and Naweed Imroze have participated and
+                  Team “tillwecollpse&quot; with its members Prateek Pattnaik
+                  ,Bibhu Prasad Pala and Naweed Imroze have participated and
                   recognized.
                 </li>
                 <li>
-                  Another team,&quot;Pseudo_algos&quot; with its members Shubham Rath,
-                  Aman Gupta and Shivank Tripathy have participated and
+                  Another team,&quot;Pseudo_algos&quot; with its members Shubham
+                  Rath, Aman Gupta and Shivank Tripathy have participated and
                   recognized.
                 </li>
               </ul>
@@ -163,7 +163,7 @@ export default function StudentAchievements() {
               <br />
               Aroonav Mishra worked with Mark Kretschmann and Mamarok in the
               Google Summer of Code-15 under the organisation KDE on the project
-              titled, “Porting of Amarok to Qt5/KF5&quot;.
+              titled, &quot;Porting of Amarok to Qt5/KF5&quot;.
             </li>
             <li>
               <strong>Google Summer of Code 2014</strong>
@@ -203,13 +203,13 @@ export default function StudentAchievements() {
               <strong>Best Paper Award in ICACNI-13</strong>
               <br />
               Gourab Chowdhury worked as a research fellow under the
-              prestigious, "Mentoring of Engineering Students by INAE Fellows
-              2015" programme. He was among the 38 students who were selected
-              from all over India to work on research projects during the summer
-              of 2015. He has worked on, "Gene Selection and Evaluation in
-              Microarray Datasets using Natural Computing" at the Machine
-              Intelligence Unit, ISI Kolkata under IEEE fellow Prof Sushmita
-              Mitra.
+              prestigious, &quot;Mentoring of Engineering Students by INAE
+              Fellows 2015&quot; programme. He was among the 38 students who
+              were selected from all over India to work on research projects
+              during the summer of 2015. He has worked on, &quot;Gene Selection
+              and Evaluation in Microarray Datasets using Natural
+              Computing&quot; at the Machine Intelligence Unit, ISI Kolkata
+              under IEEE fellow Prof Sushmita Mitra.
             </li>
             <li>
               <strong>Google Summer of Code 2013</strong>

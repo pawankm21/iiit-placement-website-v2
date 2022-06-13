@@ -25,3 +25,7 @@ export const carouselImages = [
     caption: `Dr Subrata Kumar Mohanty, Prof. In-Charge T&P Cell`,
   },
 ];
+
+export const CTC = "CTC"
+export const TOTAL = "Total"
+export const COMPANY_NAME = "Company Name"

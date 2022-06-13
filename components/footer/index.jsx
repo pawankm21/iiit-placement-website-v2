@@ -1,14 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../public/footer-logo.webp";
-import { Container } from "react-bootstrap";
 import styles from "./Footer.module.css";
-import { PhoneIcon } from "@heroicons/react/solid";
+import { PhoneIcon, MailIcon } from "@heroicons/react/solid";
 
 export default function BaseFooter() {
   return (
-    <div className="bg-black text-white w-100">
-      <Container className="p-5">
+    <div className="bg-dark text-white w-100">
+      <div className="pt-5 px-5">
         <div className="row ">
           <div className="col-lg-3 text-start">
             <div className={styles.image}>
@@ -20,11 +19,11 @@ export default function BaseFooter() {
                 blurDataURL={logo}
               />
             </div>
-            <Container>
+            <div>
               <h6 className="text-uppercase fw-bold my-2">
                 Institute{"'"}s Address :
               </h6>
-              <h6 className=" text-capitalize ">
+              <h6 className={` text-capitalize `}>
                 IIIT Bhubaneswar, Gothapatna, Po: Malipada
                 <p>Bhubaneswar - 751 003. INDIA</p>
                 <p
@@ -34,8 +33,20 @@ export default function BaseFooter() {
                   <PhoneIcon className={styles.footerIcon} /> Phone:
                   +91-674-2653300
                 </p>
+                <p
+                  className={`d-flex align-items-start text-break text-lowercase ${styles.footerText}`}
+                >
+                  {" "}
+                  <MailIcon className={styles.footerIcon} /> Email:
+                  <Link href={"mailto:placement@iiit-bh.ac.in"}>
+                    <a className={styles.footerLink}>
+                      {" "}
+                      placement@iiit-bh.ac.in
+                    </a>
+                  </Link>
+                </p>
               </h6>
-            </Container>
+            </div>
           </div>
           <div className="col-lg-9  text-center">
             <div className="row gap-5">
@@ -43,7 +54,7 @@ export default function BaseFooter() {
                 <h5 className="border-bottom border-success py-1 border-2">
                   Quick Links
                 </h5>
-                <ul className="mt-3">
+                <ul className={`mt-3 ${styles.footerText}`}>
                   <li>
                     <Link
                       href={`/jaf.doc`}
@@ -80,7 +91,7 @@ export default function BaseFooter() {
                 <h5 className="border-bottom border-success py-1 border-2">
                   IIIT Bhubaneswar
                 </h5>
-                <ul className="mt-3">
+                <ul className={`mt-3 ${styles.footerText}`}>
                   <li>
                     <Link href={`https://www.iiit-bh.ac.in/`}>
                       <a className={styles.footerLink}>IIIT Homepage</a>
@@ -104,7 +115,7 @@ export default function BaseFooter() {
                 <h5 className="border-bottom border-success py-1 border-2">
                   Find us on
                 </h5>
-                <p>
+                <p className={`mt-3 ${styles.footerText}`}>
                   <Link href={"https://twitter.com/IIIT_Bh"}>
                     <a className={styles.footerLink}>
                       {" "}
@@ -119,7 +130,7 @@ export default function BaseFooter() {
                     </a>
                   </Link>
                 </p>
-                <p>
+                <p className={`mt-3 ${styles.footerText}`}>
                   <Link href={"https://www.facebook.com/iiit.bhubaneswar/"}>
                     <a className={styles.footerLink}>
                       {" "}
@@ -138,7 +149,7 @@ export default function BaseFooter() {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
       <div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.1333360646227!2d85.74120761442246!3d20.294747386400555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1907923fc9c557%3A0xd3b0b05336a9dfaa!2sInternational%20Institute%20of%20Information%20Technology%20Bhubaneswar!5e0!3m2!1sen!2sin!4v1654865179367!5m2!1sen!2sin"

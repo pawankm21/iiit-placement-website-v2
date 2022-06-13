@@ -9,25 +9,26 @@
   margin-top: 2rem;
 }
 
-.bgOrange{
-  background-color: #FC9324;
-}
+
 .breadcrumbItem {
   text-decoration: none !important;
   font-weight: bold;
-  color: #447a2b!important;
+  color: #72df95!important;
   text-align: center;
   
 }
 .breadcrumbItem:hover {
-  color: #67ac56!important;
+  color: #009B32!important;
 }
 .breadcrumbItem > a{
   font-weight: bold;
-  color: #e89e4e!important;
+  color: #e49f55!important;
   text-decoration: underline !important;
 }
 .breadcrumbItem > a:hover{
-  color: #ffffff!important;
+  color: #e2d8d8!important;
   text-decoration: none !important;
+}
+.textGreen{
+  color: #efefef!important;
 }

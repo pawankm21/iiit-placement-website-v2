@@ -181,7 +181,7 @@ export default function Home({ data }) {
                 height={100}
                 placeholder="blur"
                 blurDataURL="/company/tekion.png"
-                objectFit="cover"
+                 
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -192,7 +192,7 @@ export default function Home({ data }) {
                 height={100}
                 placeholder="blur"
                 blurDataURL="/company/ukg.png"
-                objectFit="cover"
+                 
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -203,7 +203,7 @@ export default function Home({ data }) {
                 height={100}
                 placeholder="blur"
                 blurDataURL="/company/turtlemint.png"
-                objectFit="cover"
+                 
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -214,7 +214,7 @@ export default function Home({ data }) {
                 height={100}
                 placeholder="blur"
                 blurDataURL="/company/valuelabs.png"
-                objectFit="cover"
+
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -225,7 +225,6 @@ export default function Home({ data }) {
                 height={100}
                 placeholder="blur"
                 blurDataURL="/company/siemens.png"
-                objectFit="cover"
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -236,7 +235,7 @@ export default function Home({ data }) {
                 height={100}
                 placeholder="blur"
                 blurDataURL="/company/optum.png"
-                objectFit="cover"
+                 
               />
             </div>
           </div>

@@ -1,14 +1,12 @@
-import React from 'react'
-import Container from 'react-bootstrap/Container'
-import Table from 'react-bootstrap/Table'
+import Container from "react-bootstrap/Container";
+import Table from "react-bootstrap/Table";
+import Link from "next/link";
 
-
-export default function 
-() {
+export default function MandatoryDisclosure() {
   return (
     <Container>
       <h1>Mandatory Disclosure</h1>
-      <Container>
+      <Container>                            
         <Table striped bordered hover responsive>
           <tbody>
             <tr>
@@ -76,14 +74,14 @@ export default function
             <tr>
               <td>&nbsp;Email</td>
               <td>
-                &nbsp;<a href="mailto:info@iiit-bh.ac.in">info@iiit-bh.ac.in</a>
+                &nbsp;<Link href="mailto:info@iiit-bh.ac.in">info@iiit-bh.ac.in</Link>
               </td>
             </tr>
             <tr>
               <td>&nbsp;Website</td>
               <td>
                 &nbsp;
-                <a href="http://www.iiit-bh.ac.in">http://www.iiit-bh.ac.in</a>
+                <Link href="http://www.iiit-bh.ac.in">http://www.iiit-bh.ac.in</Link>
               </td>
             </tr>
             <tr>
@@ -161,7 +159,7 @@ export default function
             <tr>
               <td>&nbsp;Website</td>
               <td>
-                &nbsp;<a href="http://www.iiit-bh.ac.in">www.iiit-bh.ac.in</a>
+                &nbsp;<Link href="http://www.iiit-bh.ac.in">www.iiit-bh.ac.in</Link>
               </td>
             </tr>
             <tr>
@@ -192,7 +190,7 @@ export default function
             <tr>
               <td>&nbsp;Email</td>
               <td>
-                &nbsp;<a href="mailto:"></a>
+                &nbsp;<Link href="mailto:director@iiit-bh.ac.in">director@iiit-bh.ac.in</Link>
               </td>
             </tr>
             <tr>
@@ -590,9 +588,9 @@ export default function
               <td>
                 &nbsp;
                 <strong>
-                  <a href="info/fp.pdf" target="_Blank">
+                  <Link href="info/fp.pdf" target="_Blank">
                     Click here for Faculty List &amp; Profile
-                  </a>
+                  </Link>
                 </strong>
               </td>
             </tr>

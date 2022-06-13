@@ -1,6 +1,7 @@
 .footerText {
   font-size: 0.85rem;
   line-height: 1.2rem;
+  font-weight: 400;
 }
 .image {
   max-width: 100px;
@@ -18,5 +19,5 @@
   place-items: center;
 }
 .footerLink:hover{
-  color:#198754;
+  color:#8adcb6;
 }

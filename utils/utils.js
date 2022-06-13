@@ -1,4 +1,4 @@
-import { BRANCHES } from "./vars.js";
+import { BRANCHES, CTC,COMPANY_NAME } from "./vars.js";
 import { COLORS } from "./vars.js";
 // Returns last placement's year
 export function getLastPlacementYear() {
@@ -17,7 +17,7 @@ export function getMaximumCTCForBranch(data, branch, year) {
     const placed = data[year][i][BRANCHES[branch]];
     if (placed > 0 && ctc > maxCTC) {
       maxCTC = ctc;
-      companyName = data[year][i]["Company Name"];
+      companyName = data[year][i][COMPANY_NAME];
     }
   }
   return {
@@ -29,17 +29,29 @@ export function getMinimumCTCForBranch(data, branch, year) {
   var minCTC = Infinity;
   var companyName = "";
   for (var i = 1; i < data[year].length - 1; i++) {
-    const ctc = parseInt(data[year][i]["CTC"]);
+    const ctc = parseInt(data[year][i][CTC]);
     const placed = data[year][i][BRANCHES[branch]];
     if (placed > 0 && ctc < minCTC) {
       minCTC = ctc;
-      companyName = data[year][i]["Company Name"];
+      companyName = data[year][i][COMPANY_NAME];
     }
   }
   return {
     minCTC: minCTC,
     companyName: companyName,
   };
+}
+export function getAverageCTCForBranch(data, branch, year) {
+  var averageCTC = 0;
+  var totalPlaced = 0;
+  for (var i = 1; i < data[year].length - 1; i++) {
+    const ctc = parseInt(data[year][i][CTC]);
+    const placed = data[year][i][BRANCHES[branch]];
+    averageCTC += ctc * placed;
+    totalPlaced += placed;
+
+  }
+  return Math.ceil(averageCTC / totalPlaced);
 }
 export function getTotalPlacementsForBranch(data, branch, year) {
   return data[year].slice(-1)[0][branch];
@@ -50,8 +62,8 @@ export function placementBarGraphByYear(data, year) {
   const maxCTC = branches.map((branch) => {
     return getMaximumCTCForBranch(data, branch, year);
   });
-  const minCTC = branches.map((branch) => {
-    return getMinimumCTCForBranch(data, branch, year);
+  const averageCTC = branches.map((branch) => {
+    return getAverageCTCForBranch(data, branch, year);
   });
 
   const barGraph = {
@@ -73,16 +85,14 @@ export function placementBarGraphByYear(data, year) {
                   maxCTC[tooltipItem.dataIndex].maxCTC
                 }`;
               } else {
-                return `${minCTC[tooltipItem.dataIndex].companyName}: ${
-                  minCTC[tooltipItem.dataIndex].minCTC
-                }`;
+                return `${averageCTC[tooltipItem.dataIndex]} LPA`;
               }
             },
           },
         },
         title: {
           display: true,
-          text: `Maximum and minimum CTC offered in ${year}`,
+          text: `Maximum and average CTC offered in ${year}`,
         },
       },
     },
@@ -97,10 +107,10 @@ export function placementBarGraphByYear(data, year) {
           }),
         },
         {
-          label: "Minimum CTC in LPA",
+          label: "average CTC in LPA",
           backgroundColor: COLORS.ORANGE,
-          data: minCTC.map((branch) => {
-            return branch.minCTC;
+          data: averageCTC.map((branch) => {
+            return branch;
           }),
         },
       ],
@@ -211,33 +221,33 @@ export function getBreadCrumbs(route) {
   return breadCrumbs;
 }
 export function getData(fs, path, excelToJson) {
-   var data = {};
-   const EXCEL_PATHS = [];
-   fs.readdirSync("./excel", { withFileTypes: true }).forEach((file) => {
-     if (file.name.endsWith(".xlsx")) {
-       EXCEL_PATHS.push(file.name);
-     }
-   });
-   EXCEL_PATHS.forEach((excelPath) => {
-     const dir = path.resolve("./excel/" + excelPath);
-     const excelData = excelToJson({
-       sourceFile: dir,
-       columnToKey: {
-         "*": "{{columnHeader}}",
-       },
-     });
-     excelData[`${excelPath.split(".")[0]}`] = excelData.Sheet1;
-     delete excelData.Sheet1;
-     data = { ...data, ...excelData };
-   });
+  var data = {};
+  const EXCEL_PATHS = [];
+  fs.readdirSync("./excel", { withFileTypes: true }).forEach((file) => {
+    if (file.name.endsWith(".xlsx")) {
+      EXCEL_PATHS.push(file.name);
+    }
+  });
+  EXCEL_PATHS.forEach((excelPath) => {
+    const dir = path.resolve("./excel/" + excelPath);
+    const excelData = excelToJson({
+      sourceFile: dir,
+      columnToKey: {
+        "*": "{{columnHeader}}",
+      },
+    });
+    excelData[`${excelPath.split(".")[0]}`] = excelData.Sheet1;
+    delete excelData.Sheet1;
+    data = { ...data, ...excelData };
+  });
   return data;
 }
 export function getImages(fs) {
-   var IMAGE_PATHS = [];
-   fs.readdirSync("./public/company", {
-     withFileTypes: true,
-   }).forEach((file) => {
-     IMAGE_PATHS.push("/company/" + file.name);
-   });
-   return IMAGE_PATHS;
+  var IMAGE_PATHS = [];
+  fs.readdirSync("./public/company", {
+    withFileTypes: true,
+  }).forEach((file) => {
+    IMAGE_PATHS.push("/company/" + file.name);
+  });
+  return IMAGE_PATHS;
 }

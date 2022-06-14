@@ -94,6 +94,7 @@ export default function Home({ data }) {
               objectFit="cover"
               objectPosition="center"
             />
+            <blockquote className="text-center fw-bold fst-italic ">Dr. Debasish Jena, Registrar IIIT-Bh</blockquote>
           </div>
           <div className="col-md-6 col-12">
             <p>

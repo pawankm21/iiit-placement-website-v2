@@ -6,7 +6,7 @@ export default function MandatoryDisclosure() {
   return (
     <Container>
       <h1>Mandatory Disclosure</h1>
-      <Container>                            
+      <Container>
         <Table striped bordered hover responsive>
           <tbody>
             <tr>
@@ -74,14 +74,17 @@ export default function MandatoryDisclosure() {
             <tr>
               <td>&nbsp;Email</td>
               <td>
-                &nbsp;<Link href="mailto:info@iiit-bh.ac.in">info@iiit-bh.ac.in</Link>
+                &nbsp;
+                <Link href="mailto:info@iiit-bh.ac.in">info@iiit-bh.ac.in</Link>
               </td>
             </tr>
             <tr>
               <td>&nbsp;Website</td>
               <td>
                 &nbsp;
-                <Link href="http://www.iiit-bh.ac.in">http://www.iiit-bh.ac.in</Link>
+                <Link href="http://www.iiit-bh.ac.in">
+                  http://www.iiit-bh.ac.in
+                </Link>
               </td>
             </tr>
             <tr>
@@ -159,7 +162,8 @@ export default function MandatoryDisclosure() {
             <tr>
               <td>&nbsp;Website</td>
               <td>
-                &nbsp;<Link href="http://www.iiit-bh.ac.in">www.iiit-bh.ac.in</Link>
+                &nbsp;
+                <Link href="http://www.iiit-bh.ac.in">www.iiit-bh.ac.in</Link>
               </td>
             </tr>
             <tr>
@@ -190,7 +194,10 @@ export default function MandatoryDisclosure() {
             <tr>
               <td>&nbsp;Email</td>
               <td>
-                &nbsp;<Link href="mailto:director@iiit-bh.ac.in">director@iiit-bh.ac.in</Link>
+                &nbsp;
+                <Link href="mailto:director@iiit-bh.ac.in">
+                  director@iiit-bh.ac.in
+                </Link>
               </td>
             </tr>
             <tr>
@@ -381,7 +388,7 @@ export default function MandatoryDisclosure() {
               </td>
             </tr>
             <tr>
-              <td>&nbsp;% Students passed with First Class</td>
+              <td>&nbsp;% Students passed with First className</td>
               <td>
                 <table>
                   <tbody>
@@ -515,7 +522,7 @@ export default function MandatoryDisclosure() {
               </td>
             </tr>
             <tr>
-              <td>&nbsp;% Students passed with First Class</td>
+              <td>&nbsp;% Students passed with First className</td>
               <td>
                 <table>
                   <tbody>

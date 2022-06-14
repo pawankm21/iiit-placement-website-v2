@@ -63,8 +63,8 @@ export default function WhyUs() {
         <h4>Infrastructure</h4>
         <p className="col">
           The sprawling campus of IIIT Bhubaneswar is established at the
-          outskirts of Bhubaneswar in an area of 23 acres. Class rooms at IIIT
-          Bhubaneswar are equipped with the projectors and latest PCs. The
+          outskirts of Bhubaneswar in an area of 23 acres. className rooms at
+          IIIT Bhubaneswar are equipped with the projectors and latest PCs. The
           Institute has multiple specialized labs such Computer Architecture,
           Database Lab, VLSI lab, MATLAB, Engineering Drawing, Chemistry Lab,
           Physics Lab, Java Development Lab, etc. Our computers are powered with
@@ -80,14 +80,14 @@ export default function WhyUs() {
               <Carousel.Item key={`${image + index}`}>
                 <Image
                   className="d-block w-100"
-                  src={`/infra/${image+1}.jpg`}
-                  alt={image+1}
+                  src={`/infra/${image + 1}.jpg`}
+                  alt={image + 1}
                   width={900}
                   height={600}
                   objectFit="cover"
                   objectPosition="center"
                   placeholder="blur"
-                  blurDataURL={`/infra/${image+1}.jpg`}
+                  blurDataURL={`/infra/${image + 1}.jpg`}
                 />
               </Carousel.Item>
             ))}

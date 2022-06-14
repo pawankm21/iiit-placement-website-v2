@@ -4,10 +4,10 @@ export default function Collaborations() {
   return (
     <div>
       <h2>Collaborations</h2>
-      <div class="my-5">
+      <div className="my-5">
         <h3>University Tie-Ups</h3>
-        <Container class="row my-4">
-          <div class="col-lg-2">
+        <Container className="row my-4">
+          <div className="col-lg-2">
             <Image
               src={"/unt.jpg"}
               alt={"UNT"}
@@ -16,7 +16,7 @@ export default function Collaborations() {
               layout="responsive"
             ></Image>
           </div>
-          <div class="col-lg-10">
+          <div className="col-lg-10">
             <h4>University of North Texas</h4>
             <p>
               &nbsp;IIIT Bhubaneswar desires to develop and cultivate
@@ -28,7 +28,7 @@ export default function Collaborations() {
           </div>
         </Container>
 
-        <Container class="row my-4">
+        <Container className="row my-4">
           <div className="col-lg-10">
             <h4>National University of Singapore</h4>
             <p>
@@ -38,7 +38,7 @@ export default function Collaborations() {
               institute.&nbsp;
             </p>
           </div>
-          <div class="col-lg-2">
+          <div className="col-lg-2">
             <Image
               src={"/nus.png"}
               alt={"nus"}
@@ -49,11 +49,11 @@ export default function Collaborations() {
             ></Image>
           </div>
         </Container>
-        <div class="row">
-          <div class="col-lg-12">
+        <div className="row">
+          <div className="col-lg-12">
             <h3>Company Tie-Ups</h3>
-            <div class="row my-5">
-              <div class="col-lg-10">
+            <div className="row my-5">
+              <div className="col-lg-10">
                 <h4>IBM</h4>
                 <p>
                   &nbsp;Industry collaborations have been the centre of focus
@@ -69,7 +69,7 @@ export default function Collaborations() {
                   procedures involved in making real life software.&nbsp;
                 </p>
               </div>
-              <div class="col-lg-2 d-flex align-items-center">
+              <div className="col-lg-2 d-flex align-items-center">
                 <div className="w-100">
                   <Image
                     src="/company/ibm.png"
@@ -81,8 +81,8 @@ export default function Collaborations() {
                 </div>
               </div>
             </div>
-            <div class="row my-5">
-              <div class="col-lg-4 d-flex align-items-center">
+            <div className="row my-5">
+              <div className="col-lg-4 d-flex align-items-center">
                 <div className="w-100">
                   <Image
                     src="/company/capgemini.png"
@@ -93,7 +93,7 @@ export default function Collaborations() {
                   />
                 </div>
               </div>
-              <div class="col-lg-8">
+              <div className="col-lg-8">
                 <h4>Capgemini</h4>
                 <p>
                   &nbsp;IIIT Bhubaneswar and Capgemini have also joined hands to
@@ -103,8 +103,8 @@ export default function Collaborations() {
                 </p>
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-10">
+            <div className="row">
+              <div className="col-lg-10">
                 <h4>Samsung</h4>
                 <p>
                   &nbsp;Samsung R&amp;D Institute (SRI), India is been
@@ -113,7 +113,7 @@ export default function Collaborations() {
                   domain experts.&nbsp;
                 </p>
               </div>
-              <div class="col-lg-2">
+              <div className="col-lg-2">
                 <Image
                   src="/company/samsung.png"
                   width={600}

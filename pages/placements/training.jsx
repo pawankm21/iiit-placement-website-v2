@@ -8,7 +8,7 @@ export default function Training() {
         <h1>Training Programmes</h1>
         <p>
           The goal of Training &amp; Placement Cell is to Provide employment
-          opportunities and world class training to IIIT Students in leading
+          opportunities and world className training to IIIT Students in leading
           institutions. The Cell is well equipped with ample infrastructure in
           Terms of classrooms, GD rooms,Conference Room, Auditoriums for Pre
           Placement Trainings, Seminars etc.&nbsp;
@@ -18,12 +18,12 @@ export default function Training() {
           <h3 className="mt-5 mb-2">Pre-Placement Trainings</h3>
           <Container className="col-lg-4">
             <Image
-              src="/tpcell/class.jpg"
+              src="/tpcell/className.jpg"
               width={300}
               height={200}
               layout="responsive"
               placeholder="blur"
-              blurDataURL="/tpcell/class.jpg"
+              blurDataURL="/tpcell/className.jpg"
               alt="Pre-Placement Training"
             />
           </Container>

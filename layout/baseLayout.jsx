@@ -41,7 +41,7 @@ export default function BaseLayout(props) {
           placeholder="blur"
         />
         <div className="  position-absolute justify-content-center  d-md-flex  mt-lg-5 mt-3 d-none top-0 w-100 ">
-          <div className="p-5 rounded-full bg-dark shadow-lg rounded-pill  bg-opacity-75 text-black fw-light">
+          <div className="p-5 rounded-full bg-gradient bg-dark  shadow-lg rounded-pill  bg-opacity-75   fw-light">
             {" "}
             <h1
               className={`text-center d-flex align-items-center ${styles.textGreen} `}
@@ -53,8 +53,8 @@ export default function BaseLayout(props) {
                 alt="IIIT Bhubaneswar Training and Placement Cell"
                 layout="fixed"
               />
-              <strong className="ms-2 text-white fw-bolder">IIIT-Bh</strong>ubaneswar
-              Placements
+              <strong className="ms-2 text-white fw-bolder">IIIT-Bh</strong>
+              ubaneswar Placements
             </h1>
             <div className="ms-5 d-flex gap-2">
               {breadCrumb.map((item, index) => {

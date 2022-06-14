@@ -4,6 +4,17 @@ import { getData } from "../../utils/utils";
 import PlacementStatistics from "../../components/placement-statistics";
 export default function Placements({ data }) {
   const NAV_LINKS = Object.keys(data).reverse();
+  const CHARTS = NAV_LINKS.map((year) => (
+    <Tab
+      key={year}
+      eventKey={year}
+      title={`${year - 4}-${year}`}
+      className="text-center"
+      mountOnEnter={true}
+    >
+      <PlacementStatistics data={data} year={year} />
+    </Tab>
+  ));
   return (
     <div className=" w-100 h-100">
       <h1 className="my-5">Past placement statistics</h1>
@@ -12,12 +23,9 @@ export default function Placements({ data }) {
         defaultActiveKey={NAV_LINKS[0]}
         id="placements-by-year"
         className="mb-3"
+        mountOnEnter={true}
       >
-        {NAV_LINKS.map((year) => (
-          <Tab key={year} eventKey={year} title={`${year-4}-${year}`} className="text-center">
-            <PlacementStatistics data={data} year={year} />
-          </Tab>
-        ))}
+        {CHARTS.map((chart) => chart)}
       </Tabs>
     </div>
   );

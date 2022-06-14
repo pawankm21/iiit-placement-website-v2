@@ -22,11 +22,11 @@
 }
 .breadcrumbItem > a{
   font-weight: bold;
-  color: #e49f55!important;
+  color: #ffffff!important;
   text-decoration: underline !important;
 }
 .breadcrumbItem > a:hover{
-  color: #e2d8d8!important;
+  color: #fffab1!important;
   text-decoration: none !important;
 }
 .textGreen{

@@ -18,12 +18,12 @@ export default function Training() {
           <h3 className="mt-5 mb-2">Pre-Placement Trainings</h3>
           <Container className="col-lg-4">
             <Image
-              src="/tpcell/class3.jpg"
+              src="/tpcell/class.jpg"
               width={300}
               height={200}
               layout="responsive"
               placeholder="blur"
-              blurDataURL="/tpcell/class3.jpg"
+              blurDataURL="/tpcell/class.jpg"
               alt="Pre-Placement Training"
             />
           </Container>
@@ -68,7 +68,7 @@ export default function Training() {
               src="/tpcell/seminar.jpg"
               layout="responsive"
               placeholder="blur"
-              blurDataURL="/tpcell/class3.jpg"
+              blurDataURL="/tpcell/seminar.jpg"
               width={300}
               height={200}
               alt="Seminar"
@@ -79,12 +79,12 @@ export default function Training() {
           <h3 className="mt-5 mb-2">Internships and Projects</h3>
           <Container className="col-lg-4">
             <Image
-              src="/tpcell/lib-2.jpg"
+              src="/tpcell/lib.jpg"
               width={300}
               height={200}
               layout="responsive"
               placeholder="blur"
-              blurDataURL="/tpcell/lib-2.jpg"
+              blurDataURL="/tpcell/lib.jpg"
               alt="Internship"
             />
           </Container>

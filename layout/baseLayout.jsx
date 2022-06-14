@@ -40,6 +40,16 @@ export default function BaseLayout(props) {
           blurDataURL="/infra/10.jpg"
           placeholder="blur"
         />
+        <div className=" d-md-none position-absolute top-0 w-100 text-center ">
+          <h3 className="text-white fw-semibold p-4  ">Welcome To</h3>
+          <h1 className="fw-bolder p-4 text-dark fw-bolder ">
+            <strong>
+
+              <span className="text-success">IIIT Bh</span>
+              ubaneswar Placements
+            </strong>
+          </h1>
+        </div>
         <div className="  position-absolute justify-content-center  d-md-flex  mt-lg-5 mt-3 d-none top-0 w-100 ">
           <div className="p-5 rounded-full bg-gradient bg-dark  shadow-lg rounded-pill  bg-opacity-75   fw-light">
             {" "}

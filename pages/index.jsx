@@ -62,7 +62,7 @@ export default function Home({ data }) {
                     objectFit="cover"
                     objectPosition="center"
                     placeholder="blur"
-                    blurDataURL={image.src}
+                    blurDataURL={"/placeholder.png"}
                   />
 
                   <Carousel.Caption
@@ -87,7 +87,7 @@ export default function Home({ data }) {
               width={900}
               height={400}
               placeholder="blur"
-              blurDataURL="/tpcell/registrar.jpeg"
+              blurDataURL="/placeholder.png"
               objectFit="cover"
               objectPosition="center"
             />
@@ -151,7 +151,7 @@ export default function Home({ data }) {
                 width={200}
                 height={100}
                 placeholder="blur"
-                blurDataURL="/company/amazon.png"
+                blurDataURL="/placeholder.png"
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -161,7 +161,7 @@ export default function Home({ data }) {
                 width={200}
                 height={100}
                 placeholder="blur"
-                blurDataURL="/company/baker-hughes.png"
+                blurDataURL="/placeholder.png"
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -170,7 +170,7 @@ export default function Home({ data }) {
                 alt=""
                 width={200}
                 height={100}
-                blurDataURL="/company/juspay.png"
+                blurDataURL="/placeholder.png"
                 placeholder="blur"
               ></Image>
             </div>
@@ -191,7 +191,7 @@ export default function Home({ data }) {
                 width={200}
                 height={100}
                 placeholder="blur"
-                blurDataURL="/company/ukg.png"
+                blurDataURL="/placeholder.png"
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -201,7 +201,7 @@ export default function Home({ data }) {
                 width={200}
                 height={100}
                 placeholder="blur"
-                blurDataURL="/company/turtlemint.png"
+                blurDataURL="/placeholder.png"
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -211,7 +211,7 @@ export default function Home({ data }) {
                 width={200}
                 height={100}
                 placeholder="blur"
-                blurDataURL="/company/valuelabs.png"
+                blurDataURL="/placeholder.png"
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -221,7 +221,7 @@ export default function Home({ data }) {
                 width={200}
                 height={100}
                 placeholder="blur"
-                blurDataURL="/company/siemens.png"
+                blurDataURL="/placeholder.png"
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -231,7 +231,7 @@ export default function Home({ data }) {
                 width={200}
                 height={100}
                 placeholder="blur"
-                blurDataURL="/company/optum.png"
+                blurDataURL="/placeholder.png"
               />
             </div>
           </div>

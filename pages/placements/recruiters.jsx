@@ -15,7 +15,7 @@ export default function Recruiters({ images }) {
               layout="responsive"
               alt="Recruiter"
               placeholder="blur"
-              blurDataURL={image}
+              blurDataURL={"/placeholder.png"}
             />
           </div>
         ))}

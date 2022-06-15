@@ -23,7 +23,7 @@ export default function Training() {
               height={200}
               layout="responsive"
               placeholder="blur"
-              blurDataURL="/tpcell/className.jpg"
+              blurDataURL="/placeholder.png"
               alt="Pre-Placement Training"
             />
           </Container>
@@ -68,7 +68,7 @@ export default function Training() {
               src="/tpcell/seminar.jpg"
               layout="responsive"
               placeholder="blur"
-              blurDataURL="/tpcell/seminar.jpg"
+              blurDataURL="/placeholder.png"
               width={300}
               height={200}
               alt="Seminar"
@@ -84,7 +84,7 @@ export default function Training() {
               height={200}
               layout="responsive"
               placeholder="blur"
-              blurDataURL="/tpcell/lib.jpg"
+              blurDataURL="/placeholder.png"
               alt="Internship"
             />
           </Container>

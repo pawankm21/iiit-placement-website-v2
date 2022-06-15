@@ -37,7 +37,7 @@ export default function BaseLayout(props) {
           layout="fill"
           objectPosition={"center"}
           alt="IIIT Bhubaneswar Placements"
-          blurDataURL="/infra/10.jpg"
+          blurDataURL="/placeholder.png"
           placeholder="blur"
         />
         <div className=" d-md-none position-absolute top-0 w-100 text-center ">

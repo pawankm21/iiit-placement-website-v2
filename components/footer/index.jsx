@@ -16,7 +16,7 @@ export default function BaseFooter() {
                 objectFit="contain"
                 alt={"IIIT Bhubaneswar Training and Placement Cell"}
                 placeholder={"blur"}
-                blurDataURL={logo}
+                blurDataURL={"/placeholder.png"}
               />
             </div>
             <div>

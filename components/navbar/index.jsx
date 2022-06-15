@@ -106,7 +106,7 @@ export default function BaseNavbar() {
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/contact" className="fw-semibold">
+                <Nav.Link href="/contact-us" className="fw-semibold">
                   Contact Us
                 </Nav.Link>
               </Nav.Item>

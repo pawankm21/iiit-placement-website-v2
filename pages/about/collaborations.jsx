@@ -3,20 +3,20 @@ import Container from "react-bootstrap/Container";
 export default function Collaborations() {
   return (
     <div>
-      <h2>Collaborations</h2>
+      <h1>Collaborations</h1>
       <div className="my-5">
         <h3>University Tie-Ups</h3>
         <Container className="row my-4">
-          <div className="col-lg-2">
+          <div className="col-lg-4">
             <Image
-              src={"/unt.jpg"}
+              src={"/unt.png"}
               alt={"UNT"}
-              width={100}
-              height={100}
+              width={400}
+              height={200}
               layout="responsive"
             ></Image>
           </div>
-          <div className="col-lg-10">
+          <div className="col-lg-8">
             <h4>University of North Texas</h4>
             <p>
               &nbsp;IIIT Bhubaneswar desires to develop and cultivate
@@ -29,7 +29,17 @@ export default function Collaborations() {
         </Container>
 
         <Container className="row my-4">
-          <div className="col-lg-10">
+          <div className="col-lg-4 d-lg-none">
+            <Image
+              src={"/nus.png"}
+              alt={"nus"}
+              width={500}
+              height={400}
+              layout="responsive"
+              objectFit={"cover"}
+            ></Image>
+          </div>
+          <div className="col-lg-8">
             <h4>National University of Singapore</h4>
             <p>
               &nbsp;Tie ups will focus on academics, research and many joint
@@ -38,7 +48,7 @@ export default function Collaborations() {
               institute.&nbsp;
             </p>
           </div>
-          <div className="col-lg-2">
+          <div className="col-lg-4 d-lg-block d-none">
             <Image
               src={"/nus.png"}
               alt={"nus"}
@@ -53,7 +63,18 @@ export default function Collaborations() {
           <div className="col-lg-12">
             <h3>Company Tie-Ups</h3>
             <div className="row my-5">
-              <div className="col-lg-10">
+              <div className="col-lg-4 d-flex align-items-center d-lg-none">
+                <div className="w-100">
+                  <Image
+                    src="/company/ibm.png"
+                    width={800}
+                    height={400}
+                    layout="responsive"
+                    objectFit={"cover"}
+                  />
+                </div>
+              </div>
+              <div className="col-lg-8">
                 <h4>IBM</h4>
                 <p>
                   &nbsp;Industry collaborations have been the centre of focus
@@ -69,7 +90,7 @@ export default function Collaborations() {
                   procedures involved in making real life software.&nbsp;
                 </p>
               </div>
-              <div className="col-lg-2 d-flex align-items-center">
+              <div className="col-lg-4 d-lg-flex align-items-center d-none">
                 <div className="w-100">
                   <Image
                     src="/company/ibm.png"
@@ -104,7 +125,16 @@ export default function Collaborations() {
               </div>
             </div>
             <div className="row">
-              <div className="col-lg-10">
+              <div className="col-lg-4 d-lg-none">
+                <Image
+                  src="/company/samsung.png"
+                  width={600}
+                  height={400}
+                  layout="responsive"
+                  objectFit={"cover"}
+                />
+              </div>
+              <div className="col-lg-8">
                 <h4>Samsung</h4>
                 <p>
                   &nbsp;Samsung R&amp;D Institute (SRI), India is been
@@ -113,7 +143,7 @@ export default function Collaborations() {
                   domain experts.&nbsp;
                 </p>
               </div>
-              <div className="col-lg-2">
+              <div className="col-lg-4 d-none d-lg-block">
                 <Image
                   src="/company/samsung.png"
                   width={600}

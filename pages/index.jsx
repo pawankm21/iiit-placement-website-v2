@@ -38,19 +38,16 @@ export default function Home({ data }) {
     <div className="mx-auto mt-5">
       <div className="mt-5">
         <Container as="div" className="row my-5">
-            <h1>About Us</h1>
+          <h1>About Us</h1>
           <div className="col-md-8  col-12 ">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus, iste sed odit debitis amet natus animi mollitia fuga
-              tenetur obcaecati praesentium, consectetur ex rerum, modi commodi
-              ullam sunt asperiores corrupti! Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Laboriosam impedit animi veritatis!
-              Rerum doloribus impedit sit dolor cupiditate asperiores magni
-              soluta quaerat est tenetur accusantium, voluptatem assumenda,
-              beatae sapiente earum. Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit.
-            </p>
+            <h5 className="fw-normal">
+              The Training and Placement Cell, IIIT Bhubaneswar aims at creating
+              a link between the students and the corporate sectors. It works to
+              train the students with effective problem solving ability,
+              personality improvement as well as good communication skills. We
+              are a team comprising of placement executives, students and
+              faculties.
+            </h5>
           </div>
           <div className="col-12 col-md-4 text-center">
             <Carousel>
@@ -94,17 +91,20 @@ export default function Home({ data }) {
               objectFit="cover"
               objectPosition="center"
             />
-            <blockquote className="text-center fw-bold fst-italic ">Dr. Debasish Jena, Registrar IIIT-Bh</blockquote>
+            <blockquote className="text-center fw-bold fst-italic ">
+              Dr. Debasish Jena, Registrar IIIT-Bh
+            </blockquote>
           </div>
           <div className="col-md-6 col-12">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus, iste sed odit debitis amet natus animi mollitia fuga
-              tenetur obcaecati praesentium, consectetur ex rerum, modi commodi
-              ullam sunt asperiores corrupti! Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Laboriosam impedit animi veritatis!
-              Rerum doloribus impedit sit dolor cupiditate asperiores magni
-            </p>
+            <h5 className="fw-normal fst-italic ">
+              &ldquo;IIIT Bhubaneswar will be a global voice in the near future.
+              The voices which will make the institute touch new technical
+              heights and success. I am very proud to be a part of such an
+              institute. Students here are trained though various stages before
+              they are made to face the real world. Rigorous laboratory
+              practices have made their fundamentals clear in most of their
+              subjects. I wish they succeed in every field their life. &rdquo;
+            </h5>
           </div>
         </Container>
         <Container as="div" className="row align-middle my-5">
@@ -182,7 +182,6 @@ export default function Home({ data }) {
                 height={100}
                 placeholder="blur"
                 blurDataURL="/company/tekion.png"
-                 
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -193,7 +192,6 @@ export default function Home({ data }) {
                 height={100}
                 placeholder="blur"
                 blurDataURL="/company/ukg.png"
-                 
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -204,7 +202,6 @@ export default function Home({ data }) {
                 height={100}
                 placeholder="blur"
                 blurDataURL="/company/turtlemint.png"
-                 
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -215,7 +212,6 @@ export default function Home({ data }) {
                 height={100}
                 placeholder="blur"
                 blurDataURL="/company/valuelabs.png"
-
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -236,7 +232,6 @@ export default function Home({ data }) {
                 height={100}
                 placeholder="blur"
                 blurDataURL="/company/optum.png"
-                 
               />
             </div>
           </div>

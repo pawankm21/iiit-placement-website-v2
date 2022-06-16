@@ -37,7 +37,7 @@ export default function WhyUs() {
       </Container>
       <Container className="row my-5">
         <h4>Student Faculty Ratio</h4>
-        <p className="col">
+        <p className="col-md-6">
           IIIT Bhubaneswar has one of the best students-faculty ratio compared
           with most of the institute in the region. Our faculties have a
           tremendous blend of corporate expertise with the teaching passion.
@@ -46,7 +46,7 @@ export default function WhyUs() {
           such as Dept. of Science and Technology, Govt. of India and DIT, Govt
           of India.
         </p>
-        <div className="col  d-flex  align-items-center justify-content-center ">
+        <div className="col-md-6  d-flex  align-items-center justify-content-center ">
           <Image
             src="/tpcell/student-teacher-ratio.png"
             alt="jee"
@@ -61,7 +61,7 @@ export default function WhyUs() {
       </Container>
       <Container className="row my-5">
         <h4>Infrastructure</h4>
-        <p className="col">
+        <p className="col-md-6 col-12">
           The sprawling campus of IIIT Bhubaneswar is established at the
           outskirts of Bhubaneswar in an area of 23 acres. className rooms at
           IIIT Bhubaneswar are equipped with the projectors and latest PCs. The
@@ -74,7 +74,7 @@ export default function WhyUs() {
           journals and magazines. IIIT Bhubaneswar is a member of IEEE Computer
           Society, IEEE Xplore Digital Library and many more.
         </p>
-        <div className="col  d-flex  align-items-center justify-content-center ">
+        <div className="col col-md-6 col-12  d-flex  align-items-center justify-content-center ">
           <Carousel>
             {carouselImages.map((image, index) => (
               <Carousel.Item key={`${image + index}`}>

@@ -1,4 +1,4 @@
-import { BRANCHES, CTC,COMPANY_NAME } from "./vars.js";
+import { BRANCHES, CTC, COMPANY_NAME } from "./vars.js";
 import { COLORS } from "./vars.js";
 // Returns last placement's year
 export function getLastPlacementYear() {
@@ -49,7 +49,6 @@ export function getAverageCTCForBranch(data, branch, year) {
     const placed = data[year][i][BRANCHES[branch]];
     averageCTC += ctc * placed;
     totalPlaced += placed;
-
   }
   return Math.ceil(averageCTC / totalPlaced);
 }
@@ -250,4 +249,24 @@ export function getImages(fs) {
     IMAGE_PATHS.push("/company/" + file.name);
   });
   return IMAGE_PATHS;
+}
+export async function submitHandler(e, messageRef, emailRef) {
+  e.preventDefault();
+  try {
+    const res = await fetch("/api/mail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        message: messageRef.current.value,
+        email: emailRef.current.value,
+      }),
+    });
+    const data = await res.json();
+    console.log(data);
+  } catch (err) {
+    const res = err;
+    console.log(res);
+  }
 }

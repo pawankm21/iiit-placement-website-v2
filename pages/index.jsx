@@ -40,14 +40,21 @@ export default function Home({ data }) {
         <Container as="div" className="row my-5">
           <h1>About Us</h1>
           <div className="col-md-8  col-12 ">
-            <h5 className="fw-normal">
+            <h6 className="fw-normal">
               The Training and Placement Cell, IIIT Bhubaneswar aims at creating
               a link between the students and the corporate sectors. It works to
               train the students with effective problem solving ability,
               personality improvement as well as good communication skills. We
               are a team comprising of placement executives, students and
-              faculties.
-            </h5>
+              faculties.We facilitate full-time and internship recruitment for
+              300+ graduates from across 5 different departments {"("} Computer
+              Science {"&"} Engineering, Information Technology, Electrical and
+              Electronics Engineering, Electronics and Telecommunication
+              Engineering {")"} with a vast diversity of talent. We have
+              students across many programs namely B.Tech, M.Tech, and Ph.D who
+              are looking forward to challenging and exciting job opportunities
+              in industry and academia.
+            </h6>
           </div>
           <div className="col-12 col-md-4 text-center">
             <Carousel>
@@ -96,7 +103,7 @@ export default function Home({ data }) {
             </blockquote>
           </div>
           <div className="col-md-6 col-12">
-            <h5 className="fw-normal fst-italic ">
+            <h6 className="fw-normal fst-italic ">
               &ldquo;IIIT Bhubaneswar will be a global voice in the near future.
               The voices which will make the institute touch new technical
               heights and success. I am very proud to be a part of such an
@@ -104,7 +111,7 @@ export default function Home({ data }) {
               they are made to face the real world. Rigorous laboratory
               practices have made their fundamentals clear in most of their
               subjects. I wish they succeed in every field their life. &rdquo;
-            </h5>
+            </h6>
           </div>
         </Container>
         <Container as="div" className="row align-middle my-5">

@@ -83,8 +83,6 @@ export default function BaseNavbar() {
                 <NavDropdown.Item href="/for-recruiters/recruitment-procedure">
                   Recruitment Procedure
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item>Apply Here</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="About IIIT-bh" className="fw-semibold">
                 <NavDropdown.Item href="/about/academics">

@@ -29,4 +29,3 @@ export const carouselImages = [
 export const CTC = "CTC"
 export const TOTAL = "Total"
 export const COMPANY_NAME = "Company Name"
-export const UNDER_CONSTRUCTION = "To be updates soon"

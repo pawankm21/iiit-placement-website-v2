@@ -18,7 +18,7 @@ export default function Training() {
           <h3 className="mt-5 mb-2">Pre-Placement Trainings</h3>
           <Container className="col-lg-4">
             <Image
-              src="/tpcell/className.jpg"
+              src="/tpcell/class.jpg"
               width={300}
               height={200}
               layout="responsive"

@@ -1,15 +1,15 @@
 import Container from "react-bootstrap/Container";
 import Table from "react-bootstrap/Table";
 import Link from "next/link";
-import { UNDER_CONSTRUCTION } from "../../utils/vars";
+import UnderConstruction from "../../components/fallback";
 
 export default function MandatoryDisclosure() {
   return (
     <Container>
       <h1>Mandatory Disclosure</h1>
       <Container>
-        {UNDER_CONSTRUCTION}
-        {/* <Table striped bordered hover responsive>
+        <UnderConstruction/>
+         <Table striped bordered hover responsive>
           <tbody>
             <tr>
               <td>&nbsp;</td>
@@ -850,7 +850,7 @@ export default function MandatoryDisclosure() {
               <td>&nbsp;prafulla@iiit-bh.ac.in</td>
             </tr>
           </tbody>
-        </Table> */}
+        </Table> 
       </Container>
     </Container>
   );

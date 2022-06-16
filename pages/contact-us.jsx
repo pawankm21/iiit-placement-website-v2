@@ -27,7 +27,7 @@ export default function ContactUs() {
               <strong>Dr. Subrata Kumar Mohanty</strong>
               <p>
                 Professor Incharge Training and Placement cell
-                <div>Phone: +91 8093030324, +91 9437122111</div>
+                <div>Phone:+91 9439365722,+91 8895432243</div>
                 <Link href={"mailto:Subrata@iiit-bh.ac.in"}>
                   Email –Subrata@iiit-bh.ac.in
                 </Link>

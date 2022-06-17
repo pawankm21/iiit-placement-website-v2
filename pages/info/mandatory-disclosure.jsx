@@ -6,7 +6,7 @@ import UnderConstruction from "../../components/fallback";
 export default function MandatoryDisclosure() {
   return (
     <Container>
-      <h1>Mandatory Disclosure</h1>
+      <h1 className="fw-bolder">Mandatory Disclosure</h1>
       <Container>
         <UnderConstruction/>
          <Table striped bordered hover responsive>

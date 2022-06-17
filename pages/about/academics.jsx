@@ -1,17 +1,15 @@
-import Container from "react-bootstrap/Container";
+import div from "react-bootstrap/Container";
 import Link from "next/link";
 
 export default function Academics() {
   return (
-    <Container>
-      <Container className="col-lg-12">
-        <Container className="my-5 fw-bolder">
-          <h1>Academics </h1>
-        </Container>
+    <div>
+      <div className="col-lg-12">
+        <h1 className="my-5 fw-bolder">Academics </h1>
 
-        <Container className="row">
+        <div className="row">
           <h2 className="text-success">Courses</h2>
-          <Container className="col-lg-12">
+          <div className="col-lg-12">
             <h5>B.Tech</h5>
             <p>The B-tech program is divided into five departments:</p>
             <ul>
@@ -33,10 +31,10 @@ export default function Academics() {
               to attract the best students and the faculty over the coming
               years.
             </p>
-          </Container>
-        </Container>
-        <Container className="row">
-          <Container className="col-lg-12">
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-12">
             <h5>M.Tech</h5>
             <p>
               The Institute offers M-Tech programme in Computer Science and
@@ -54,10 +52,10 @@ export default function Academics() {
               Object Oriented Programming with Java, Advanced Database
               Management System,etc.
             </p>
-          </Container>
-        </Container>
-        <Container className="row">
-          <Container className="col-lg-12">
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-12">
             <h5>PhD</h5>
             <p>
               The Institute offers doctoral programme in Computer Science and
@@ -73,15 +71,15 @@ export default function Academics() {
               Information Retrieval, Mobile Ad Hoc Network, Advanced Data
               Mining, Information Theory and Coding,etc.
             </p>
-          </Container>
-        </Container>
-      </Container>
-      <Container className="col-lg-12">
+          </div>
+        </div>
+      </div>
+      <div className="col-lg-12">
         <h2 className="text-success" id="dept">
           Departments
         </h2>
-        <Container className="row">
-          <Container className="col-lg-12">
+        <div className="row">
+          <div className="col-lg-12">
             <h5>Computer Science and Engineering</h5>
             <p>
               This department comprises of undergraduate, postgraduate and
@@ -92,10 +90,10 @@ export default function Academics() {
               computing,etc
             </p>
             <br />
-          </Container>
-        </Container>
-        <Container className="row">
-          <Container className="col-lg-12">
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-12">
             <h5>Information and Technology</h5>
             <p>
               integrating “Computing and Communication&quot;. The branch is
@@ -104,10 +102,10 @@ export default function Academics() {
               students into various academic and project activities.
               <br />
             </p>
-          </Container>
-        </Container>
-        <Container className="row">
-          <Container className="col-lg-12">
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-12">
             <h5>Computer Engineering</h5>
             <p>
               Computer Engineering embodies the science and technology of
@@ -116,10 +114,10 @@ export default function Academics() {
               computer-controlled equipment.
               <br />
             </p>
-          </Container>
-        </Container>
-        <Container className="row">
-          <Container className="col-lg-12">
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-12">
             <h5>Electronics and Telecommunication Engineering</h5>
             <p>
               The Department of Electrical and Electronics Engineering enshrines
@@ -128,10 +126,10 @@ export default function Academics() {
               into one field of study.
               <br />
             </p>
-          </Container>
-        </Container>
-        <Container className="row">
-          <Container className="col-lg-12">
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-12">
             <h5>Electrical and Electronics Engineering</h5>
             <p>
               The discipline of ETC focuses on the design of underlying hardware
@@ -139,9 +137,9 @@ export default function Academics() {
               integration with the software support. Ushered by a group of both.
               <br />
             </p>
-          </Container>
-        </Container>
-      </Container>
-    </Container>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }

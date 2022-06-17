@@ -8,7 +8,7 @@ export default function ContactUs() {
     <div>
       <div className=" row">
         <h1 className=" mb-5 text-center fw-bolder">Contact Us</h1>
-        <div className="col ">
+        <div className="col-md-6 ">
           <h3 className="fw-bold mb-5">Contact Information</h3>
           <div>
             <p>
@@ -66,7 +66,7 @@ export default function ContactUs() {
             </p>
           </div>
         </div>
-        <div className="col py-5">
+        <div className="col-md-5 py-5">
           <h3 className="mt-5">Mail us</h3>
           <p>
             Are you a recruiter?{" "}

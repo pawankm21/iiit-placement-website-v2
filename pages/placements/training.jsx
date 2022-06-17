@@ -5,7 +5,7 @@ export default function Training() {
   return (
     <Container>
       <Container className="col-lg-12">
-        <h1>Training Programmes</h1>
+        <h1 className="fw-bolder">Training Programmes</h1>
         <p>
           The goal of Training &amp; Placement Cell is to Provide employment
           opportunities and world className training to IIIT Students in leading

@@ -14,6 +14,8 @@ export default function BaseFooter() {
               <Image
                 src={logo}
                 objectFit="contain"
+                width={50}
+                height={50}
                 alt={"IIIT Bhubaneswar Training and Placement Cell"}
                 placeholder={"blur"}
                 blurDataURL={"/placeholder.png"}

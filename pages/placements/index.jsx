@@ -17,7 +17,7 @@ export default function Placements({ data }) {
   ));
   return (
     <div className=" w-100 h-100">
-      <h1 className="my-5">Past placement statistics</h1>
+      <h1 className="my-5 fw-bolder">Past placement statistics</h1>
       <h2>BTech Batches</h2>
       <Tabs
         defaultActiveKey={NAV_LINKS[0]}

@@ -7,9 +7,9 @@ export default function WhyUs() {
   const carouselImages = [...Array(23).keys()];
   return (
     <Container>
-      <h1 className="my-5">Why Recruit from us?</h1>
+      <h1 className="my-5 fw-bolder">Why Recruit from us?</h1>
       <Container className="row">
-        <h4>Selection Process</h4>
+        <h3>Selection Process</h3>
         <div className="col-lg-4  d-flex  align-items-center ">
           <Image
             src="/tpcell/jee.jpg"
@@ -36,7 +36,7 @@ export default function WhyUs() {
         </p>
       </Container>
       <Container className="row my-5">
-        <h4>Student Faculty Ratio</h4>
+        <h3>Student Faculty Ratio</h3>
         <p className="col-md-6">
           IIIT Bhubaneswar has one of the best students-faculty ratio compared
           with most of the institute in the region. Our faculties have a
@@ -60,7 +60,7 @@ export default function WhyUs() {
         </div>
       </Container>
       <Container className="row my-5">
-        <h4>Infrastructure</h4>
+        <h3>Infrastructure</h3>
         <p className="col-md-6 col-12">
           The sprawling campus of IIIT Bhubaneswar is established at the
           outskirts of Bhubaneswar in an area of 23 acres. className rooms at

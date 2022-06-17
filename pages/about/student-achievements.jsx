@@ -5,7 +5,7 @@ export default function StudentAchievements() {
   return (
     <Container>
       <div className="row">
-        <Carousel>
+        {/* <Carousel>
           <Carousel.Item>
             <Carousel.Caption>
               <h3>First slide label</h3>
@@ -42,10 +42,10 @@ export default function StudentAchievements() {
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
           </Carousel.Item>
-        </Carousel>
+        </Carousel> */}
 
         <div className="col-lg-12">
-          <h3>Student Achivements</h3>
+          <h1 className="my-5 fw-bolder">Student Achivements</h1>
           <ul>
             <p>
               The Institute conducts a number of contests and competitions to

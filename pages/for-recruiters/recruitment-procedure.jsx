@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Procedure() {
   return (
     <Container>
-      <h3>Procedure for Recruiters</h3>
+      <h1 className="my-5 fw-bolder">Procedure for Recruiters</h1>
       <ul>
         <li>
           <p>
@@ -16,8 +16,8 @@ export default function Procedure() {
             Company/ Organization sends in a JAF (Job Announcement Form)
             containing details of the job offer (pay package, place of posting,
             allowances and other bonuses). Fill{" "}
-            <Link href="/jaf.doc"> the JAF for Recruiters</Link> which the recruiter has to sign and send it to the
-            T&amp;P Cell.
+            <Link href="/jaf.doc"> the JAF for Recruiters</Link> which the
+            recruiter has to sign and send it to the T&amp;P Cell.
           </p>
         </li>
         <li>

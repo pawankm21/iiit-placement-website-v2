@@ -3,16 +3,16 @@ import Container from "react-bootstrap/Container";
 export default function Collaborations() {
   return (
     <div>
-      <h1>Collaborations</h1>
+      <h1 className="my-5 fw-bolder">Collaborations</h1>
       <div className="my-5">
-        <h3>University Tie-Ups</h3>
+        <h2 className="fw-bold">University Tie-Ups</h2>
         <Container className="row my-4">
           <div className="col-lg-4">
             <Image
               src={"/unt.png"}
               alt={"UNT"}
-              width={400}
-              height={200}
+              width={200}
+              height={100}
               layout="responsive"
             ></Image>
           </div>
@@ -52,8 +52,8 @@ export default function Collaborations() {
             <Image
               src={"/nus.png"}
               alt={"nus"}
-              width={500}
-              height={400}
+              width={200}
+              height={100}
               layout="responsive"
               objectFit={"cover"}
             ></Image>
@@ -61,7 +61,7 @@ export default function Collaborations() {
         </Container>
         <div className="row">
           <div className="col-lg-12">
-            <h3>Company Tie-Ups</h3>
+            <h2 className="fw-bold ">Company Tie-Ups</h2>
             <div className="row my-5">
               <div className="col-lg-4 d-flex align-items-center d-lg-none">
                 <div className="w-100">
@@ -146,8 +146,8 @@ export default function Collaborations() {
               <div className="col-lg-4 d-none d-lg-block">
                 <Image
                   src="/company/samsung.png"
-                  width={600}
-                  height={400}
+                  width={400}
+                  height={200}
                   layout="responsive"
                   objectFit={"cover"}
                 />

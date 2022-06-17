@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Link from "next/link";
 export default function Procedure() {
   return (
-    <Container>
+    <Container className="mb-5">
       <h1 className="my-5 fw-bolder">Procedure for Recruiters</h1>
       <ul>
         <li>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Training() {
   return (
-    <Container>
+    <Container className="mb-5">
       <Container className="col-lg-12">
         <h1 className="fw-bolder">Training Programmes</h1>
         <p>

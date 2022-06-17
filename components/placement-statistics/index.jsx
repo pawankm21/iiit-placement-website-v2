@@ -1,4 +1,5 @@
 import Table from "react-bootstrap/Table";
+import { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import {
   placementBarGraphByYear,
@@ -15,6 +16,7 @@ import {
   Legend,
   ArcElement,
 } from "chart.js";
+import { BRANCHES } from "../../utils/vars";
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -25,17 +27,28 @@ ChartJS.register(
   ArcElement
 );
 export default function PlacementStatistics({ data, year }) {
+  const [isDataAvailable, setIsDataAvailable] = useState(false);
+  useEffect(() => {
+    if (Object.keys(data[year][0]).length > Object.keys(BRANCHES).length) {
+      setIsDataAvailable(true);
+    }
+  }, [data, year]);
   return (
     <Container>
       <h1>Placement Statistics {year} </h1>
-      <Container className="row align-middle mb-5">
-        <div className="col">
-          <Bar {...placementBarGraphByYear(data, year)} />
-        </div>
-        <div className="col">
-          <Pie {...getPlacementPieChartByYear(data, year)} />
-        </div>
-      </Container>
+      {isDataAvailable ? (
+        <Container className="row align-middle mb-5">
+          <div className="col">
+            <Bar {...placementBarGraphByYear(data, year)} />
+          </div>
+          <div className="col">
+            <Pie {...getPlacementPieChartByYear(data, year)} />
+          </div>
+        </Container>
+      ) : (
+        <></>
+      )}
+
       <Table striped bordered hover responsive>
         <thead>
           {Object.keys(data[year][0]).map((key, index) => (

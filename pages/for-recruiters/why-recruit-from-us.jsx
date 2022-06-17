@@ -108,7 +108,7 @@ export default function WhyUs() {
               />
               <Card.Body>
                 <Card.Title>Past Placement Records</Card.Title>
-                <Button variant="outline-success">View</Button>
+                <Button variant="outline-success" href="/placements/" >View</Button>
               </Card.Body>
             </Card>
           </div>
@@ -125,7 +125,12 @@ export default function WhyUs() {
               />
               <Card.Body>
                 <Card.Title>Student Achievements</Card.Title>
-                <Button variant="outline-success">View</Button>
+                <Button
+                  variant="outline-success"
+                  href="/about/student-achievements"
+                >
+                  View
+                </Button>
               </Card.Body>
             </Card>
           </div>
@@ -141,7 +146,9 @@ export default function WhyUs() {
               />
               <Card.Body>
                 <Card.Title>Activities</Card.Title>
-                <Button variant="outline-success">View</Button>
+                <Button variant="outline-success" href="/">
+                  View
+                </Button>
               </Card.Body>
             </Card>
           </div>

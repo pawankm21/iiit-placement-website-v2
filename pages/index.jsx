@@ -64,7 +64,7 @@ export default function Home({ data }) {
         <Container as="div" className="row my-5">
           <h1>About Us</h1>
           <div className="col-md-8  col-12 ">
-            <h6 className="fw-normal">
+            <p className="fw-normal">
               The Training and Placement Cell, IIIT Bhubaneswar aims at creating
               a link between the students and the corporate sectors. It works to
               train the students with effective problem solving ability,
@@ -78,41 +78,119 @@ export default function Home({ data }) {
               students across many programs namely B.Tech, M.Tech, and Ph.D who
               are looking forward to challenging and exciting job opportunities
               in industry and academia.
-            </h6>
+            </p>
           </div>
           <div className="col-12 col-md-4 text-center">
-            <Carousel>
-              {carouselComponents}
-            </Carousel>
+            <Carousel>{carouselComponents}</Carousel>
+          </div>
+        </Container>
+        <Container as="div" className="row my-5">
+          <h1>Director&apos;s Message</h1>
+          <div className="col-md-5 col-12">
+            <div className="d-flex  justify-content-lg-start">
+              <Image
+                src="/tpcell/director.png"
+                alt="Director"
+                width={400}
+                height={380}
+                objectFit="cover"
+                objectPosition="center"
+              />
+            </div>
+          </div>
+
+          <div className="col-md-7 col-12">
+            <div>
+              <Image
+                src="/icons/quote.svg"
+                width={24}
+                height={24}
+                style={{ transform: "rotate(180deg)" }}
+              />
+            </div>
+            <p className="fw-normal fst-italic ms-lg-5">
+              <div className="fw-bold mb-2">Greetings recruiter,</div>
+              Since our inception 15 years ago, we've gone a long way. Rather
+              than simply providing placement, our main goal is to provide a
+              path for career development. The T&P cell promotes the potential
+              of students who are nurtured by building employability skills and
+              are developed by a culture of engineering, research, and
+              technology in the highly competitive academic environment. Over
+              the last 16 years, we've nurtured the industry association, and
+              we'd like to maintain that relationship with our new recruiters.
+              Students are trained through a personalized skill upgrade and
+              technical training program, and as a result, they contribute to
+              global core competencies by generating rich human capital. The
+              institute would like to gratefully recognize the mutually fruitful
+              partnership with our previous recruiters. Since its foundation, we
+              have promoted the industry association. We want to maintain the
+              same level of communication. We'd like to encourage you to visit
+              our campus and assess the skill of our students. We look forward
+              to working with you in the campus recruitment class of 2022. As a
+              potential employer, we are confident that your search for the
+              ideal applicant has come to an end.
+              <div>Best Regards,</div>
+              <blockquote className="fw-bold">
+                Mr. Manoj Pattnayak Director, IIIT Bhubaneswar
+              </blockquote>
+            </p>
+            <div className=" text-end">
+              <Image src="/icons/quote.svg" width={24} height={24} />
+            </div>
           </div>
         </Container>
         <Container as="div" className="row my-5">
           <h1>Registrar&apos;s Message</h1>
-          <div className="col-md-6 col-12">
-            <Image
-              src="/tpcell/registrar.jpeg"
-              alt="Registrar"
-              width={900}
-              height={400}
-              placeholder="blur"
-              blurDataURL="/placeholder.png"
-              objectFit="cover"
-              objectPosition="center"
-            />
-            <blockquote className="text-center fw-bold fst-italic ">
-              Dr. Debasish Jena, Registrar IIIT-Bh
-            </blockquote>
+          <div className="col-md-5 col-12">
+            <div className="d-flex  justify-content-lg-end  mt-lg-5 ">
+              <Image
+                src="/tpcell/registrar.jpeg"
+                alt="Registrar"
+                width={400}
+                height={380}
+                objectFit="cover"
+                objectPosition="center"
+              />
+            </div>
           </div>
-          <div className="col-md-6 col-12">
-            <h6 className="fw-normal fst-italic ">
-              &ldquo;IIIT Bhubaneswar will be a global voice in the near future.
-              The voices which will make the institute touch new technical
-              heights and success. I am very proud to be a part of such an
-              institute. Students here are trained though various stages before
-              they are made to face the real world. Rigorous laboratory
-              practices have made their fundamentals clear in most of their
-              subjects. I wish they succeed in every field their life. &rdquo;
-            </h6>
+
+          <div className="col-md-7 col-12">
+            <div>
+              <Image
+                src="/icons/quote.svg"
+                width={24}
+                height={24}
+                style={{ transform: "rotate(180deg)" }}
+              />
+            </div>
+            <p className="fw-normal fst-italic ms-lg-5">
+              <div className="fw-bold mb-2">Greetings recruiter,</div> Fifteen
+              years ago, the then President of India Dr. A. P. J Abdul Kalam
+              laid the foundation stone of the Institute. After taking baby
+              steps, the Institutes has entered into its teens. In the first
+              decade of its existence, the Institute had some enviable
+              achievements. The construction of the campus, building academic
+              infrastructure, recruiting a bunch of young and talented faculty
+              are some of these achievements. The Institute aims to be a
+              technology playground. This implies fun in learning, developing of
+              competitive spirit, developing a sense of independence and
+              interdependence. The Institute's curriculum, education delivery
+              methods, evaluation standards are being constantly fine tuned to
+              achieve the objective of being a technology playground. In the
+              campus, you will encounter restless students aspiring for more
+              energetic faculty driving the students hard and an environment
+              which encourages learning celebrates achievements and cultivates
+              humanity and good citizenship. I invite you to visit our campus
+              and engage with students who can be your future hires and faculty
+              who can show what technology will be like in future.
+              <div>Best Regards,</div>
+              <blockquote className="fw-bold">
+                Dr. Debasish Jena, Registrar IIIT-Bh
+              </blockquote>
+            </p>
+            <div className=" text-end">
+              <Image src="/icons/quote.svg" width={24} height={24} />
+            </div>
           </div>
         </Container>
         <Container as="div" className="row align-middle my-5">

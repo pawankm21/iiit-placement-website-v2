@@ -14,7 +14,7 @@ export default function Training() {
           Placement Trainings, Seminars etc.&nbsp;
         </p>
         <br />
-        <Container className="row">
+        <p className="row">
           <h3 className="mt-5 mb-2">Pre-Placement Trainings</h3>
           <Container className="col-lg-4">
             <Image
@@ -45,8 +45,8 @@ export default function Training() {
               drives.&nbsp;
             </p>
           </Container>
-        </Container>
-        <Container className="row">
+        </p>
+        <p className="row">
           <h3 className="mt-5 mb-2">Seminars</h3>
           <Container className="col-lg-8">
             <p>
@@ -74,8 +74,8 @@ export default function Training() {
               alt="Seminar"
             />
           </Container>
-        </Container>
-        <Container className="row">
+        </p>
+        <p className="row">
           <h3 className="mt-5 mb-2">Internships and Projects</h3>
           <Container className="col-lg-4">
             <Image
@@ -106,7 +106,7 @@ export default function Training() {
               ahead.&nbsp;
             </p>
           </Container>
-        </Container>
+        </p>
       </Container>
     </Container>
   );

@@ -17,8 +17,7 @@ export default function BaseFooter() {
                 width={50}
                 height={50}
                 alt={"IIIT Bhubaneswar Training and Placement Cell"}
-                placeholder={"blur"}
-                blurDataURL={"/placeholder.png"}
+                priority={true}
               />
             </div>
             <div>

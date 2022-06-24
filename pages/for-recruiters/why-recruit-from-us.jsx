@@ -1,10 +1,26 @@
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import Carousel from "react-bootstrap/Carousel"
+import Carousel from "react-bootstrap/Carousel";
 import Image from "next/image";
 export default function WhyUs() {
-  const carouselImages = [...Array(23).keys()];
+  const carouselImages = [...Array(23).keys()].map((image, index) => {
+    return (
+      <Carousel.Item key={`${image + index}`}>
+        <Image
+          className="d-block w-100"
+          src={`/infra/${image + 1}.jpg`}
+          alt={image + 1}
+          width={900}
+          height={600}
+          objectFit="cover"
+          objectPosition="center"
+          placeholder="blur"
+          blurDataURL={`/placeholder.png`}
+        />
+      </Carousel.Item>
+    );
+  });
   return (
     <Container>
       <h1 className="my-5 fw-bolder">Why Recruit from us?</h1>
@@ -75,23 +91,7 @@ export default function WhyUs() {
           Society, IEEE Xplore Digital Library and many more.
         </p>
         <div className="col col-md-6 col-12  d-flex  align-items-center justify-content-center ">
-          <Carousel>
-            {carouselImages.map((image, index) => (
-              <Carousel.Item key={`${image + index}`}>
-                <Image
-                  className="d-block w-100"
-                  src={`/infra/${image + 1}.jpg`}
-                  alt={image + 1}
-                  width={900}
-                  height={600}
-                  objectFit="cover"
-                  objectPosition="center"
-                  placeholder="blur"
-                  blurDataURL={`/placeholder.png`}
-                />
-              </Carousel.Item>
-            ))}
-          </Carousel>
+          <Carousel>{carouselImages}</Carousel>
         </div>
       </Container>
       <div>
@@ -108,7 +108,9 @@ export default function WhyUs() {
               />
               <Card.Body>
                 <Card.Title>Past Placement Records</Card.Title>
-                <Button variant="outline-success" href="/placements/" >View</Button>
+                <Button variant="outline-success" href="/placements/">
+                  View
+                </Button>
               </Card.Body>
             </Card>
           </div>
@@ -146,7 +148,11 @@ export default function WhyUs() {
               />
               <Card.Body>
                 <Card.Title>Information Brochure</Card.Title>
-                <Button variant="outline-success" href="/ib.pdf" target="_blank" >
+                <Button
+                  variant="outline-success"
+                  href="/ib.pdf"
+                  target="_blank"
+                >
                   View
                 </Button>
               </Card.Body>

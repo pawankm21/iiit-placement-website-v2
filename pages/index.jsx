@@ -34,6 +34,30 @@ ChartJS.register(
 import { carouselImages } from "../utils/vars";
 
 export default function Home({ data }) {
+  const carouselComponents = carouselImages.map((image, index) => (
+    <Carousel.Item key={`${image.src + index}`}>
+      <Image
+        className="d-block w-100"
+        src={image.src}
+        alt={image.alt}
+        width={900}
+        height={600}
+        objectFit="cover"
+        objectPosition="center"
+        placeholder="blur"
+        blurDataURL={"/placeholder.png"}
+      />
+
+      <Carousel.Caption
+        className="   p-1 bg-dark bg-opacity-50 px-lg-2 rounded-3 fw-semibold"
+        style={{
+          fontSize: "0.8rem",
+        }}
+      >
+        {image.caption}
+      </Carousel.Caption>
+    </Carousel.Item>
+  ));
   return (
     <div className="mx-auto mt-5">
       <div className="mt-5">
@@ -58,30 +82,7 @@ export default function Home({ data }) {
           </div>
           <div className="col-12 col-md-4 text-center">
             <Carousel>
-              {carouselImages.map((image, index) => (
-                <Carousel.Item key={`${image.src + index}`}>
-                  <Image
-                    className="d-block w-100"
-                    src={image.src}
-                    alt={image.alt}
-                    width={900}
-                    height={600}
-                    objectFit="cover"
-                    objectPosition="center"
-                    placeholder="blur"
-                    blurDataURL={"/placeholder.png"}
-                  />
-
-                  <Carousel.Caption
-                    className="   p-1 bg-dark bg-opacity-50 px-lg-2 rounded-3 fw-semibold"
-                    style={{
-                      fontSize: "0.8rem",
-                    }}
-                  >
-                    {image.caption}
-                  </Carousel.Caption>
-                </Carousel.Item>
-              ))}
+              {carouselComponents}
             </Carousel>
           </div>
         </Container>

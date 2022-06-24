@@ -138,15 +138,15 @@ export default function WhyUs() {
             <Card className="h-100 pe-auto text border-success">
               <Card.Img
                 variant="top"
-                src="/tpcell/events.jpg"
+                src="/tpcell/ib.png"
                 style={{
                   objectFit: "cover",
                   height: 300,
                 }}
               />
               <Card.Body>
-                <Card.Title>Activities</Card.Title>
-                <Button variant="outline-success" href="/">
+                <Card.Title>Information Brochure</Card.Title>
+                <Button variant="outline-success" href="/ib.pdf" target="_blank" >
                   View
                 </Button>
               </Card.Body>

@@ -74,6 +74,17 @@ export default function BaseFooter() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
+                      <a className={styles.footerLink}>
+                        Click Here-Download the Information Brochure-2022
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href={`/ib.pdf`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <a className={styles.footerLink}>Information Brochure</a>
                     </Link>
                   </li>

@@ -34,16 +34,6 @@ export default function ContactUs() {
               </p>
             </p>
             <p>
-              <strong>Mr. Sanat Kumar Swain </strong>
-              <p>
-                Assistant Training and Placement Officer{" "}
-                <div>Phone: +91 8093030329, +91 9040310345</div>
-                <Link href="mailto:sanat@iiit-bh.ac.in">
-                  Email – sanat@iiit-bh.ac.in
-                </Link>
-              </p>
-            </p>
-            <p>
               <strong>Ms. Navanita Nayak</strong>
               <p>
                 Assistant Training and Placement Officer

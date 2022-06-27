@@ -10,9 +10,9 @@ export default function Collaborations() {
           <div className="col-lg-4">
             <Image
               src={"/unt.png"}
-              alt={"UNT"}
               width={200}
               height={100}
+              alt="University of North Texas"
               layout="responsive"
             ></Image>
           </div>
@@ -32,7 +32,7 @@ export default function Collaborations() {
           <div className="col-lg-4 d-lg-none">
             <Image
               src={"/nus.png"}
-              alt={"nus"}
+              alt={"University of Singapore"}
               width={500}
               height={400}
               layout="responsive"
@@ -71,6 +71,7 @@ export default function Collaborations() {
                     height={400}
                     layout="responsive"
                     objectFit={"cover"}
+                    alt="IBM"
                   />
                 </div>
               </div>
@@ -98,6 +99,7 @@ export default function Collaborations() {
                     height={400}
                     layout="responsive"
                     objectFit={"cover"}
+                    alt="IBM"
                   />
                 </div>
               </div>
@@ -111,6 +113,7 @@ export default function Collaborations() {
                     height={300}
                     layout="responsive"
                     objectFit={"cover"}
+                    alt="Capgemini"
                   />
                 </div>
               </div>
@@ -132,6 +135,7 @@ export default function Collaborations() {
                   height={400}
                   layout="responsive"
                   objectFit={"cover"}
+                  alt="Samsung"
                 />
               </div>
               <div className="col-lg-8">
@@ -150,6 +154,7 @@ export default function Collaborations() {
                   height={200}
                   layout="responsive"
                   objectFit={"cover"}
+                  alt="Samsung"
                 />
               </div>
             </div>

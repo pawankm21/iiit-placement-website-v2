@@ -104,38 +104,45 @@ export default function Home({ data }) {
               <Image
                 src="/icons/quote.svg"
                 width={24}
+                alt="quote"
                 height={24}
                 style={{ transform: "rotate(180deg)" }}
               />
             </div>
             <p className="fw-normal fst-italic ms-lg-5">
               <div className="fw-bold mb-2">Greetings recruiter,</div>
-              Since our inception 15 years ago, we've gone a long way. Rather
-              than simply providing placement, our main goal is to provide a
-              path for career development. The T&P cell promotes the potential
-              of students who are nurtured by building employability skills and
-              are developed by a culture of engineering, research, and
-              technology in the highly competitive academic environment. Over
-              the last 16 years, we've nurtured the industry association, and
-              we'd like to maintain that relationship with our new recruiters.
-              Students are trained through a personalized skill upgrade and
-              technical training program, and as a result, they contribute to
-              global core competencies by generating rich human capital. The
-              institute would like to gratefully recognize the mutually fruitful
-              partnership with our previous recruiters. Since its foundation, we
-              have promoted the industry association. We want to maintain the
-              same level of communication. We'd like to encourage you to visit
-              our campus and assess the skill of our students. We look forward
-              to working with you in the campus recruitment class of 2022. As a
-              potential employer, we are confident that your search for the
-              ideal applicant has come to an end.
+              Since our inception 15 years ago, we&apos;ve gone a long way.
+              Rather than simply providing placement, our main goal is to
+              provide a path for career development. The T&P cell promotes the
+              potential of students who are nurtured by building employability
+              skills and are developed by a culture of engineering, research,
+              and technology in the highly competitive academic environment.
+              Over the last 16 years, we&apos;ve nurtured the industry
+              association, and we&apos;d like to maintain that relationship with
+              our new recruiters. Students are trained through a personalized
+              skill upgrade and technical training program, and as a result,
+              they contribute to global core competencies by generating rich
+              human capital. The institute would like to gratefully recognize
+              the mutually fruitful partnership with our previous recruiters.
+              Since its foundation, we have promoted the industry association.
+              We want to maintain the same level of communication. We&apos;d
+              like to encourage you to visit our campus and assess the skill of
+              our students. We look forward to working with you in the campus
+              recruitment class of 2022. As a potential employer, we are
+              confident that your search for the ideal applicant has come to an
+              end.
               <div>Best Regards,</div>
               <blockquote className="fw-bold">
                 Mr. Manoj Pattnayak Director, IIIT Bhubaneswar
               </blockquote>
             </p>
             <div className=" text-end">
-              <Image src="/icons/quote.svg" width={24} height={24} />
+              <Image
+                src="/icons/quote.svg"
+                width={24}
+                height={24}
+                alt="quote"
+              />
             </div>
           </div>
         </Container>
@@ -161,6 +168,7 @@ export default function Home({ data }) {
                 width={24}
                 height={24}
                 style={{ transform: "rotate(180deg)" }}
+                alt="quote"
               />
             </div>
             <p className="fw-normal fst-italic ms-lg-5">
@@ -174,22 +182,27 @@ export default function Home({ data }) {
               are some of these achievements. The Institute aims to be a
               technology playground. This implies fun in learning, developing of
               competitive spirit, developing a sense of independence and
-              interdependence. The Institute's curriculum, education delivery
-              methods, evaluation standards are being constantly fine tuned to
-              achieve the objective of being a technology playground. In the
-              campus, you will encounter restless students aspiring for more
-              energetic faculty driving the students hard and an environment
-              which encourages learning celebrates achievements and cultivates
-              humanity and good citizenship. I invite you to visit our campus
-              and engage with students who can be your future hires and faculty
-              who can show what technology will be like in future.
+              interdependence. The Institute&apos;s curriculum, education
+              delivery methods, evaluation standards are being constantly fine
+              tuned to achieve the objective of being a technology playground.
+              In the campus, you will encounter restless students aspiring for
+              more energetic faculty driving the students hard and an
+              environment which encourages learning celebrates achievements and
+              cultivates humanity and good citizenship. I invite you to visit
+              our campus and engage with students who can be your future hires
+              and faculty who can show what technology will be like in future.
               <div>Best Regards,</div>
               <blockquote className="fw-bold">
                 Dr. Debasish Jena, Registrar IIIT-Bh
               </blockquote>
             </p>
             <div className=" text-end">
-              <Image src="/icons/quote.svg" width={24} height={24} />
+              <Image
+                src="/icons/quote.svg"
+                width={24}
+                height={24}
+                alt="quote"
+              />
             </div>
           </div>
         </Container>

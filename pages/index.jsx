@@ -58,6 +58,8 @@ export default function Home({ data }) {
       </Carousel.Caption>
     </Carousel.Item>
   ));
+  const PIECHART = <Pie {...getPlacementPieChartByYear(data, 2022)} />;
+  const BARGRAPH = <Bar {...placementBarGraphByYear(data, 2022)} />;
   return (
     <div className="mx-auto mt-5">
       <div className="mt-5">
@@ -208,13 +210,8 @@ export default function Home({ data }) {
         </Container>
         <Container as="div" className="row align-middle my-5">
           <h1>Placement Highlights {getLastPlacementYear()} Batch</h1>
-          <div className="col-lg-6">
-            {" "}
-            <Bar {...placementBarGraphByYear(data, 2022)} />
-          </div>
-          <div className="col-lg-6">
-            <Pie {...getPlacementPieChartByYear(data, 2022)} />
-          </div>
+          <div className="col-lg-6">{BARGRAPH}</div>
+          <div className="col-lg-6">{PIECHART}</div>
         </Container>
         <Container className="d-flex">
           <Button className="btn-lg text-dark btn-info mx-auto ">

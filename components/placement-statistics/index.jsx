@@ -33,17 +33,15 @@ export default function PlacementStatistics({ data, year }) {
       setIsDataAvailable(true);
     }
   }, [data, year]);
+  const PIECHART = <Pie {...getPlacementPieChartByYear(data, year)} />;
+  const BARGRAPH = <Bar {...placementBarGraphByYear(data, year)} />;
   return (
     <Container>
       <h1>Placement Statistics {year} </h1>
       {isDataAvailable ? (
         <Container className="row align-middle mb-5">
-          <div className="col">
-            <Bar {...placementBarGraphByYear(data, year)} />
-          </div>
-          <div className="col">
-            <Pie {...getPlacementPieChartByYear(data, year)} />
-          </div>
+          <div className="col">{PIECHART}</div>
+          <div className="col">{BARGRAPH}</div>
         </Container>
       ) : (
         <></>

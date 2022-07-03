@@ -6,25 +6,14 @@ import Image from "next/image";
 import logo from "../../public/logo.png";
 import { useState, useEffect } from "react";
 export default function BaseNavbar() {
-  const [scrolled, setScrolled] = useState(false);
-  useEffect(() => {
-    window.onscroll = function () {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-  }, []);
+
   return (
     <Navbar
       collapseOnSelect
       expand="lg"
       variant="light"
       sticky="top"
-      className={`${
-        scrolled ? "shadow bg-light" : "bg-light bg-gradient bg-opacity-25"
-      }`}
+      className={`shadow bg-light position-fixed w-100`}
     >
       <Container>
         <Navbar.Brand href="/">
@@ -77,7 +66,7 @@ export default function BaseNavbar() {
                 </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="For Recruiters" className="fw-semibold">
-                <NavDropdown.Item  href="/for-recruiters/why-recruit-from-us">
+                <NavDropdown.Item href="/for-recruiters/why-recruit-from-us">
                   Why Recruit From IIIT-Bh?
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/for-recruiters/recruitment-procedure">
@@ -97,7 +86,7 @@ export default function BaseNavbar() {
               </NavDropdown>
               <Nav.Item>
                 <Nav.Link
-                  href="http://placement.iiit-bh.ac.in/alumni/"
+                  href="https://sites.google.com/iiit-bh.ac.in/alumni"
                   className="fw-semibold"
                 >
                   Alumni

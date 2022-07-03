@@ -1,5 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
-import Container from "react-bootstrap/Container";
+import div from "react-bootstrap/Container";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "react-bootstrap/Button";
@@ -63,7 +63,7 @@ export default function Home({ data }) {
   return (
     <div className="mx-auto mt-5">
       <div className="mt-5">
-        <Container as="div" className="row my-5">
+        <div className="row my-5">
           <h1>About Us</h1>
           <div className="col-md-8  col-12 ">
             <p className="fw-normal">
@@ -85,15 +85,15 @@ export default function Home({ data }) {
           <div className="col-12 col-md-4 text-center">
             <Carousel>{carouselComponents}</Carousel>
           </div>
-        </Container>
-        <Container as="div" className="row my-5">
-          <h1>Director&apos;s Message</h1>
-          <div className="col-md-5 col-12">
-            <div className="d-flex  justify-content-lg-start">
+        </div>
+        <div className="row my-5">
+          <h1 className="mb-4">Director&apos;s Message</h1>
+          <div className="col-md-3 col-12">
+            <div className="d-flex  justify-content-lg-start justify-content-center">
               <Image
                 src="/tpcell/director.png"
                 alt="Director"
-                width={400}
+                width={380}
                 height={380}
                 objectFit="cover"
                 objectPosition="center"
@@ -101,17 +101,8 @@ export default function Home({ data }) {
             </div>
           </div>
 
-          <div className="col-md-7 col-12">
-            <div>
-              <Image
-                src="/icons/quote.svg"
-                width={24}
-                alt="quote"
-                height={24}
-                style={{ transform: "rotate(180deg)" }}
-              />
-            </div>
-            <p className="fw-normal fst-italic ms-lg-5">
+          <div className="col-md-9 col-12">
+            <p className="fw-normal fst-italic">
               <div className="fw-bold mb-2">Greetings recruiter,</div>
               Since our inception 15 years ago, we&apos;ve gone a long way.
               Rather than simply providing placement, our main goal is to
@@ -138,42 +129,29 @@ export default function Home({ data }) {
                 Mr. Manoj Pattnayak Director, IIIT Bhubaneswar
               </blockquote>
             </p>
-            <div className=" text-end">
-              <Image
-                src="/icons/quote.svg"
-                width={24}
-                height={24}
-                alt="quote"
-              />
-            </div>
           </div>
-        </Container>
-        <Container as="div" className="row my-5">
-          <h1>Registrar&apos;s Message</h1>
-          <div className="col-md-5 col-12">
-            <div className="d-flex  justify-content-lg-end  mt-lg-5 ">
+        </div>
+        <div className="row my-5 ">
+          <h1 className="mb-4">Registrar&apos;s Message</h1>
+          <div className="col-md-3 col-12 mb-lg-0 mb-4 d-flex  align-items-center  justify-content-center">
+            <div className=" ">
               <Image
                 src="/tpcell/registrar.jpeg"
                 alt="Registrar"
-                width={400}
+                width={380}
                 height={380}
                 objectFit="cover"
                 objectPosition="center"
+                style={{
+                  borderRadius: "100%",
+                  placeSelf: "center",
+                }}
               />
             </div>
           </div>
 
-          <div className="col-md-7 col-12">
-            <div>
-              <Image
-                src="/icons/quote.svg"
-                width={24}
-                height={24}
-                style={{ transform: "rotate(180deg)" }}
-                alt="quote"
-              />
-            </div>
-            <p className="fw-normal fst-italic ms-lg-5">
+          <div className="col-md-9 col-12">
+            <p className="fw-normal fst-italic ">
               <div className="fw-bold mb-2">Greetings recruiter,</div> Fifteen
               years ago, the then President of India Dr. A. P. J Abdul Kalam
               laid the foundation stone of the Institute. After taking baby
@@ -198,22 +176,14 @@ export default function Home({ data }) {
                 Dr. Debasish Jena, Registrar IIIT-Bh
               </blockquote>
             </p>
-            <div className=" text-end">
-              <Image
-                src="/icons/quote.svg"
-                width={24}
-                height={24}
-                alt="quote"
-              />
-            </div>
           </div>
-        </Container>
-        <Container as="div" className="row align-middle my-5">
+        </div>
+        <div className="row align-middle my-5">
           <h1>Placement Highlights {getLastPlacementYear()} Batch</h1>
           <div className="col-lg-6">{BARGRAPH}</div>
           <div className="col-lg-6">{PIECHART}</div>
-        </Container>
-        <Container className="d-flex">
+        </div>
+        <div className="d-flex">
           <Button className="btn-lg text-dark btn-info mx-auto ">
             <Link href="/placements">
               <span className="text-dark fw-bold">
@@ -230,14 +200,14 @@ export default function Home({ data }) {
               </span>
             </Link>
           </Button>
-        </Container>
-        <Container as="div" className="my-5 px-md-5">
+        </div>
+        <div className="my-5 px-md-5">
           <h1>No. of Campus Recruiters over the years</h1>
           <div className="px-lg-5 mx-lg-5">
             <Bar {...getNumberOfRecruitersBarGraph(data)} className="px-md-5" />
           </div>
-        </Container>
-        <Container as="div" className="my-5">
+        </div>
+        <div className="my-5">
           <h1>Top Recruiters</h1>
           <div className="row justify-content-evenly">
             <div className="col-3 col-lg-auto">
@@ -331,7 +301,7 @@ export default function Home({ data }) {
               />
             </div>
           </div>
-        </Container>
+        </div>
       </div>
     </div>
   );

@@ -28,7 +28,6 @@ export default function BaseLayout(props) {
         style={{
           width: "100vw",
           height: "50vh",
-          marginTop: "116px",
         }}
       >
         <Image

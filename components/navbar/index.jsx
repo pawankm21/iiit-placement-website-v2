@@ -13,7 +13,7 @@ export default function BaseNavbar() {
       expand="lg"
       variant="light"
       sticky="top"
-      className={`shadow bg-light position-fixed w-100`}
+      className={`shadow bg-light position-sticky w-100`}
     >
       <Container>
         <Navbar.Brand href="/">

@@ -1,3 +1,4 @@
+export const CURRENT_YEAR=new Date().getFullYear()
 export const COLORS = {
   GREEN: "#049C33",
   ORANGE: "#FC9324",
@@ -17,7 +18,7 @@ export const carouselImages = [
   {
     src: "/tpcell/1.jpeg",
     alt: "Placement",
-    caption: `Placement Cell 2022`,
+    caption: `Placement Cell ${CURRENT_YEAR}`,
   },
   {
     src: "/tpcell/professor_incharge.jpeg",

@@ -5,6 +5,7 @@ import styles from "./Footer.module.css";
 import { PhoneIcon, MailIcon } from "@heroicons/react/solid";
 
 export default function BaseFooter() {
+  const CURRENT_YEAR = new Date().getFullYear();
   return (
     <div className="bg-dark text-white w-100">
       <div className="pt-5 px-5">
@@ -74,7 +75,7 @@ export default function BaseFooter() {
                       rel="noopener noreferrer"
                     >
                       <a className={styles.footerLink}>
-                        Click Here-Download the Information Brochure-2022
+                        Click Here-Download the Information Brochure-{CURRENT_YEAR}
                       </a>
                     </Link>
                   </li>

@@ -31,7 +31,7 @@ ChartJS.register(
   Legend,
   ArcElement
 );
-import { carouselImages } from "../utils/vars";
+import { carouselImages, CURRENT_YEAR } from "../utils/vars";
 
 export default function Home({ data }) {
   const carouselComponents = carouselImages.map((image, index) => (
@@ -58,8 +58,8 @@ export default function Home({ data }) {
       </Carousel.Caption>
     </Carousel.Item>
   ));
-  const PIECHART = <Pie {...getPlacementPieChartByYear(data, 2022)} />;
-  const BARGRAPH = <Bar {...placementBarGraphByYear(data, 2022)} />;
+  const PIECHART = <Pie {...getPlacementPieChartByYear(data, CURRENT_YEAR)} />;
+  const BARGRAPH = <Bar {...placementBarGraphByYear(data, CURRENT_YEAR)} />;
   return (
     <div className="mx-auto mt-5">
       <div className="mt-5">
@@ -103,16 +103,10 @@ export default function Home({ data }) {
 
           <div className="col-md-9 col-12">
             <p className="fw-normal fst-italic">
-              <div className="fw-bold mb-2">Greetings recruiter,</div>
-              Since our inception 15 years ago, we&apos;ve gone a long way.
-              Rather than simply providing placement, our main goal is to
-              provide a path for career development. The T&P cell promotes the
+              <div className="fw-bold mb-2">Greetings recruiter,</div>The T&P cell promotes the
               potential of students who are nurtured by building employability
               skills and are developed by a culture of engineering, research,
-              and technology in the highly competitive academic environment.
-              Over the last 16 years, we&apos;ve nurtured the industry
-              association, and we&apos;d like to maintain that relationship with
-              our new recruiters. Students are trained through a personalized
+              and technology in the highly competitive academic environment. Students are trained through a personalized
               skill upgrade and technical training program, and as a result,
               they contribute to global core competencies by generating rich
               human capital. The institute would like to gratefully recognize
@@ -121,7 +115,7 @@ export default function Home({ data }) {
               We want to maintain the same level of communication. We&apos;d
               like to encourage you to visit our campus and assess the skill of
               our students. We look forward to working with you in the campus
-              recruitment class of 2022. As a potential employer, we are
+              recruitment class of {CURRENT_YEAR}. As a potential employer, we are
               confident that your search for the ideal applicant has come to an
               end.
               <div>Best Regards,</div>
@@ -152,10 +146,7 @@ export default function Home({ data }) {
 
           <div className="col-md-9 col-12">
             <p className="fw-normal fst-italic ">
-              <div className="fw-bold mb-2">Greetings recruiter,</div> Fifteen
-              years ago, the then President of India Dr. A. P. J Abdul Kalam
-              laid the foundation stone of the Institute. After taking baby
-              steps, the Institutes has entered into its teens. In the first
+              <div className="fw-bold mb-2">Greetings recruiter,</div> In the first
               decade of its existence, the Institute had some enviable
               achievements. The construction of the campus, building academic
               infrastructure, recruiting a bunch of young and talented faculty
@@ -164,11 +155,7 @@ export default function Home({ data }) {
               competitive spirit, developing a sense of independence and
               interdependence. The Institute&apos;s curriculum, education
               delivery methods, evaluation standards are being constantly fine
-              tuned to achieve the objective of being a technology playground.
-              In the campus, you will encounter restless students aspiring for
-              more energetic faculty driving the students hard and an
-              environment which encourages learning celebrates achievements and
-              cultivates humanity and good citizenship. I invite you to visit
+              tuned to achieve the objective of being a technology playground.I invite you to visit
               our campus and engage with students who can be your future hires
               and faculty who can show what technology will be like in future.
               <div>Best Regards,</div>

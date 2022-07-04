@@ -120,17 +120,15 @@ export default function Home({ data }) {
         <div className="row my-5 ">
           <h1 className="mb-4">Registrar&apos;s Message</h1>
           <div className="col-md-3 col-12 ">
-      
-              <img
-                src="/tpcell/registrar.jpeg"
-                alt="Registrar"
+            <img
+              src="/tpcell/registrar.jpeg"
+              alt="Registrar"
               className="img-fluid"
               style={{
                 height: "100%",
                 objectFit: "cover",
               }}
-              />
-        
+            />
           </div>
 
           <div className="col-md-9 col-12">
@@ -187,87 +185,80 @@ export default function Home({ data }) {
         <div className="my-5">
           <h1>Top Recruiters</h1>
           <div className="row justify-content-evenly">
-            <div className="col-3 col-lg-auto">
-              <img
-                src="/company/amazon.png"
-                alt="Amazon"
-                width={200}
-                height={100}
-                priority={true}
-              />
-            </div>
-            <div className="col-3 col-lg-auto">
-              <img
-                src="/company/baker-hughes.png"
-                alt=""
-                width={200}
-                height={100}
-                priority={true}
-              />
-            </div>
-            <div className="col-3 col-lg-auto">
-              <img
-                src="/company/juspay.png"
-                alt=""
-                width={200}
-                height={100}
-                priority={true}
-              />
-            </div>
-            <div className="col-3 col-lg-auto">
-              <img
-                src="/company/tekion.png"
-                alt=""
-                width={200}
-                height={100}
-                priority={true}
-              />
-            </div>
-            <div className="col-3 col-lg-auto">
-              <img
-                src="/company/ukg.png"
-                alt=""
-                width={200}
-                height={100}
-                priority={true}
-              />
-            </div>
-            <div className="col-3 col-lg-auto">
-              <img
-                src="/company/turtlemint.png"
-                alt="turtlemint"
-                width={200}
-                height={100}
-                priority={true}
-              />
-            </div>
-            <div className="col-3 col-lg-auto">
-              <img
-                src="/company/valuelabs.png"
-                alt="value-labs"
-                width={200}
-                height={100}
-                priority={true}
-              />
-            </div>
-            <div className="col-3 col-lg-auto">
-              <img
-                src="/company/siemens.png"
-                alt=""
-                width={200}
-                height={100}
-                priority={true}
-              />
-            </div>
-            <div className="col-3 col-lg-auto">
-              <img
-                src="/company/optum.png"
-                alt="optum"
-                width={200}
-                height={100}
-                priority={true}
-              />
-            </div>
+            <img
+              src="/company/amazon.png"
+              alt="Amazon"
+              className="img-fluid col"
+              style={{
+                objectFit: "cover",
+              }}
+            />
+            <img
+              src="/company/baker-hughes.png"
+              alt="baker-hughes"
+              className="img-fluid col"
+              style={{
+                objectFit: "cover",
+              }}
+            />
+            <img
+              src="/company/juspay.png"
+              alt="juspay"
+              className="img-fluid col"
+              style={{
+                objectFit: "cover",
+              }}
+            />
+
+            <img
+              src="/company/tekion.png"
+              alt="tekion"
+              className="img-fluid col"
+              style={{
+                objectFit: "cover",
+              }}
+            />
+            <img
+              src="/company/ukg.png"
+              alt="ukg"
+              className="img-fluid col"
+              style={{
+                objectFit: "cover",
+              }}
+            />
+
+            <img
+              src="/company/turtlemint.png"
+              alt="turtlemint"
+              className="img-fluid col"
+              style={{
+                objectFit: "cover",
+              }}
+            />
+            <img
+              src="/company/valuelabs.png"
+              alt="value-labs"
+              className="img-fluid col"
+              style={{
+                objectFit: "cover",
+              }}
+            />
+            <img
+              src="/company/siemens.png"
+              alt="siemens"
+              className="img-fluid col"
+              style={{
+                objectFit: "cover",
+              }}
+            />
+            <img
+              src="/company/optum.png"
+              alt="optum"
+              className="img-fluid col"
+              style={{
+                objectFit: "cover",
+              }}
+            />
           </div>
         </div>
       </div>

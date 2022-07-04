@@ -60,6 +60,7 @@ export default function BaseLayout(props) {
                 src="/footer-logo.webp"
                 width={50}
                 height={50}
+                priority={true}
                 alt="IIIT Bhubaneswar Training and Placement Cell"
                 layout="fixed"
               />

@@ -15,7 +15,6 @@ export default function WhyUs() {
           height={600}
           objectFit="cover"
           objectPosition="center"
-          placeholder="blur"
           blurDataURL={`/placeholder.png`}
         />
       </Carousel.Item>
@@ -33,8 +32,6 @@ export default function WhyUs() {
             width={400}
             height={200}
             layout="fixed"
-            placeholder="blur"
-            blurDataURL="/placeholder.png"
           />
         </div>
         <p className="col-lg-8">
@@ -69,9 +66,8 @@ export default function WhyUs() {
             width={200}
             height={200}
             layout="fixed"
-            placeholder="blur"
             objectFit={"cover"}
-            blurDataURL="/placeholder.png"
+ 
           />
         </div>
       </Container>

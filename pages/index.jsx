@@ -44,8 +44,7 @@ export default function Home({ data }) {
         height={600}
         objectFit="cover"
         objectPosition="center"
-        placeholder="blur"
-        blurDataURL={"/placeholder.png"}
+
       />
 
       <Carousel.Caption
@@ -103,10 +102,11 @@ export default function Home({ data }) {
 
           <div className="col-md-9 col-12">
             <p className="fw-normal fst-italic">
-              <div className="fw-bold mb-2">Greetings recruiter,</div>The T&P cell promotes the
-              potential of students who are nurtured by building employability
-              skills and are developed by a culture of engineering, research,
-              and technology in the highly competitive academic environment. Students are trained through a personalized
+              <div className="fw-bold mb-2">Greetings recruiter,</div>The T&P
+              cell promotes the potential of students who are nurtured by
+              building employability skills and are developed by a culture of
+              engineering, research, and technology in the highly competitive
+              academic environment. Students are trained through a personalized
               skill upgrade and technical training program, and as a result,
               they contribute to global core competencies by generating rich
               human capital. The institute would like to gratefully recognize
@@ -115,9 +115,9 @@ export default function Home({ data }) {
               We want to maintain the same level of communication. We&apos;d
               like to encourage you to visit our campus and assess the skill of
               our students. We look forward to working with you in the campus
-              recruitment class of {CURRENT_YEAR}. As a potential employer, we are
-              confident that your search for the ideal applicant has come to an
-              end.
+              recruitment class of {CURRENT_YEAR}. As a potential employer, we
+              are confident that your search for the ideal applicant has come to
+              an end.
               <div>Best Regards,</div>
               <blockquote className="fw-bold">
                 Mr. Manoj Pattnayak Director, IIIT Bhubaneswar
@@ -146,8 +146,8 @@ export default function Home({ data }) {
 
           <div className="col-md-9 col-12">
             <p className="fw-normal fst-italic ">
-              <div className="fw-bold mb-2">Greetings recruiter,</div> In the first
-              decade of its existence, the Institute had some enviable
+              <div className="fw-bold mb-2">Greetings recruiter,</div> In the
+              first decade of its existence, the Institute had some enviable
               achievements. The construction of the campus, building academic
               infrastructure, recruiting a bunch of young and talented faculty
               are some of these achievements. The Institute aims to be a
@@ -155,9 +155,10 @@ export default function Home({ data }) {
               competitive spirit, developing a sense of independence and
               interdependence. The Institute&apos;s curriculum, education
               delivery methods, evaluation standards are being constantly fine
-              tuned to achieve the objective of being a technology playground.I invite you to visit
-              our campus and engage with students who can be your future hires
-              and faculty who can show what technology will be like in future.
+              tuned to achieve the objective of being a technology playground.I
+              invite you to visit our campus and engage with students who can be
+              your future hires and faculty who can show what technology will be
+              like in future.
               <div>Best Regards,</div>
               <blockquote className="fw-bold">
                 Dr. Debasish Jena, Registrar IIIT-Bh
@@ -203,8 +204,7 @@ export default function Home({ data }) {
                 alt="Amazon"
                 width={200}
                 height={100}
-                placeholder="blur"
-                blurDataURL="/placeholder.png"
+                priority={true}
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -213,8 +213,7 @@ export default function Home({ data }) {
                 alt=""
                 width={200}
                 height={100}
-                placeholder="blur"
-                blurDataURL="/placeholder.png"
+                priority={true}
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -223,8 +222,7 @@ export default function Home({ data }) {
                 alt=""
                 width={200}
                 height={100}
-                blurDataURL="/placeholder.png"
-                placeholder="blur"
+                priority={true}
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -233,8 +231,7 @@ export default function Home({ data }) {
                 alt=""
                 width={200}
                 height={100}
-                placeholder="blur"
-                blurDataURL="/company/tekion.png"
+                priority={true}
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -243,8 +240,7 @@ export default function Home({ data }) {
                 alt=""
                 width={200}
                 height={100}
-                placeholder="blur"
-                blurDataURL="/placeholder.png"
+                priority={true}
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -253,8 +249,7 @@ export default function Home({ data }) {
                 alt="turtlemint"
                 width={200}
                 height={100}
-                placeholder="blur"
-                blurDataURL="/placeholder.png"
+                priority={true}
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -263,8 +258,7 @@ export default function Home({ data }) {
                 alt="value-labs"
                 width={200}
                 height={100}
-                placeholder="blur"
-                blurDataURL="/placeholder.png"
+                priority={true}
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
@@ -273,18 +267,16 @@ export default function Home({ data }) {
                 alt=""
                 width={200}
                 height={100}
-                placeholder="blur"
-                blurDataURL="/placeholder.png"
+                priority={true}
               ></Image>
             </div>
             <div className="col-3 col-lg-auto">
               <Image
                 src="/company/optum.png"
-                alt=""
+                alt="optum"
                 width={200}
                 height={100}
-                placeholder="blur"
-                blurDataURL="/placeholder.png"
+                priority={true}
               />
             </div>
           </div>

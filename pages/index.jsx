@@ -1,4 +1,8 @@
 import Carousel from "react-bootstrap/Carousel";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
 import Link from "next/link";
 import Button from "react-bootstrap/Button";
 import {
@@ -184,82 +188,77 @@ export default function Home({ data }) {
         </div>
         <div className="my-5">
           <h1>Top Recruiters</h1>
-          <div className="row justify-content-evenly">
-            <img
-              src="/company/amazon.png"
-              alt="Amazon"
-              className="img-fluid col"
-              style={{
-                objectFit: "cover",
-              }}
-            />
-            <img
-              src="/company/baker-hughes.png"
-              alt="baker-hughes"
-              className="img-fluid col"
-              style={{
-                objectFit: "cover",
-              }}
-            />
-            <img
-              src="/company/juspay.png"
-              alt="juspay"
-              className="img-fluid col"
-              style={{
-                objectFit: "cover",
-              }}
-            />
-
-            <img
-              src="/company/tekion.png"
-              alt="tekion"
-              className="img-fluid col"
-              style={{
-                objectFit: "cover",
-              }}
-            />
-            <img
-              src="/company/ukg.png"
-              alt="ukg"
-              className="img-fluid col"
-              style={{
-                objectFit: "cover",
-              }}
-            />
-
-            <img
-              src="/company/turtlemint.png"
-              alt="turtlemint"
-              className="img-fluid col"
-              style={{
-                objectFit: "cover",
-              }}
-            />
-            <img
-              src="/company/valuelabs.png"
-              alt="value-labs"
-              className="img-fluid col"
-              style={{
-                objectFit: "cover",
-              }}
-            />
-            <img
-              src="/company/siemens.png"
-              alt="siemens"
-              className="img-fluid col"
-              style={{
-                objectFit: "cover",
-              }}
-            />
-            <img
-              src="/company/optum.png"
-              alt="optum"
-              className="img-fluid col"
-              style={{
-                objectFit: "cover",
-              }}
-            />
-          </div>
+          <Container>
+            <Row className="justify-content-center align-items-center">
+              <Col md={3} xs={6}>
+                <img
+                  src="/company/amazon.png"
+                  alt="Amazon"
+                  className="w-100 h-100"
+                />
+              </Col>
+              <Col md={3} xs={6}>
+                {" "}
+                <img
+                  src="/company/turtlemint.png"
+                  alt="turtlemint"
+                  className="w-100 h-100"
+                />
+              </Col>
+              <Col md={3} xs={6}>
+                {" "}
+                <img
+                  src="/company/valuelabs.png"
+                  alt="value-labs"
+                  className="w-100 h-100"
+                />
+              </Col>
+              <Col md={3} xs={6}>
+                {" "}
+                <img
+                  src="/company/siemens.png"
+                  alt="siemens"
+                  className="w-100 h-100"
+                />
+              </Col>
+              <Col md={3} xs={6}>
+                {" "}
+                <img
+                  src="/company/optum.png"
+                  alt="optum"
+                  className="w-100 h-100"
+                />
+              </Col>
+              <Col md={3} xs={6}>
+                {" "}
+                <img src="/company/ukg.png" alt="ukg" className="w-100 h-100" />
+              </Col>
+              <Col md={3} xs={6}>
+                {" "}
+                <img
+                  src="/company/tekion.png"
+                  alt="tekion"
+                  className="w-100 h-100"
+                />
+              </Col>
+              <Col md={3} xs={6}>
+                {" "}
+                <img
+                  src="/company/juspay.png"
+                  alt="juspay"
+                  className="w-100 h-100"
+                />
+              </Col>
+              <Col md={3} xs={6}>
+                {" "}
+                <img
+                  src="/company/baker-hughes.png"
+                  alt="baker-hughes"
+                  className="w-100 h-100"
+                />
+              </Col>
+            </Row>
+          </Container>
         </div>
       </div>
     </div>

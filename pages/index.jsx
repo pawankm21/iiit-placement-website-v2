@@ -1,6 +1,4 @@
 import Carousel from "react-bootstrap/Carousel";
-import div from "react-bootstrap/Container";
-import Image from "next/image";
 import Link from "next/link";
 import Button from "react-bootstrap/Button";
 import {
@@ -36,15 +34,14 @@ import { carouselImages, CURRENT_YEAR } from "../utils/vars";
 export default function Home({ data }) {
   const carouselComponents = carouselImages.map((image, index) => (
     <Carousel.Item key={`${image.src + index}`}>
-      <Image
+      <img
         className="d-block w-100"
         src={image.src}
         alt={image.alt}
-        width={900}
-        height={600}
-        objectFit="cover"
-        objectPosition="center"
-
+        style={{
+          objectFit: "cover",
+          height: "300px",
+        }}
       />
 
       <Carousel.Caption
@@ -88,16 +85,11 @@ export default function Home({ data }) {
         <div className="row my-5">
           <h1 className="mb-4">Director&apos;s Message</h1>
           <div className="col-md-3 col-12">
-            <div className="d-flex  justify-content-lg-start justify-content-center">
-              <Image
-                src="/tpcell/director.png"
-                alt="Director"
-                width={380}
-                height={380}
-                objectFit="cover"
-                objectPosition="center"
-              />
-            </div>
+            <img
+              src="/tpcell/director.png"
+              alt="Director"
+              className="img-fluid"
+            />
           </div>
 
           <div className="col-md-9 col-12">
@@ -127,21 +119,18 @@ export default function Home({ data }) {
         </div>
         <div className="row my-5 ">
           <h1 className="mb-4">Registrar&apos;s Message</h1>
-          <div className="col-md-3 col-12 mb-lg-0 mb-4 d-flex  align-items-center  justify-content-center">
-            <div className=" ">
-              <Image
+          <div className="col-md-3 col-12 ">
+      
+              <img
                 src="/tpcell/registrar.jpeg"
                 alt="Registrar"
-                width={380}
-                height={380}
-                objectFit="cover"
-                objectPosition="center"
-                style={{
-                  borderRadius: "100%",
-                  placeSelf: "center",
-                }}
+              className="img-fluid"
+              style={{
+                height: "100%",
+                objectFit: "cover",
+              }}
               />
-            </div>
+        
           </div>
 
           <div className="col-md-9 col-12">
@@ -199,79 +188,79 @@ export default function Home({ data }) {
           <h1>Top Recruiters</h1>
           <div className="row justify-content-evenly">
             <div className="col-3 col-lg-auto">
-              <Image
+              <img
                 src="/company/amazon.png"
                 alt="Amazon"
                 width={200}
                 height={100}
                 priority={true}
-              ></Image>
+              />
             </div>
             <div className="col-3 col-lg-auto">
-              <Image
+              <img
                 src="/company/baker-hughes.png"
                 alt=""
                 width={200}
                 height={100}
                 priority={true}
-              ></Image>
+              />
             </div>
             <div className="col-3 col-lg-auto">
-              <Image
+              <img
                 src="/company/juspay.png"
                 alt=""
                 width={200}
                 height={100}
                 priority={true}
-              ></Image>
+              />
             </div>
             <div className="col-3 col-lg-auto">
-              <Image
+              <img
                 src="/company/tekion.png"
                 alt=""
                 width={200}
                 height={100}
                 priority={true}
-              ></Image>
+              />
             </div>
             <div className="col-3 col-lg-auto">
-              <Image
+              <img
                 src="/company/ukg.png"
                 alt=""
                 width={200}
                 height={100}
                 priority={true}
-              ></Image>
+              />
             </div>
             <div className="col-3 col-lg-auto">
-              <Image
+              <img
                 src="/company/turtlemint.png"
                 alt="turtlemint"
                 width={200}
                 height={100}
                 priority={true}
-              ></Image>
+              />
             </div>
             <div className="col-3 col-lg-auto">
-              <Image
+              <img
                 src="/company/valuelabs.png"
                 alt="value-labs"
                 width={200}
                 height={100}
                 priority={true}
-              ></Image>
+              />
             </div>
             <div className="col-3 col-lg-auto">
-              <Image
+              <img
                 src="/company/siemens.png"
                 alt=""
                 width={200}
                 height={100}
                 priority={true}
-              ></Image>
+              />
             </div>
             <div className="col-3 col-lg-auto">
-              <Image
+              <img
                 src="/company/optum.png"
                 alt="optum"
                 width={200}

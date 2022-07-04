@@ -2,8 +2,6 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Image from "next/image";
-import logo from "../../public/logo.png";
 import { useState, useEffect } from "react";
 export default function BaseNavbar() {
 
@@ -23,10 +21,11 @@ export default function BaseNavbar() {
               minWidth: "100px",
             }}
           >
-            <Image
-              src={logo}
-              objectFit="contain"
-              priority={true}
+            <img
+              src={"/logo.png"}
+              style={{
+                maxWidth: "300px"
+              }}
               alt={"IIIT Bhubaneswar Training and Placement Cell"}
             />
           </div>

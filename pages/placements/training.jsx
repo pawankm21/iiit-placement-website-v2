@@ -1,5 +1,4 @@
 import Container from "react-bootstrap/Container";
-import Image from "next/image";
 
 export default function Training() {
   return (
@@ -16,13 +15,10 @@ export default function Training() {
         <br />
         <p className="row">
           <h3 className="mt-5 mb-2">Pre-Placement Trainings</h3>
-          <Container className="col-lg-4">
-            <Image
+          <Container className="col-lg-4 my-3 my-lg-0">
+            <img
               src="/tpcell/class.jpg"
-              width={300}
-              height={200}
-              layout="responsive"
-              priority={true}
+              className="img-fluid"
               alt="Pre-Placement Training"
             />
           </Container>
@@ -47,6 +43,13 @@ export default function Training() {
         </p>
         <p className="row">
           <h3 className="mt-5 mb-2">Seminars</h3>
+          <Container className="col-lg-4  d-lg-none my-3 my-lg-0">
+            <img
+              src="/tpcell/seminar.jpg"
+              className="img-fluid"
+              alt="Seminar"
+            />
+          </Container>
           <Container className="col-lg-8">
             <p>
               &nbsp;IIIT Bhubaneswar arranges seminars and talks with different
@@ -62,28 +65,18 @@ export default function Training() {
               <br />
             </p>
           </Container>
-          <Container className="col-lg-4">
-            <Image
+          <Container className="col-lg-4 d-none d-lg-block my-3 my-lg-0">
+            <img
               src="/tpcell/seminar.jpg"
-              layout="responsive"
-              priority={true}
-              width={300}
-              height={200}
+              className="img-fluid"
               alt="Seminar"
             />
           </Container>
         </p>
         <p className="row">
           <h3 className="mt-5 mb-2">Internships and Projects</h3>
-          <Container className="col-lg-4">
-            <Image
-              src="/tpcell/lib.jpg"
-              width={300}
-              height={200}
-              layout="responsive"
-              priority={true}
-              alt="Internship"
-            />
+          <Container className="col-lg-4  my-3 my-lg-0">
+            <img src="/tpcell/lib.jpg" className="img-fluid" alt="Internship" />
           </Container>
           <Container className="col-lg-8">
             <p>

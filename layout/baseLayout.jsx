@@ -30,22 +30,22 @@ export default function BaseLayout(props) {
           height: "50vh",
         }}
       >
-        <Image
+        <img
           src="/infra/10.jpg"
-          priority={true}
-          objectFit="cover"
-          layout="fill"
-          objectPosition={"center"}
+          className="w-100 h-100"
           alt="IIIT Bhubaneswar Placements"
-          blurDataURL="/placeholder.png"
-          placeholder="blur"
         />
-        <div className=" d-md-none position-absolute top-0 w-100 text-center ">
+        <div className=" d-md-none position-absolute top-0 w-100 text-center bg-success bg-opacity-50 h-100">
           <h3 className="text-white fw-semibold p-4  ">Welcome To</h3>
-          <h1 className="fw-bolder p-4 text-dark fw-bolder ">
+          <h1 className="fw-bolder p-4 text-white fw-bolder ">
             <strong>
-
-              <span className="text-success">IIIT Bh</span>
+              <span
+                style={{
+                  color: "#00FF08",
+                }}
+              >
+                IIIT Bh
+              </span>
               ubaneswar Placements
             </strong>
           </h1>
@@ -56,7 +56,7 @@ export default function BaseLayout(props) {
             <h1
               className={`text-center d-flex align-items-center ${styles.textGreen} `}
             >
-              <Image
+              <img
                 src="/footer-logo.webp"
                 width={50}
                 height={50}

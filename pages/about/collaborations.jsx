@@ -8,13 +8,11 @@ export default function Collaborations() {
         <h2 className="fw-bold">University Tie-Ups</h2>
         <Container className="row my-4">
           <div className="col-lg-4">
-            <Image
+            <img
               src={"/unt.png"}
-              width={200}
-              height={100}
+              className="img-fluid"
               alt="University of North Texas"
-              layout="responsive"
-            ></Image>
+            />
           </div>
           <div className="col-lg-8">
             <h4>University of North Texas</h4>
@@ -30,14 +28,11 @@ export default function Collaborations() {
 
         <Container className="row my-4">
           <div className="col-lg-4 d-lg-none">
-            <Image
+            <img
               src={"/nus.png"}
               alt={"University of Singapore"}
-              width={500}
-              height={400}
-              layout="responsive"
-              objectFit={"cover"}
-            ></Image>
+              className="img-fluid"
+            />
           </div>
           <div className="col-lg-8">
             <h4>National University of Singapore</h4>
@@ -49,14 +44,7 @@ export default function Collaborations() {
             </p>
           </div>
           <div className="col-lg-4 d-lg-block d-none">
-            <Image
-              src={"/nus.png"}
-              alt={"nus"}
-              width={200}
-              height={100}
-              layout="responsive"
-              objectFit={"cover"}
-            ></Image>
+            <img src={"/nus.png"} alt={"nus"} className="img-fluid" />
           </div>
         </Container>
         <div className="row">
@@ -65,14 +53,7 @@ export default function Collaborations() {
             <div className="row my-5">
               <div className="col-lg-4 d-flex align-items-center d-lg-none">
                 <div className="w-100">
-                  <Image
-                    src="/company/ibm.png"
-                    width={800}
-                    height={400}
-                    layout="responsive"
-                    objectFit={"cover"}
-                    alt="IBM"
-                  />
+                  <img src="/company/ibm.png" className="img-fluid" alt="IBM" />
                 </div>
               </div>
               <div className="col-lg-8">
@@ -93,26 +74,16 @@ export default function Collaborations() {
               </div>
               <div className="col-lg-4 d-lg-flex align-items-center d-none">
                 <div className="w-100">
-                  <Image
-                    src="/company/ibm.png"
-                    width={800}
-                    height={400}
-                    layout="responsive"
-                    objectFit={"cover"}
-                    alt="IBM"
-                  />
+                  <img src="/company/ibm.png" className="img-fluid" alt="IBM" />
                 </div>
               </div>
             </div>
             <div className="row my-5">
               <div className="col-lg-4 d-flex align-items-center">
                 <div className="w-100">
-                  <Image
+                  <img
                     src="/company/capgemini.png"
-                    width={600}
-                    height={300}
-                    layout="responsive"
-                    objectFit={"cover"}
+                    className="img-fluid"
                     alt="Capgemini"
                   />
                 </div>
@@ -129,12 +100,9 @@ export default function Collaborations() {
             </div>
             <div className="row">
               <div className="col-lg-4 d-lg-none">
-                <Image
+                <img
                   src="/company/samsung.png"
-                  width={600}
-                  height={400}
-                  layout="responsive"
-                  objectFit={"cover"}
+                  className="img-fluid"
                   alt="Samsung"
                 />
               </div>
@@ -148,12 +116,9 @@ export default function Collaborations() {
                 </p>
               </div>
               <div className="col-lg-4 d-none d-lg-block">
-                <Image
+                <img
                   src="/company/samsung.png"
-                  width={400}
-                  height={200}
-                  layout="responsive"
-                  objectFit={"cover"}
+                  className="img-fluid"
                   alt="Samsung"
                 />
               </div>

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../public/footer-logo.webp";
 import styles from "./Footer.module.css";
 import { PhoneIcon, MailIcon } from "@heroicons/react/solid";
 
@@ -12,8 +11,8 @@ export default function BaseFooter() {
         <div className="row ">
           <div className="col-lg-3 text-start">
             <div className={styles.image}>
-              <Image
-                src={logo}
+              <img
+                src={"/footer-logo.webp"}
                 objectFit="contain"
                 width={50}
                 height={50}
@@ -75,7 +74,8 @@ export default function BaseFooter() {
                       rel="noopener noreferrer"
                     >
                       <a className={styles.footerLink}>
-                        Click Here-Download the Information Brochure-{CURRENT_YEAR}
+                        Click Here-Download the Information Brochure-
+                        {CURRENT_YEAR}
                       </a>
                     </Link>
                   </li>
@@ -132,7 +132,7 @@ export default function BaseFooter() {
                   <Link href={"https://twitter.com/IIIT_Bh"}>
                     <a className={styles.footerLink}>
                       {" "}
-                      <Image
+                      <img
                         src="/icons/twitter.svg"
                         alt="Twitter"
                         width={20}
@@ -147,7 +147,7 @@ export default function BaseFooter() {
                   <Link href={"https://www.facebook.com/iiit.bhubaneswar/"}>
                     <a className={styles.footerLink}>
                       {" "}
-                      <Image
+                      <img
                         src="/icons/facebook.svg"
                         alt="facebook"
                         width={20}

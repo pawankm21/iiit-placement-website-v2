@@ -2,19 +2,18 @@ import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Carousel from "react-bootstrap/Carousel";
-import Image from "next/image";
 export default function WhyUs() {
   const carouselImages = [...Array(23).keys()].map((image, index) => {
     return (
       <Carousel.Item key={`${image + index}`}>
-        <Image
+        <img
           className="d-block w-100"
           src={`/infra/${image + 1}.jpg`}
           alt={image + 1}
-          width={900}
-          height={600}
-          objectFit="cover"
-          objectPosition="center"
+          style={{
+            height: "300px",
+            objectFit: "cover",
+          }}
           blurDataURL={`/placeholder.png`}
         />
       </Carousel.Item>
@@ -26,7 +25,7 @@ export default function WhyUs() {
       <Container className="row">
         <h3>Selection Process</h3>
         <div className="col-lg-4  d-flex  align-items-center ">
-          <Image
+          <img
             src="/tpcell/jee.jpg"
             alt="jee"
             width={400}
@@ -60,7 +59,7 @@ export default function WhyUs() {
           of India.
         </p>
         <div className="col-md-6  d-flex  align-items-center justify-content-center ">
-          <Image
+          <img
             src="/tpcell/student-teacher-ratio.png"
             alt="jee"
             width={200}

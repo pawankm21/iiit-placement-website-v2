@@ -4,13 +4,10 @@ import { getImages } from "../../utils/utils";
 export default function Recruiters({ images }) {
   const IMAGES = images.map((image, index) => (
     <div className="col-md-2 col-sm-4 p-4" key={index + image}>
-      <Image
+      <img
         src={image}
-        width={200}
-        height={150}
-        layout="responsive"
+        className="img-fluid"
         alt="Recruiter"
-        priority={true}
       />
     </div>
   ));

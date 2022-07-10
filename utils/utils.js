@@ -241,12 +241,12 @@ export function getData(fs, path, excelToJson) {
   });
   return data;
 }
-export function getImages(fs) {
+export function getImages(fs,path,folderName) {
   var IMAGE_PATHS = [];
-  fs.readdirSync("./public/company", {
+  fs.readdirSync(path, {
     withFileTypes: true,
   }).forEach((file) => {
-    IMAGE_PATHS.push("/company/" + file.name);
+    IMAGE_PATHS.push(folderName+ file.name);
   });
   return IMAGE_PATHS;
 }

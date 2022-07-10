@@ -17,7 +17,7 @@ export default function BaseFooter() {
                 width={50}
                 height={50}
                 alt={"IIIT Bhubaneswar Training and Placement Cell"}
-                priority={true}
+                priority="true"
               />
             </div>
             <div>

@@ -33,17 +33,17 @@ ChartJS.register(
   Legend,
   ArcElement
 );
-import { carouselImages, CURRENT_YEAR } from "../utils/vars";
+import { placementCellImages, CURRENT_YEAR } from "../utils/vars";
 
 export default function Home({ data }) {
-  const carouselComponents = carouselImages.map((image, index) => (
+  const carouselComponents = placementCellImages.map((image, index) => (
     <Carousel.Item key={`${image.src + index}`}>
       <img
         className="d-block w-100"
         src={image.src}
         alt={image.alt}
         style={{
-          objectFit: "cover",
+          objectFit: "contain",
           height: "300px",
         }}
       />

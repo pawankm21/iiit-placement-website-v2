@@ -1,5 +1,5 @@
 import Container from "react-bootstrap/Container";
-import Image from "next/image";
+
 import { getImages } from "../../utils/utils";
 export default function Recruiters({ images }) {
   const IMAGES = images.map((image, index) => (
@@ -25,7 +25,7 @@ export async function getStaticProps(context) {
 
   return {
     props: {
-      images: getImages(fs),
+      images: getImages(fs,"./public/company","/company/"),
     },
   };
 }

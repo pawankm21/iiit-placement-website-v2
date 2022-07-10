@@ -113,7 +113,7 @@ export default function WhyUs() {
             <Card className="h-100 pe-auto text border-success">
               <Card.Img
                 variant="top"
-                src="/tpcell/achievements.jpg"
+                src="/achievements/achievements.jpg"
                 style={{
                   objectFit: "cover",
                   height: 300,

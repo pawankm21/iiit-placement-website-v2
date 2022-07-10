@@ -14,7 +14,7 @@ export const BRANCHES = {
   ETC: "ETC",
   EEE: "EEE",
 };
-export const carouselImages = [
+export const placementCellImages = [
   {
     src: "/tpcell/1.jpeg",
     alt: "Placement",
@@ -30,3 +30,4 @@ export const carouselImages = [
 export const CTC = "CTC"
 export const TOTAL = "Total"
 export const COMPANY_NAME = "Company Name"
+

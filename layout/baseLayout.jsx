@@ -30,10 +30,12 @@ export default function BaseLayout(props) {
           height: "50vh",
         }}
       >
-        <img
+        <Image
           src="/infra/10.jpg"
-          className="w-100 h-100"
-          style={{ objectFit: "cover" }}
+          priority={true}
+          objectFit="cover"
+          layout="fill"
+          objectPosition={"center"}
           alt="IIIT Bhubaneswar Placements"
         />
         <div className=" d-md-none position-absolute top-0 w-100 text-center bg-success bg-opacity-50 h-100">

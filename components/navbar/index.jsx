@@ -11,7 +11,7 @@ export default function BaseNavbar() {
       expand="lg"
       variant="light"
       sticky="top"
-      className={`shadow bg-light position-sticky w-100`}
+      className={`shadow bg-light w-100`}
     >
       <Container>
         <Navbar.Brand href="/">
@@ -35,11 +35,11 @@ export default function BaseNavbar() {
           <div className="w-100">
             <Nav className="justify-content-end">
               <Nav.Item>
-                <Nav.Link href="/" className="fw-semibold">
+                <Nav.Link href="/" className="fw-bold">
                   Home
                 </Nav.Link>
               </Nav.Item>
-              <NavDropdown title="Placements" className="fw-semibold">
+              <NavDropdown title="Placements" className="fw-bold">
                 <NavDropdown.Item href="/placements/recruiters">
                   Our Recruiters
                 </NavDropdown.Item>
@@ -50,7 +50,7 @@ export default function BaseNavbar() {
                   Training
                 </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title="Info" className="fw-semibold">
+              <NavDropdown title="Info" className="fw-bold">
                 <NavDropdown.Item href="/info/mandatory-disclosure">
                   Mandatory Disclosure
                 </NavDropdown.Item>
@@ -63,7 +63,7 @@ export default function BaseNavbar() {
                   Information Brochure
                 </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title="For Recruiters" className="fw-semibold">
+              <NavDropdown title="For Recruiters" className="fw-bold">
                 <NavDropdown.Item href="/for-recruiters/why-recruit-from-us">
                   Why Recruit From IIIT-Bh?
                 </NavDropdown.Item>
@@ -71,7 +71,7 @@ export default function BaseNavbar() {
                   Recruitment Procedure
                 </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title="About IIIT-bh" className="fw-semibold">
+              <NavDropdown title="About IIIT-bh" className="fw-bold">
                 <NavDropdown.Item href="/about/academics">
                   Academics
                 </NavDropdown.Item>
@@ -81,17 +81,21 @@ export default function BaseNavbar() {
                 <NavDropdown.Item href="/about/collaborations">
                   Collaborations
                 </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/faculty.pdf" className="">
+                  Download Faculty Profile
+                </NavDropdown.Item>
               </NavDropdown>
               <Nav.Item>
                 <Nav.Link
                   href="https://sites.google.com/iiit-bh.ac.in/alumni"
-                  className="fw-semibold"
+                  className="fw-bold"
                 >
                   Alumni
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/contact-us" className="fw-semibold">
+                <Nav.Link href="/contact-us" className="fw-bold">
                   Contact Us
                 </Nav.Link>
               </Nav.Item>

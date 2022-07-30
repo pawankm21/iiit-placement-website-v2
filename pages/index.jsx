@@ -2,8 +2,11 @@ import Carousel from "react-bootstrap/Carousel";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-
+import Card from "react-bootstrap/Card"
+import ListGroup from 'react-bootstrap/ListGroup'
 import Link from "next/link";
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs"
 import Button from "react-bootstrap/Button";
 import {
   getLastPlacementYear,
@@ -34,7 +37,8 @@ ChartJS.register(
   ArcElement
 );
 import { placementCellImages, CURRENT_YEAR } from "../utils/vars";
-
+import news from "../data/news.json"
+import events from "../data/events.json"
 export default function Home({ data }) {
   const carouselComponents = placementCellImages.map((image, index) => (
     <Carousel.Item key={`${image.src + index}`}>
@@ -62,6 +66,80 @@ export default function Home({ data }) {
   const BARGRAPH = <Bar {...placementBarGraphByYear(data, CURRENT_YEAR)} />;
   return (
     <div className="mx-auto mt-5">
+      <Row>
+        <Col className="col-8">
+          <Tabs
+            defaultActiveKey="News"
+            id="uncontrolled-tab"
+            className="mb-3"
+          >
+            <Tab eventKey="News" title="News">
+              <div style={{
+                height: "200px",
+              }} >
+                <ListGroup className="card">
+                  {news.map(({ headline, main })=>(
+                    <ListGroup.Item key={headline}>
+                      <h6 className="text-success fw-bold">{headline}</h6>
+                      <p className="fst-italic">{main}</p>
+                    </ListGroup.Item>
+                  ))}
+                </ListGroup>
+              </div>
+            </Tab>
+            <Tab eventKey="Events" title="Events">
+              <div style={{
+                height: "200px",
+              }} >
+                <ListGroup className="card">
+                  {events.map((event) => (
+                    <ListGroup.Item key={event}>
+                      <li className="text-success">{event}</li>
+                    </ListGroup.Item>
+                  ))}
+                </ListGroup>
+              </div>
+            </Tab>
+          </Tabs>
+        </Col>
+        <Col className=" col-4">
+          <Card>
+            <Card.Header className="fw-bold text-success">Quick Links</Card.Header>
+            <ListGroup variant="flush">
+              <ListGroup.Item> <Link href="/placements">Placement Statistics </Link></ListGroup.Item>
+              <ListGroup.Item>
+                <Link href="/recruitment-procedure">
+                  <a>
+                    Recruitment Procedure
+                 </a>
+                </Link>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <Link href="/JAF_2020.doc">
+                  <a>
+                    JAF form
+                  </a>
+                </Link>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <Link href="/ib.pdf">
+                  <a>
+                    Placement Brochure
+                 </a>
+                </Link>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <Link href="/faculty.pdf">
+                  <a>
+                    Faculty Profile
+
+                  </a>
+                </Link>
+              </ListGroup.Item>
+            </ListGroup>
+          </Card>
+        </Col>
+      </Row>
       <div className="mt-5">
         <div className="row my-5">
           <h1>About Us</h1>
@@ -273,6 +351,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       data: getData(fs, path, excelToJson),
+
     },
   };
 }

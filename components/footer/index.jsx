@@ -67,7 +67,7 @@ export default function BaseFooter() {
                       </a>
                     </Link>
                   </li>
-                  <li>
+                    <li>
                     <Link
                       href={`/ib.pdf`}
                       target="_blank"
@@ -88,6 +88,7 @@ export default function BaseFooter() {
                       <a className={styles.footerLink}>Information Brochure</a>
                     </Link>
                   </li>
+                  
                   <li>
                     <Link href={`/placements`}>
                       <a className={styles.footerLink}>Placement Reports</a>
@@ -113,6 +114,17 @@ export default function BaseFooter() {
                   <li>
                     <Link href={`https://www.iiit-bh.ac.in/university/about`}>
                       <a className={styles.footerLink}>About IIIT-Bh</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href={`/faculty.pdf`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <a className={styles.footerLink}>
+                        Click Here-Download Faculty Profile
+                      </a>
                     </Link>
                   </li>
                   <li>

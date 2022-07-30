@@ -11,6 +11,8 @@ export default function BaseLayout(props) {
   const router = useRouter();
   const breadCrumb = getBreadCrumbs(router.route);
   return (
+    <>
+      <BaseNavbar />
     <div className={styles.layout}>
       <Head>
         <title>IIIT Bhubaneswar Placements</title>
@@ -22,7 +24,6 @@ export default function BaseLayout(props) {
         />
         <noscript>Please enable JavaScript to view the content.</noscript>
       </Head>
-      <BaseNavbar />
       <div
         className="position-relative"
         style={{
@@ -98,5 +99,6 @@ export default function BaseLayout(props) {
       <Container className={styles.main}>{props.children}</Container>
       <BaseFooter />
     </div>
+    </>
   );
 }

@@ -67,7 +67,7 @@ export default function Home({ data }) {
   return (
     <div className="mx-auto mt-5">
       <Row>
-        <Col className="col-8">
+        <Col className="col-lg-8 col-12">
           <Tabs
             defaultActiveKey="News"
             id="uncontrolled-tab"
@@ -102,7 +102,7 @@ export default function Home({ data }) {
             </Tab>
           </Tabs>
         </Col>
-        <Col className=" col-4">
+        <Col className=" col-md-4  col-12">
           <Card>
             <Card.Header className="fw-bold text-success">Quick Links</Card.Header>
             <ListGroup variant="flush">

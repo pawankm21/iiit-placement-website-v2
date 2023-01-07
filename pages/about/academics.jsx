@@ -8,7 +8,7 @@ export default function Academics() {
         <h1 className="my-5 fw-bolder">Academics </h1>
 
         <div className="row">
-          <h2 className="text-success">Courses</h2>
+          <h2 className="text-success text-lg">Courses</h2>
           <div className="col-lg-12">
             <h5>B.Tech</h5>
             <p>The B-tech program is divided into five departments:</p>
@@ -75,8 +75,8 @@ export default function Academics() {
         </div>
       </div>
       <div className="col-lg-12">
-        <h2 className="text-success" id="dept">
-          Departments
+        <h2 className="text-success pt-5 pb-2 text-lg" id="dept">
+        Departments
         </h2>
         <div className="row">
           <div className="col-lg-12">

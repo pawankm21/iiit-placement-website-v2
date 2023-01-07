@@ -12,6 +12,10 @@ export default function Collaborations() {
               src={"/unt.png"}
               className="Image-fluid"
               alt="University of North Texas"
+              width={400}
+              height={300}
+              objectFit="contain"
+              layout="responsive"
             />
           </div>
           <div className="col-lg-8">
@@ -32,6 +36,10 @@ export default function Collaborations() {
               src={"/nus.png"}
               alt={"University of Singapore"}
               className="Image-fluid"
+              width={400}
+              height={300}
+              objectFit="contain"
+              layout="responsive"
             />
           </div>
           <div className="col-lg-8">
@@ -44,7 +52,15 @@ export default function Collaborations() {
             </p>
           </div>
           <div className="col-lg-4 d-lg-block d-none">
-            <Image src={"/nus.png"} alt={"nus"} className="Image-fluid" />
+            <Image
+              src={"/nus.png"}
+              alt={"nus"}
+              className="Image-fluid"
+              width={400}
+              height={300}
+              objectFit="contain"
+              layout="responsive"
+            />
           </div>
         </Container>
         <div className="row">
@@ -53,7 +69,15 @@ export default function Collaborations() {
             <div className="row my-5">
               <div className="col-lg-4 d-flex align-items-center d-lg-none">
                 <div className="w-100">
-                  <Image src="/company/ibm.png" className="Image-fluid" alt="IBM" />
+                  <Image
+                    src="/company/ibm.png"
+                    className="Image-fluid"
+                    alt="IBM"
+                    width={400}
+                    height={300}
+                    objectFit="contain"
+                    layout="responsive"
+                  />
                 </div>
               </div>
               <div className="col-lg-8">
@@ -74,7 +98,15 @@ export default function Collaborations() {
               </div>
               <div className="col-lg-4 d-lg-flex align-items-center d-none">
                 <div className="w-100">
-                  <Image src="/company/ibm.png" className="Image-fluid" alt="IBM" />
+                  <Image
+                    src="/company/ibm.png"
+                    className="Image-fluid"
+                    alt="IBM"
+                    width={400}
+                    height={300}
+                    objectFit="contain"
+                    layout="responsive"
+                  />
                 </div>
               </div>
             </div>
@@ -85,6 +117,10 @@ export default function Collaborations() {
                     src="/company/capgemini.png"
                     className="Image-fluid"
                     alt="Capgemini"
+                    width={400}
+                    height={300}
+                    objectFit="contain"
+                    layout="responsive"
                   />
                 </div>
               </div>
@@ -104,6 +140,10 @@ export default function Collaborations() {
                   src="/company/samsung.png"
                   className="Image-fluid"
                   alt="Samsung"
+                  width={400}
+                  height={300}
+                  objectFit="contain"
+                  layout="responsive"
                 />
               </div>
               <div className="col-lg-8">
@@ -120,6 +160,10 @@ export default function Collaborations() {
                   src="/company/samsung.png"
                   className="Image-fluid"
                   alt="Samsung"
+                  width={400}
+                  height={300}
+                  objectFit="contain"
+                  layout="responsive"
                 />
               </div>
             </div>

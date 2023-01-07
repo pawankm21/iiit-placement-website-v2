@@ -1,5 +1,5 @@
 import Container from "react-bootstrap/Container";
-
+import Image from "next/image";
 import { getImages } from "../../utils/utils";
 export default function Recruiters({ images }) {
   const IMAGES = images.map((image, index) => (
@@ -8,6 +8,10 @@ export default function Recruiters({ images }) {
         src={image}
         className="Image-fluid"
         alt="Recruiter"
+        width={200}
+        height={200}
+        objectFit="contain"
+        layout="responsive"
       />
     </div>
   ));

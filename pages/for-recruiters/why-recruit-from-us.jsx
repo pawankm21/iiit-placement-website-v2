@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
@@ -10,11 +11,9 @@ export default function WhyUs() {
           className="d-block w-100"
           src={`/infra/${image + 1}.jpg`}
           alt={image + 1}
-          style={{
-            height: "300px",
-            objectFit: "cover",
-          }}
-          blurDataURL={`/placeholder.png`}
+          width={400}
+          height={400}
+          objectFit="cover"
         />
       </Carousel.Item>
     );
@@ -66,7 +65,6 @@ export default function WhyUs() {
             height={200}
             layout="fixed"
             objectFit={"cover"}
- 
           />
         </div>
       </Container>
@@ -86,20 +84,20 @@ export default function WhyUs() {
           Society, IEEE Xplore Digital Library and many more.
         </p>
         <div className="col col-md-6 col-12  d-flex  align-items-center justify-content-center ">
-          <Carousel>{carouselImages}</Carousel>
+          <Carousel >{carouselImages}</Carousel>
         </div>
       </Container>
       <div>
         <Container className="row g-4 my-5">
           <div className="col">
             <Card className="h-100 pe-auto text border-success">
-              <Card.Image
+              <Card.Img
                 variant="top"
                 src="/tpcell/batch.jpg"
-                style={{
-                  objectFit: "cover",
-                  height: 300,
-                }}
+                width={100}
+                height={300}
+                layout="responsive"
+                objectFit="cover"
               />
               <Card.Body>
                 <Card.Title>Past Placement Records</Card.Title>
@@ -111,14 +109,14 @@ export default function WhyUs() {
           </div>
           <div className="col">
             <Card className="h-100 pe-auto text border-success">
-              <Card.Image
+              <Card.Img
                 variant="top"
                 src="/achievements/achievements.jpg"
-                style={{
-                  objectFit: "cover",
-                  height: 300,
-                  objectPosition: "top",
-                }}
+                width={100}
+                height={300}
+                layout="responsive"
+                objectFit="cover"
+                objectPosition="top"
               />
               <Card.Body>
                 <Card.Title>Student Achievements</Card.Title>
@@ -133,13 +131,13 @@ export default function WhyUs() {
           </div>
           <div className="col">
             <Card className="h-100 pe-auto text border-success">
-              <Card.Image
+              <Card.Img
                 variant="top"
                 src="/tpcell/ib.png"
-                style={{
-                  objectFit: "cover",
-                  height: 300,
-                }}
+                width={100}
+                height={300}
+                layout="responsive"
+                objectFit="cover"
               />
               <Card.Body>
                 <Card.Title>Information Brochure</Card.Title>

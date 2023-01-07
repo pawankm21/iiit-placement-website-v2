@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Container from "react-bootstrap/Container";
 import Carousel from "react-bootstrap/Carousel";
 export default function StudentAchievements({ achievements }) {
@@ -5,6 +6,7 @@ export default function StudentAchievements({ achievements }) {
     <Container>
       <div className="row">
         <h1 className="my-5 fw-bolder">Student Achivements</h1>
+        <p className="my-1">Here are some glimpses of our achievers</p>
         <Carousel>
           {achievements.map((achievement, index) => {
             if (achievement.images.length > 0) {
@@ -13,13 +15,12 @@ export default function StudentAchievements({ achievements }) {
                    <Carousel.Item key={index + achievement.title}>
                      <Image
                        src={"/achievements/" + image}
-                       className=" w-100"
                        alt={achievement.title}
-                       style={{
-                         height: "500px",
-                         objectFit: "cover",
-                         objectPosition: "top",
-                       }}
+                        width= {1000}
+                         height= {500}
+                         objectFit="cover"
+                         objectPosition= "top"
+
                      />
                      <Carousel.Caption className="bg-dark">
                        <h3>{achievement.title}</h3>

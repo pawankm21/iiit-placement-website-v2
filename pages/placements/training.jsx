@@ -1,5 +1,5 @@
 import Container from "react-bootstrap/Container";
-
+import Image from "next/image";
 export default function Training() {
   return (
     <Container className="mb-5">
@@ -20,6 +20,10 @@ export default function Training() {
               src="/tpcell/class.jpg"
               className="Image-fluid"
               alt="Pre-Placement Training"
+              width={400}
+              height={300}
+              objectFit="contain"
+              layout="responsive"
             />
           </Container>
           <Container className="col-lg-8">
@@ -48,6 +52,10 @@ export default function Training() {
               src="/tpcell/seminar.jpg"
               className="Image-fluid"
               alt="Seminar"
+              width={400}
+              height={300}
+              objectFit="contain"
+              layout="responsive"
             />
           </Container>
           <Container className="col-lg-8">
@@ -70,13 +78,22 @@ export default function Training() {
               src="/tpcell/seminar.jpg"
               className="Image-fluid"
               alt="Seminar"
+              width={400}
+              height={300}
+              objectFit="contain"
+              layout="responsive"
             />
           </Container>
         </p>
         <p className="row">
           <h3 className="mt-5 mb-2">Internships and Projects</h3>
           <Container className="col-lg-4  my-3 my-lg-0">
-            <Image src="/tpcell/lib.jpg" className="Image-fluid" alt="Internship" />
+            <Image src="/tpcell/lib.jpg" className="Image-fluid" alt="Internship" 
+               width={400}
+              height={300}
+              objectFit="contain"
+              layout="responsive"
+            />
           </Container>
           <Container className="col-lg-8">
             <p>

@@ -11,7 +11,7 @@ export default function BaseFooter() {
         <div className="row ">
           <div className="col-lg-3 text-start">
             <div className={styles.image}>
-              <img
+              <Image
                 src={"/footer-logo.webp"}
                 objectFit="contain"
                 width={50}
@@ -144,7 +144,7 @@ export default function BaseFooter() {
                   <Link href={"https://twitter.com/IIIT_Bh"}>
                     <a className={styles.footerLink}>
                       {" "}
-                      <img
+                      <Image
                         src="/icons/twitter.svg"
                         alt="Twitter"
                         width={20}
@@ -159,7 +159,7 @@ export default function BaseFooter() {
                   <Link href={"https://www.facebook.com/iiit.bhubaneswar/"}>
                     <a className={styles.footerLink}>
                       {" "}
-                      <img
+                      <Image
                         src="/icons/facebook.svg"
                         alt="facebook"
                         width={20}

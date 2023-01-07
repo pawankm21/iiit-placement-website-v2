@@ -16,9 +16,9 @@ export default function Training() {
         <p className="row">
           <h3 className="mt-5 mb-2">Pre-Placement Trainings</h3>
           <Container className="col-lg-4 my-3 my-lg-0">
-            <img
+            <Image
               src="/tpcell/class.jpg"
-              className="img-fluid"
+              className="Image-fluid"
               alt="Pre-Placement Training"
             />
           </Container>
@@ -44,9 +44,9 @@ export default function Training() {
         <p className="row">
           <h3 className="mt-5 mb-2">Seminars</h3>
           <Container className="col-lg-4  d-lg-none my-3 my-lg-0">
-            <img
+            <Image
               src="/tpcell/seminar.jpg"
-              className="img-fluid"
+              className="Image-fluid"
               alt="Seminar"
             />
           </Container>
@@ -66,9 +66,9 @@ export default function Training() {
             </p>
           </Container>
           <Container className="col-lg-4 d-none d-lg-block my-3 my-lg-0">
-            <img
+            <Image
               src="/tpcell/seminar.jpg"
-              className="img-fluid"
+              className="Image-fluid"
               alt="Seminar"
             />
           </Container>
@@ -76,7 +76,7 @@ export default function Training() {
         <p className="row">
           <h3 className="mt-5 mb-2">Internships and Projects</h3>
           <Container className="col-lg-4  my-3 my-lg-0">
-            <img src="/tpcell/lib.jpg" className="img-fluid" alt="Internship" />
+            <Image src="/tpcell/lib.jpg" className="Image-fluid" alt="Internship" />
           </Container>
           <Container className="col-lg-8">
             <p>

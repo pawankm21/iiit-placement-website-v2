@@ -6,7 +6,7 @@ export default function WhyUs() {
   const carouselImages = [...Array(23).keys()].map((image, index) => {
     return (
       <Carousel.Item key={`${image + index}`}>
-        <img
+        <Image
           className="d-block w-100"
           src={`/infra/${image + 1}.jpg`}
           alt={image + 1}
@@ -25,7 +25,7 @@ export default function WhyUs() {
       <Container className="row">
         <h3>Selection Process</h3>
         <div className="col-lg-4  d-flex  align-items-center ">
-          <img
+          <Image
             src="/tpcell/jee.jpg"
             alt="jee"
             width={400}
@@ -59,7 +59,7 @@ export default function WhyUs() {
           of India.
         </p>
         <div className="col-md-6  d-flex  align-items-center justify-content-center ">
-          <img
+          <Image
             src="/tpcell/student-teacher-ratio.png"
             alt="jee"
             width={200}
@@ -93,7 +93,7 @@ export default function WhyUs() {
         <Container className="row g-4 my-5">
           <div className="col">
             <Card className="h-100 pe-auto text border-success">
-              <Card.Img
+              <Card.Image
                 variant="top"
                 src="/tpcell/batch.jpg"
                 style={{
@@ -111,7 +111,7 @@ export default function WhyUs() {
           </div>
           <div className="col">
             <Card className="h-100 pe-auto text border-success">
-              <Card.Img
+              <Card.Image
                 variant="top"
                 src="/achievements/achievements.jpg"
                 style={{
@@ -133,7 +133,7 @@ export default function WhyUs() {
           </div>
           <div className="col">
             <Card className="h-100 pe-auto text border-success">
-              <Card.Img
+              <Card.Image
                 variant="top"
                 src="/tpcell/ib.png"
                 style={{

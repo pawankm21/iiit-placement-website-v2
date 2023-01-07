@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -21,11 +22,14 @@ export default function BaseNavbar() {
               minWidth: "100px",
             }}
           >
-            <img
+            <Image
               src={"/logo.png"}
               style={{
                 maxWidth: "300px"
               }}
+              width={300}
+              height={100}
+              objectFit="contain"
               alt={"IIIT Bhubaneswar Training and Placement Cell"}
             />
           </div>

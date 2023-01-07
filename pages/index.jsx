@@ -1,12 +1,13 @@
+import Image from "next/image";
 import Carousel from "react-bootstrap/Carousel";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card"
-import ListGroup from 'react-bootstrap/ListGroup'
+import Card from "react-bootstrap/Card";
+import ListGroup from "react-bootstrap/ListGroup";
 import Link from "next/link";
 import Tab from "react-bootstrap/Tab";
-import Tabs from "react-bootstrap/Tabs"
+import Tabs from "react-bootstrap/Tabs";
 import Button from "react-bootstrap/Button";
 import {
   getLastPlacementYear,
@@ -37,19 +38,18 @@ ChartJS.register(
   ArcElement
 );
 import { placementCellImages, CURRENT_YEAR } from "../utils/vars";
-import news from "../data/news.json"
-import events from "../data/events.json"
+import news from "../data/news.json";
+import events from "../data/events.json";
 export default function Home({ data }) {
   const carouselComponents = placementCellImages.map((image, index) => (
     <Carousel.Item key={`${image.src + index}`}>
-      <img
+      <Image
         className="d-block w-100"
         src={image.src}
         alt={image.alt}
-        style={{
-          objectFit: "contain",
-          height: "300px",
-        }}
+        objectFit="contain"
+        height={300}
+        width={300}
       />
 
       <Carousel.Caption
@@ -68,17 +68,15 @@ export default function Home({ data }) {
     <div className="mx-auto mt-5">
       <Row>
         <Col className="col-lg-8 col-12">
-          <Tabs
-            defaultActiveKey="News"
-            id="uncontrolled-tab"
-            className="mb-3"
-          >
+          <Tabs defaultActiveKey="News" id="uncontrolled-tab" className="mb-3">
             <Tab eventKey="News" title="News">
-              <div style={{
-                height: "200px",
-              }} >
+              <div
+                style={{
+                  height: "200px",
+                }}
+              >
                 <ListGroup className="card">
-                  {news.map(({ headline, main })=>(
+                  {news.map(({ headline, main }) => (
                     <ListGroup.Item key={headline}>
                       <h6 className="text-success fw-bold">{headline}</h6>
                       <p className="fst-italic">{main}</p>
@@ -88,9 +86,11 @@ export default function Home({ data }) {
               </div>
             </Tab>
             <Tab eventKey="Events" title="Events">
-              <div style={{
-                height: "200px",
-              }} >
+              <div
+                style={{
+                  height: "200px",
+                }}
+              >
                 <ListGroup className="card">
                   {events.map((event) => (
                     <ListGroup.Item key={event}>
@@ -104,36 +104,32 @@ export default function Home({ data }) {
         </Col>
         <Col className=" col-md-4  col-12">
           <Card>
-            <Card.Header className="fw-bold text-success">Quick Links</Card.Header>
+            <Card.Header className="fw-bold text-success">
+              Quick Links
+            </Card.Header>
             <ListGroup variant="flush">
-              <ListGroup.Item> <Link href="/placements">Placement Statistics </Link></ListGroup.Item>
+              <ListGroup.Item>
+                {" "}
+                <Link href="/placements">Placement Statistics </Link>
+              </ListGroup.Item>
               <ListGroup.Item>
                 <Link href="/recruitment-procedure">
-                  <a>
-                    Recruitment Procedure
-                 </a>
+                  <a>Recruitment Procedure</a>
                 </Link>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Link href="/JAF_2020.doc">
-                  <a>
-                    JAF form
-                  </a>
+                  <a>JAF form</a>
                 </Link>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Link href="/ib.pdf">
-                  <a>
-                    Placement Brochure
-                 </a>
+                  <a>Placement Brochure</a>
                 </Link>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Link href="/faculty.pdf">
-                  <a>
-                    Faculty Profile
-
-                  </a>
+                  <a>Faculty Profile</a>
                 </Link>
               </ListGroup.Item>
             </ListGroup>
@@ -167,10 +163,14 @@ export default function Home({ data }) {
         <div className="row my-5">
           <h1 className="mb-4">Director&apos;s Message</h1>
           <div className="col-md-3 col-12">
-            <img
+            <Image
               src="/tpcell/director.png"
               alt="Director"
-              className="img-fluid"
+              className="Image-fluid"
+              width={100}
+              height={100}
+              layout="responsive"
+              objectFit="cover"
             />
           </div>
 
@@ -202,14 +202,14 @@ export default function Home({ data }) {
         <div className="row my-5 ">
           <h1 className="mb-4">Registrar&apos;s Message</h1>
           <div className="col-md-3 col-12 ">
-            <img
+            <Image
               src="/tpcell/registrar.jpeg"
               alt="Registrar"
-              className="img-fluid"
-              style={{
-                height: "100%",
-                objectFit: "cover",
-              }}
+              className="Image-fluid"
+              width={100}
+              height={100}
+              layout="responsive"
+              objectFit="cover"
             />
           </div>
 
@@ -269,68 +269,108 @@ export default function Home({ data }) {
           <Container>
             <Row className="justify-content-center align-items-center">
               <Col md={3} xs={6}>
-                <img
+                <Image
                   src="/company/amazon.png"
                   alt="Amazon"
+                  width={200}
+                  height={100}
+                  objectFit="cover"
+                  layout="responsive"
                   className="w-100 h-100"
                 />
               </Col>
               <Col md={3} xs={6}>
                 {" "}
-                <img
+                <Image
                   src="/company/turtlemint.png"
                   alt="turtlemint"
+                  width={200}
+                  height={100}
+                  objectFit="cover"
+                  layout="responsive"
                   className="w-100 h-100"
                 />
               </Col>
               <Col md={3} xs={6}>
                 {" "}
-                <img
+                <Image
                   src="/company/valuelabs.png"
                   alt="value-labs"
+                  width={200}
+                  height={100}
+                  objectFit="cover"
+                  layout="responsive"
                   className="w-100 h-100"
                 />
               </Col>
               <Col md={3} xs={6}>
                 {" "}
-                <img
+                <Image
                   src="/company/siemens.png"
-                  alt="siemens"
+                  alt="siemens healthineers"
                   className="w-100 h-100"
+                  width={500}
+                  height={100}
+                  layout="responsive"
+                  objectFit="cover"
                 />
               </Col>
               <Col md={3} xs={6}>
                 {" "}
-                <img
+                <Image
                   src="/company/optum.png"
                   alt="optum"
                   className="w-100 h-100"
+                  width={200}
+                  height={100}
+                  layout="responsive"
+                  objectFit="cover"
                 />
               </Col>
               <Col md={3} xs={6}>
                 {" "}
-                <img src="/company/ukg.png" alt="ukg" className="w-100 h-100" />
+                <Image
+                  src="/company/ukg.png"
+                  alt="ukg"
+                  className="w-100 h-100"
+                  width={200}
+                  height={100}
+                  layout="responsive"
+                  objectFit="cover"
+                />
               </Col>
               <Col md={3} xs={6}>
                 {" "}
-                <img
+                <Image
                   src="/company/tekion.png"
                   alt="tekion"
+                  width={200}
+                  height={100}
+                  layout="responsive"
+                  objectFit="cover"
                   className="w-100 h-100"
                 />
               </Col>
               <Col md={3} xs={6}>
                 {" "}
-                <img
+                <Image
                   src="/company/juspay.png"
                   alt="juspay"
+                  width={200}
+                  height={100}
+                  layout="responsive"
+                  objectFit="cover"
                   className="w-100 h-100"
                 />
               </Col>
               <Col md={3} xs={6}>
                 {" "}
-                <img
+                <Image
                   src="/company/baker-hughes.png"
+                  width={200}
+                  height={100}
+                  layout="responsive"
+                  objectFit="cover"
                   alt="baker-hughes"
                   className="w-100 h-100"
                 />
@@ -351,7 +391,6 @@ export async function getStaticProps(context) {
   return {
     props: {
       data: getData(fs, path, excelToJson),
-
     },
   };
 }

@@ -11,7 +11,7 @@ export default function StudentAchievements({ achievements }) {
               return achievement.images.map((image, index) => {
                  return (
                    <Carousel.Item key={index + achievement.title}>
-                     <img
+                     <Image
                        src={"/achievements/" + image}
                        className=" w-100"
                        alt={achievement.title}

@@ -60,7 +60,7 @@ export default function BaseLayout(props) {
             <h1
               className={`text-center d-flex align-items-center ${styles.textGreen} `}
             >
-              <img
+              <Image
                 src="/footer-logo.webp"
                 width={50}
                 height={50}

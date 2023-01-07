@@ -8,9 +8,9 @@ export default function Collaborations() {
         <h2 className="fw-bold">University Tie-Ups</h2>
         <Container className="row my-4">
           <div className="col-lg-4">
-            <img
+            <Image
               src={"/unt.png"}
-              className="img-fluid"
+              className="Image-fluid"
               alt="University of North Texas"
             />
           </div>
@@ -28,10 +28,10 @@ export default function Collaborations() {
 
         <Container className="row my-4">
           <div className="col-lg-4 d-lg-none">
-            <img
+            <Image
               src={"/nus.png"}
               alt={"University of Singapore"}
-              className="img-fluid"
+              className="Image-fluid"
             />
           </div>
           <div className="col-lg-8">
@@ -44,7 +44,7 @@ export default function Collaborations() {
             </p>
           </div>
           <div className="col-lg-4 d-lg-block d-none">
-            <img src={"/nus.png"} alt={"nus"} className="img-fluid" />
+            <Image src={"/nus.png"} alt={"nus"} className="Image-fluid" />
           </div>
         </Container>
         <div className="row">
@@ -53,7 +53,7 @@ export default function Collaborations() {
             <div className="row my-5">
               <div className="col-lg-4 d-flex align-items-center d-lg-none">
                 <div className="w-100">
-                  <img src="/company/ibm.png" className="img-fluid" alt="IBM" />
+                  <Image src="/company/ibm.png" className="Image-fluid" alt="IBM" />
                 </div>
               </div>
               <div className="col-lg-8">
@@ -74,16 +74,16 @@ export default function Collaborations() {
               </div>
               <div className="col-lg-4 d-lg-flex align-items-center d-none">
                 <div className="w-100">
-                  <img src="/company/ibm.png" className="img-fluid" alt="IBM" />
+                  <Image src="/company/ibm.png" className="Image-fluid" alt="IBM" />
                 </div>
               </div>
             </div>
             <div className="row my-5">
               <div className="col-lg-4 d-flex align-items-center">
                 <div className="w-100">
-                  <img
+                  <Image
                     src="/company/capgemini.png"
-                    className="img-fluid"
+                    className="Image-fluid"
                     alt="Capgemini"
                   />
                 </div>
@@ -100,9 +100,9 @@ export default function Collaborations() {
             </div>
             <div className="row">
               <div className="col-lg-4 d-lg-none">
-                <img
+                <Image
                   src="/company/samsung.png"
-                  className="img-fluid"
+                  className="Image-fluid"
                   alt="Samsung"
                 />
               </div>
@@ -116,9 +116,9 @@ export default function Collaborations() {
                 </p>
               </div>
               <div className="col-lg-4 d-none d-lg-block">
-                <img
+                <Image
                   src="/company/samsung.png"
-                  className="img-fluid"
+                  className="Image-fluid"
                   alt="Samsung"
                 />
               </div>

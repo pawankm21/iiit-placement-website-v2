@@ -62,7 +62,7 @@ export default function PlacementStatistics({ data, year }) {
             </tr>
           ))}
           <tr>
-            {Array(Object.keys(data[year][0]).length-Object.values(data[year][data[year].length-1]).length).map(()=><td></td>)}
+            {Array(Object.keys(data[year][0]).length-Object.values(data[year][data[year].length-1]).length).map((v,i)=><td key={i}></td>)}
             {Object.values(data[year][data[year].length - 1]).map(
               (value, index) => (
                 <td className="fw-bolder" key={index}>

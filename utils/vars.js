@@ -1,4 +1,4 @@
-export const CURRENT_YEAR=2022
+export const CURRENT_YEAR=2023
 export const COLORS = {
   GREEN: "#049C33",
   ORANGE: "#FC9324",

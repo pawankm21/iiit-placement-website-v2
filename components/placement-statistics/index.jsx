@@ -49,9 +49,12 @@ export default function PlacementStatistics({ data, year }) {
 
       <Table striped bordered hover responsive>
         <thead>
+          <tr>
+
           {Object.keys(data[year][0]).map((key, index) => (
             <th key={index}>{key}</th>
-          ))}
+            ))}
+            </tr>
         </thead>
         <tbody>
           {data[year].slice(1, -1).map((row, index) => (
@@ -62,11 +65,11 @@ export default function PlacementStatistics({ data, year }) {
             </tr>
           ))}
           <tr>
-            <td> </td>
+  
             {Object.values(data[year][data[year].length - 1]).map(
               (value, index) => (
                 <td className="fw-bolder" key={index}>
-                  {value}
+                  {value!="Total"?value:""}
                 </td>
               )
             )}

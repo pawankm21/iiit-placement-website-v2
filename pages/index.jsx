@@ -236,7 +236,7 @@ export default function Home({ data }) {
           </div>
         </div>
         <div className="row align-middle my-5">
-          <h1>Placement Highlights {getLastPlacementYear()} Batch</h1>
+          <h1>Placement Highlights {CURRENT_YEAR} Batch</h1>
           <div className="col-lg-6">{BARGRAPH}</div>
           <div className="col-lg-6">{PIECHART}</div>
         </div>

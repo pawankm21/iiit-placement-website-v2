@@ -80,7 +80,7 @@ export function placementBarGraphByYear(data, year) {
           callbacks: {
             label: function (tooltipItem) {
               if (tooltipItem.datasetIndex === 0) {
-                return `${maxCTC[tooltipItem.dataIndex].companyName}: ${
+                return `${maxCTC[tooltipItem.dataIndex].companyName||maxCTC[tooltipItem.dataIndex].name}: ${
                   maxCTC[tooltipItem.dataIndex].maxCTC
                 }`;
               } else {

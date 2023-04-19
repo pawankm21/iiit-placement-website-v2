@@ -34,23 +34,22 @@ export default function ContactUs() {
               </p>
             </p>
             <p>
-              <strong>Ms. Navanita Nayak</strong>
-              <p>
-                Assistant Training and Placement Officer
-                <div>Phone: +91 8093030324, +91 9437122111</div>
-                <Link href="mailto:navanita@iiit-bh.ac.in">
-                  Email – navanita@iiit-bh.ac.in
-                </Link>
-              </p>
-            </p>
-
-            <p>
               <strong>Ms. Rajashree Mohanty</strong>
               <p>
                 Assistant Training and Placement Officer
                 <div>Phone: +91 8093030326, +91 7992991136</div>
                 <Link href="mailto:rajashree@iiit-bh.ac.in">
                   Email – rajashree@iiit-bh.ac.in
+                </Link>
+              </p>
+            </p>
+            <p>
+              <strong>Ms. Navanita Nayak</strong>
+              <p>
+                Assistant Training and Placement Officer
+                <div>Phone: +91 8093030324, +91 9437122111</div>
+                <Link href="mailto:navanita@iiit-bh.ac.in">
+                  Email – navanita@iiit-bh.ac.in
                 </Link>
               </p>
             </p>

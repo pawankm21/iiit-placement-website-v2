@@ -160,45 +160,6 @@ export default function Home({ data }) {
             <Carousel>{carouselComponents}</Carousel>
           </div>
         </div>
-        <div className="row my-5">
-          <h1 className="mb-4">Director&apos;s Message</h1>
-          <div className="col-md-3 col-12">
-            <Image
-              src="/tpcell/director.png"
-              alt="Director"
-              className="Image-fluid"
-              width={100}
-              height={100}
-              layout="responsive"
-              objectFit="cover"
-            />
-          </div>
-
-          <div className="col-md-9 col-12">
-            <p className="fw-normal fst-italic">
-              <div className="fw-bold mb-2">Greetings recruiter,</div>The T&P
-              cell promotes the potential of students who are nurtured by
-              building employability skills and are developed by a culture of
-              engineering, research, and technology in the highly competitive
-              academic environment. Students are trained through a personalized
-              skill upgrade and technical training program, and as a result,
-              they contribute to global core competencies by generating rich
-              human capital. The institute would like to gratefully recognize
-              the mutually fruitful partnership with our previous recruiters.
-              Since its foundation, we have promoted the industry association.
-              We want to maintain the same level of communication. We&apos;d
-              like to encourage you to visit our campus and assess the skill of
-              our students. We look forward to working with you in the campus
-              recruitment class of {CURRENT_YEAR}. As a potential employer, we
-              are confident that your search for the ideal applicant has come to
-              an end.
-              <div>Best Regards,</div>
-              <blockquote className="fw-bold">
-                Mr. Manoj Pattnayak Director, IIIT Bhubaneswar
-              </blockquote>
-            </p>
-          </div>
-        </div>
         <div className="row my-5 ">
           <h1 className="mb-4">Registrar&apos;s Message</h1>
           <div className="col-md-3 col-12 ">

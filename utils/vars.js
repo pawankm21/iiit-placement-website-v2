@@ -16,11 +16,6 @@ export const BRANCHES = {
 };
 export const placementCellImages = [
   {
-    src: "/tpcell/1.jpeg",
-    alt: "Placement",
-    caption: `Placement Cell ${CURRENT_YEAR}`,
-  },
-  {
     src: "/tpcell/professor_incharge.jpeg",
     alt: "Professor Incharge",
     caption: `Dr. Subrata Kumar Mohanty, Prof. In-Charge T&P Cell`,

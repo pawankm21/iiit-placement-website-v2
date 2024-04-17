@@ -152,7 +152,7 @@ export default function BaseFooter() {
                         height={20}
                         layout="fixed"
                       />
-                      Twitter
+                       Twitter
                     </a>
                   </Link>
                 </p>
@@ -167,7 +167,22 @@ export default function BaseFooter() {
                         height={20}
                         layout="fixed"
                       />
-                      Facebook
+                       Facebook
+                    </a>
+                  </Link>
+                </p>
+                <p className={`mt-3 ${styles.footerText}`}>
+                  <Link href={"https://www.instagram.com/iiitbhubaneswar/"}>
+                    <a className={styles.footerLink}>
+                      {" "}
+                      <Image
+                        src="/icons/instagram.svg"
+                        alt="instagram"
+                        width={20}
+                        height={20}
+                        layout="fixed"
+                      />
+                       Instagram
                     </a>
                   </Link>
                 </p>

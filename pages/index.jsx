@@ -127,11 +127,12 @@ export default function Home({ data }) {
                   <a>Placement Brochure</a>
                 </Link>
               </ListGroup.Item>
-              <ListGroup.Item>
+              {/* removed faculty profile */}
+              {/* <ListGroup.Item>
                 <Link href="/faculty.pdf">
                   <a>Faculty Profile</a>
                 </Link>
-              </ListGroup.Item>
+              </ListGroup.Item> */}
             </ListGroup>
           </Card>
         </Col>

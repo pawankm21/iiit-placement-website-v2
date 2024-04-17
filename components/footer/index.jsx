@@ -116,7 +116,8 @@ export default function BaseFooter() {
                       <a className={styles.footerLink}>About IIIT-Bh</a>
                     </Link>
                   </li>
-                  <li>
+                  {/* Removing Faculty Profile form the footer */}
+                  {/* <li>
                     <Link
                       href={`/faculty.pdf`}
                       target="_blank"
@@ -126,7 +127,7 @@ export default function BaseFooter() {
                         Click Here-Download Faculty Profile
                       </a>
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
                       href={`https://sites.google.com/iiit-bh.ac.in/alumni`}

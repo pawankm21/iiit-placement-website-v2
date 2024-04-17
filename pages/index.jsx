@@ -112,11 +112,12 @@ export default function Home({ data }) {
                 {" "}
                 <Link href="/placements">Placement Statistics </Link>
               </ListGroup.Item>
-              <ListGroup.Item>
+              {/* Removed Recruitmemtn Procedure as it was empty */}
+              {/* <ListGroup.Item>
                 <Link href="/recruitment-procedure">
                   <a>Recruitment Procedure</a>
                 </Link>
-              </ListGroup.Item>
+              </ListGroup.Item> */}
               <ListGroup.Item>
                 <Link href="/JAF_2020.doc">
                   <a>JAF form</a>

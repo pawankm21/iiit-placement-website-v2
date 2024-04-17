@@ -85,10 +85,10 @@ export default function BaseNavbar() {
                 <NavDropdown.Item href="/about/collaborations">
                   Collaborations
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/faculty.pdf" className="">
+                {/* <NavDropdown.Divider /> */}
+                {/* <NavDropdown.Item href="/faculty.pdf" className="">
                   Download Faculty Profile
-                </NavDropdown.Item>
+                </NavDropdown.Item> */}
               </NavDropdown>
               <Nav.Item>
                 <Nav.Link

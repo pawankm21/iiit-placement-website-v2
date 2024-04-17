@@ -163,19 +163,31 @@ export default function Home({ data }) {
           </div>
         </div>
         <div className="row my-5 ">
-          <h1 className="mb-4">Registrar&apos;s Message</h1>
-          <div className="col-md-3 col-12 ">
+          <h1 className="mb-4">Director&apos;s Message</h1>
+          <div className="col-md-3 col-12 mb-4">
             <Image
-              src="/tpcell/registrar.jpeg"
-              alt="Registrar"
+              src="/tpcell/director.png"
+              alt="Director"
               className="Image-fluid"
               width={100}
-              height={100}
+              height={135}
               layout="responsive"
               objectFit="cover"
             />
           </div>
 
+          <div className="col-md-9 col-12">
+            <p className="fw-normal fst-italic ">
+              <div className="fw-bold mb-2">Greetings Recruiters, </div>Greetings from IIIT Bhubaneswar, I am honored to welcome you to our esteemed institution dedicated to providing a world-class education in information technology. Since our establishment in 2006, IIIT Bhubaneswar has relentlessly pursued excellence in education and research. Over fifteen years, we've become a prominent force in IT, guided by a vision to offer top-notch technical education and serve as a hub for cutting-edge research. Our mission is to unlock the full potential of our students and faculty. With a stellar record in academics, we stand poised to contribute significantly to technology solutions and sustainability research. Our diverse student body and meticulously designed programs instill qualities like innovation, leadership, teamwork, and a global perspective. IIIT Bhubaneswar is committed to academic excellence, reflected in our constant review and enhancement of programs, incorporating the latest technological theories. We leverage state-of-the-art technologies for effective course delivery, emphasizing practical applications, and positioning ourselves globally. Our environment fosters innovation, creativity, and academic excellence. We endorse interdisciplinary research, benefiting both industry and society. Committed to nurturing well-rounded leadership skills, we anticipate remarkable achievements in the broader academic community. Stakeholders are invited to engage and mutually benefit. I encourage you to visit our lush green campus, witness the potential of our talented students and faculty, and experience our commitment to excellence. Welcome to IIIT Bhubaneswar!
+              <div>Best Regards,</div>
+              <blockquote className="fw-bold">
+              Dr. Ashish Ghosh, Director IIIT Bhubaneswar
+              </blockquote>
+            </p>
+          </div>
+        </div>
+        <div className="row my-5 ">
+          <h1 className="mb-4">Registrar&apos;s Message</h1>
           <div className="col-md-9 col-12">
             <p className="fw-normal fst-italic ">
               <div className="fw-bold mb-2">Greetings recruiter,</div> In the
@@ -197,6 +209,19 @@ export default function Home({ data }) {
               </blockquote>
             </p>
           </div>
+
+          <div className="col-md-3 col-12 ">
+            <Image
+              src="/tpcell/registrar.jpeg"
+              alt="Registrar"
+              className="Image-fluid"
+              width={100}
+              height={100}
+              layout="responsive"
+              objectFit="cover"
+            />
+          </div>
+
         </div>
         <div className="row align-middle my-5">
           <h1>Placement Highlights {CURRENT_YEAR} Batch</h1>

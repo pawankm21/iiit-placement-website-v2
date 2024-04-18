@@ -178,7 +178,7 @@ export default function MandatoryDisclosure() {
                 &nbsp;<strong>Name of Director</strong>
               </td>
               <td>
-                &nbsp;<strong>Dr. </strong>
+                &nbsp;<strong>Dr. Ashish Ghosh </strong>
               </td>
             </tr>
             <tr>

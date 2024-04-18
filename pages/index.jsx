@@ -94,7 +94,8 @@ export default function Home({ data }) {
                 <ListGroup className="card">
                   {events.map((event) => (
                     <ListGroup.Item key={event}>
-                      <li className="text-success">{event}</li>
+                      <h6 className="text-success fw-bold">{event.name}</h6>
+                      <p className="fst-italic">{event.description}</p>
                     </ListGroup.Item>
                   ))}
                 </ListGroup>

@@ -15,7 +15,7 @@ export default function ContactUs() {
               <h4>Training and Placement Cell</h4>
               <strong>Placement Office, IIIT Bhubaneswar</strong>
               <p>
-                Ground floor, Main Academic Building, IIIT Bhubaneswar,
+                First Floor, Placement Building, IIIT Bhubaneswar,
                 Bhubaneswar, Odisha - 751003, India
                 <div>Phone: 0674-3060510/19</div>
                 <Link href={"mailto:placement@iiit-bh.ac.in"}>

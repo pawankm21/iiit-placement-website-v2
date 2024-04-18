@@ -67,18 +67,6 @@ export default function BaseFooter() {
                       </a>
                     </Link>
                   </li>
-                    <li>
-                    <Link
-                      href={`/ib.pdf`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <a className={styles.footerLink}>
-                        Click Here-Download the Information Brochure-
-                        {CURRENT_YEAR}
-                      </a>
-                    </Link>
-                  </li>
                   <li>
                     <Link
                       href={`/ib.pdf`}

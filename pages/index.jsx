@@ -142,7 +142,7 @@ export default function Home({ data }) {
       <div className="mt-5">
         <div className="row my-5">
           <h1>About Us</h1>
-          <div className="col-md-8  col-12 ">
+          <div className="">
             <p className="fw-normal">
               The Training and Placement Cell, IIIT Bhubaneswar aims at creating
               a link between the students and the corporate sectors. It works to
@@ -158,9 +158,6 @@ export default function Home({ data }) {
               are looking forward to challenging and exciting job opportunities
               in industry and academia.
             </p>
-          </div>
-          <div className="col-12 col-md-4 text-center">
-            <Carousel>{carouselComponents}</Carousel>
           </div>
         </div>
         <div className="row my-5 ">

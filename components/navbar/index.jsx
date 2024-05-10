@@ -85,6 +85,9 @@ export default function BaseNavbar() {
                 <NavDropdown.Item href="/about/collaborations">
                   Collaborations
                 </NavDropdown.Item>
+                <NavDropdown.Item href="/about/team">
+                  Placement Team
+                </NavDropdown.Item>
                 {/* <NavDropdown.Divider /> */}
                 {/* <NavDropdown.Item href="/faculty.pdf" className="">
                   Download Faculty Profile

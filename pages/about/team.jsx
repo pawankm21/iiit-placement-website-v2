@@ -55,28 +55,6 @@ export default function PlacementTeam() {
           <div className="row">
             <div className="col-12 col-sm-2">
               <Image
-                src="/tpcell/team/rajashree.jpeg"
-                height={290}
-                width={250}
-                objectFit="cover"
-              />
-            </div>
-            <div className="col-8">
-            <p>
-                <strong>Ms. Rajashree Mohanty</strong>
-                <p>
-                  Assistant Training and Placement Officer
-                  <div>Phone: +91 8093030326, +91 7992991136</div>
-                  <Link href="mailto:rajashree@iiit-bh.ac.in">
-                    Email – rajashree@iiit-bh.ac.in
-                  </Link>
-                </p>
-              </p>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12 col-sm-2">
-              <Image
                 src="/tpcell/team/navanita.jpeg"
                 height={290}
                 width={250}
@@ -91,6 +69,28 @@ export default function PlacementTeam() {
                   <div>Phone: +91 8093030324, +91 9437122111</div>
                   <Link href="mailto:navanita@iiit-bh.ac.in">
                     Email – navanita@iiit-bh.ac.in
+                  </Link>
+                </p>
+              </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12 col-sm-2">
+              <Image
+                src="/tpcell/team/rajashree.jpeg"
+                height={290}
+                width={250}
+                objectFit="cover"
+              />
+            </div>
+            <div className="col-8">
+            <p>
+                <strong>Ms. Rajashree Mohanty</strong>
+                <p>
+                  Assistant Training and Placement Officer
+                  <div>Phone: +91 8093030326, +91 7992991136</div>
+                  <Link href="mailto:rajashree@iiit-bh.ac.in">
+                    Email – rajashree@iiit-bh.ac.in
                   </Link>
                 </p>
               </p>

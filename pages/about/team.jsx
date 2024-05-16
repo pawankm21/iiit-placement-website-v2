@@ -454,6 +454,72 @@ export default function PlacementTeam() {
             </p>
           </div>
         </div>
+        <div className="row">
+          <div className="col-12 col-sm-2">
+            <Image
+              src="/tpcell/team/Prity.jpg"
+              height={290}
+              width={250}
+              objectFit="cover"
+            />
+          </div>
+          <div className="col-10">
+            <p>
+              <strong>Prity Mishra</strong>
+              <p>
+              Electronics and Communication Engineering, Batch of 2026
+                <div>Phone: +91 6371190090</div>
+                <Link href="mailto:b222036@iiit-bh.ac.in">
+                  Email – b222036@iiit-bh.ac.in
+                </Link>
+              </p>
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-sm-2">
+            <Image
+              src="/tpcell/team/Aashray.jpg"
+              height={290}
+              width={250}
+              objectFit="cover"
+            />
+          </div>
+          <div className="col-10">
+            <p>
+              <strong>Aashray Gupta</strong>
+              <p>
+              Computer Engineering, Batch of 2025
+                <div>Phone: +91 9592996389</div>
+                <Link href="mailto:b521001@iiit-bh.ac.in">
+                  Email – b521001@iiit-bh.ac.in
+                </Link>
+              </p>
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-sm-2">
+            <Image
+              src="/tpcell/team/Priyanshu.jpeg"
+              height={290}
+              width={250}
+              objectFit="cover"
+            />
+          </div>
+          <div className="col-10">
+            <p>
+              <strong>Priyanshu Dwibedi</strong>
+              <p>
+              Electronics and Communication Engineering, Batch of 2026
+                <div>Phone: +91 8889703636</div>
+                <Link href="mailto:b222037@iiit-bh.ac.in">
+                  Email – b222037@iiit-bh.ac.in
+                </Link>
+              </p>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

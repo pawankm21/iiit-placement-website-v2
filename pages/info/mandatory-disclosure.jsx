@@ -63,7 +63,7 @@ export default function MandatoryDisclosure() {
             </tr>
             <tr>
               <td>&nbsp;Phone number with STD code</td>
-              <td>&nbsp;+91-674-6636602</td>
+              <td>&nbsp;+91-674-2653309</td>
             </tr>
             <tr>
               <td>&nbsp;FAX number with STD code</td>
@@ -187,7 +187,7 @@ export default function MandatoryDisclosure() {
             </tr>
             <tr>
               <td>&nbsp;Phone number with STD code</td>
-              <td>&nbsp;0674 - 6636601</td>
+              <td>&nbsp;0674 - 2653304</td>
             </tr>
             <tr>
               <td>&nbsp;FAX number with STD code</td>

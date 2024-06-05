@@ -32,7 +32,7 @@ export default function BaseFooter() {
                 >
                   {" "}
                   <PhoneIcon className={styles.footerIcon} /> Phone:
-                  +91-674-2653300
+                  +91-674-2653310
                 </p>
                 <p
                   className={`d-flex align-items-start text-break text-lowercase ${styles.footerText}`}

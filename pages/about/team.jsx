@@ -303,7 +303,7 @@ export default function PlacementTeam() {
         <div className="row">
           <div className="col-12 col-sm-2">
             <Image
-              src="/tpcell/team/Licky.jpg"
+              src="/tpcell/team/sipra.webp"
               height={290}
               width={250}
               objectFit="cover"
@@ -311,12 +311,12 @@ export default function PlacementTeam() {
           </div>
           <div className="col-10">
             <p>
-              <strong>Licky Mishra </strong>
+              <strong>Sipra Mohanty</strong>
               <p>
-              Computer Engineering, Batch of 2026
-                <div>Phone: +91 7978131633</div>
-                <Link href="mailto:b522031@iiit-bh.ac.in">
-                  Email – b522031@iiit-bh.ac.in
+              Computer Science Engineering, Batch of 2026
+                <div>Phone: +91 8338916918</div>
+                <Link href="mailto:b122112@iiit-bh.ac.in">
+                  Email – b122112@iiit-bh.ac.in
                 </Link>
               </p>
             </p>
@@ -515,6 +515,226 @@ export default function PlacementTeam() {
                 <div>Phone: +91 8889703636</div>
                 <Link href="mailto:b222037@iiit-bh.ac.in">
                   Email – b222037@iiit-bh.ac.in
+                </Link>
+              </p>
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-sm-2">
+            <Image
+              src="/tpcell/team/bandana.webp"
+              height={290}
+              width={250}
+              objectFit="cover"
+            />
+          </div>
+          <div className="col-10">
+            <p>
+              <strong>B K Bandana</strong>
+              <p>
+              Computer Science Engineering, Batch of 2026
+                <div>Phone: +91 9777949237</div>
+                <Link href="mailto:b122032@iiit-bh.ac.in">
+                  Email – b122032@iiit-bh.ac.in
+                </Link>
+              </p>
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-sm-2">
+            <Image
+              src="/tpcell/team/chirantan.webp"
+              height={290}
+              width={250}
+              objectFit="cover"
+            />
+          </div>
+          <div className="col-10">
+            <p>
+              <strong>Chirantan Beura</strong>
+              <p>
+              Information Technology, Batch of 2026
+                <div>Phone: +91 8018825114</div>
+                <Link href="mailto:b422022@iiit-bh.ac.in">
+                  Email – b422022@iiit-bh.ac.in
+                </Link>
+              </p>
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-sm-2">
+            <Image
+              src="/tpcell/team/arushi.webp"
+              height={290}
+              width={250}
+              objectFit="cover"
+            />
+          </div>
+          <div className="col-10">
+            <p>
+              <strong>Arushi Mahapatra </strong>
+              <p>
+              Electrical and Electronics Engineering, Batch of 2026
+                <div>Phone: +91 7815006714</div>
+                <Link href="mailto:b322012@iiit-bh.ac.in">
+                  Email – b322012@iiit-bh.ac.in
+                </Link>
+              </p>
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-sm-2">
+            <Image
+              src="/tpcell/team/bedasnata.webp"
+              height={290}
+              width={250}
+              objectFit="cover"
+            />
+          </div>
+          <div className="col-10">
+            <p>
+              <strong>Bedasnata Das </strong>
+              <p>
+              Computer Science Engineering, Batch of 2026
+                <div>Phone: +91 9437547479</div>
+                <Link href="mailto:b122034@iiit-bh.ac.in">
+                  Email – b122034@iiit-bh.ac.in
+                </Link>
+              </p>
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-sm-2">
+            <Image
+              src="/tpcell/team/manyata.webp"
+              height={290}
+              width={250}
+              objectFit="cover"
+            />
+          </div>
+          <div className="col-10">
+            <p>
+              <strong>Manyata Patra</strong>
+              <p>
+              Computer Science Engineering, Batch of 2026
+                <div>Phone: +91 9439922542</div>
+                <Link href="mailto:b122068@iiit-bh.ac.in">
+                  Email – b122068@iiit-bh.ac.in
+                </Link>
+              </p>
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-sm-2">
+            <Image
+              src="/tpcell/team/ekansh.webp"
+              height={290}
+              width={250}
+              objectFit="cover"
+            />
+          </div>
+          <div className="col-10">
+            <p>
+              <strong>Ekansh Mittal</strong>
+              <p>
+              Information Technology, Batch of 2026
+                <div>Phone: +91 9417328942</div>
+                <Link href="mailto:b422026@iiit-bh.ac.in">
+                  Email – b422026@iiit-bh.ac.in
+                </Link>
+              </p>
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-sm-2">
+            <Image
+              src="/tpcell/team/sachin.webp"
+              height={290}
+              width={250}
+              objectFit="cover"
+            />
+          </div>
+          <div className="col-10">
+            <p>
+              <strong>Sachin Lovanshi</strong>
+              <p>
+              Computer Science Engineering, Batch of 2026
+                <div>Phone: +91 7987471703</div>
+                <Link href="mailto:b122097@iiit-bh.ac.in">
+                  Email – b122097@iiit-bh.ac.in
+                </Link>
+              </p>
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-sm-2">
+            <Image
+              src="/tpcell/team/rishav.webp"
+              height={290}
+              width={250}
+              objectFit="cover"
+            />
+          </div>
+          <div className="col-10">
+            <p>
+              <strong>Rishav Chourasia</strong>
+              <p>
+              Computer Science Engineering, Batch of 2026
+                <div>Phone: +91 6370263361</div>
+                <Link href="mailto:b122092@iiit-bh.ac.in">
+                  Email – b122092@iiit-bh.ac.in
+                </Link>
+              </p>
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-sm-2">
+            <Image
+              src="/tpcell/team/astha.jpg"
+              height={290}
+              width={250}
+              objectFit="cover"
+            />
+          </div>
+          <div className="col-10">
+            <p>
+              <strong>Astha Sharma</strong>
+              <p>
+              Computer Science Engineering, Batch of 2026
+                <div>Phone: +91 7606984353</div>
+                <Link href="mailto:b122028@iiit-bh.ac.in">
+                  Email – b122028@iiit-bh.ac.in
+                </Link>
+              </p>
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-sm-2">
+            <Image
+              src="/tpcell/team/astha.jpg"
+              height={290}
+              width={250}
+              objectFit="cover"
+            />
+          </div>
+          <div className="col-10">
+            <p>
+              <strong>Kriti Mishra</strong>
+              <p>
+              Electrical and Electronics Engineering, Batch of 2026
+                <div>Phone: +91 9903906572</div>
+                <Link href="mailto:b322024@iiit-bh.ac.in">
+                  Email – b322024@iiit-bh.ac.in
                 </Link>
               </p>
             </p>

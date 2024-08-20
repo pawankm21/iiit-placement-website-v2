@@ -160,7 +160,7 @@ export default function PlacementTeam() {
               <strong>Prabhu Prasad Sahoo</strong>
               <p>
                 Electronics and Communication Engineering, Batch of 2025
-                <div>Phone: +91 8260858426</div>
+                <div>Phone: +91 9861849028</div>
                 <Link href="mailto:b221038@iiit-bh.ac.in">
                   Email – b221038@iiit-bh.ac.in
                 </Link>
@@ -273,6 +273,28 @@ export default function PlacementTeam() {
                 <div>Phone: +91 7978099637</div>
                 <Link href="mailto:b321021@iiit-bh.ac.in">
                   Email – b321021@iiit-bh.ac.in
+                </Link>
+              </p>
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-sm-2">
+            <Image
+              src="/tpcell/team/sushobhan.jpg"
+              height={290}
+              width={250}
+              objectFit="cover"
+            />
+          </div>
+          <div className="col-10">
+            <p>
+              <strong>Sushobhan Tripathy</strong>
+              <p>
+              Information Technology, Batch of 2025
+                <div>Phone: +91 8763460642</div>
+                <Link href="mailto:b421058@iiit-bh.ac.in">
+                  Email – b421058@iiit-bh.ac.in
                 </Link>
               </p>
             </p>

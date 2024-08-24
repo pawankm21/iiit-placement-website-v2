@@ -762,6 +762,28 @@ export default function PlacementTeam() {
             </p>
           </div>
         </div>
+        <div className="row">
+          <div className="col-12 col-sm-2">
+            <Image
+              src="/tpcell/team/ankita.webp"
+              height={290}
+              width={250}
+              objectFit="cover"
+            />
+          </div>
+          <div className="col-10">
+            <p>
+              <strong>Ankita Jena</strong>
+              <p>
+              Computer Science Engineering, Batch of 2026
+                <div>Phone: +91 9831883153</div>
+                <Link href="mailto:b122021@iiit-bh.ac.in">
+                  Email – b122021@iiit-bh.ac.in
+                </Link>
+              </p>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

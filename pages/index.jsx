@@ -76,10 +76,25 @@ export default function Home({ data }) {
                 }}
               >
                 <ListGroup className="card">
-                  {news.map(({ headline, main }) => (
+                  {news.map(({ headline, main, additionalText }) => (
                     <ListGroup.Item key={headline}>
                       <h6 className="text-success fw-bold">{headline}</h6>
                       <p className="fst-italic">{main}</p>
+                      {(
+                          <>
+                            {additionalText && (
+                              <p
+                                className="mt-1 fst-italic"
+                                dangerouslySetInnerHTML={{
+                                  __html: additionalText.replace(
+                                    /\*\*(.*?)\*\*/g,
+                                    "<strong>$1</strong>"
+                                  ),
+                                }}
+                              ></p>
+                            )}
+                          </>
+                    )}
                     </ListGroup.Item>
                   ))}
                 </ListGroup>
@@ -111,6 +126,15 @@ export default function Home({ data }) {
               <ListGroup.Item>
                 {" "}
                 <Link href="/placements">Placement Statistics </Link>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <a
+                  href="https://interviews-at-iiit.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Interviews-at-IIIT Web Portal
+                </a>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Link href="/recruitment-procedure">

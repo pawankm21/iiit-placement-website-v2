@@ -109,8 +109,7 @@ export default function Home({ data }) {
                 <ListGroup className="card">
                   {events.map((event) => (
                     <ListGroup.Item key={event}>
-                      <h6 className="text-success fw-bold">{event.name}</h6>
-                      <p className="fst-italic">{event.description}</p>
+                      <li className="text-success">{event}</li>
                     </ListGroup.Item>
                   ))}
                 </ListGroup>
@@ -133,12 +132,20 @@ export default function Home({ data }) {
                 {" "}
                 <Link href="/placements">Placement Statistics </Link>
               </ListGroup.Item>
-              {/* Removed Recruitmemtn Procedure as it was empty */}
-              {/* <ListGroup.Item>
+              <ListGroup.Item>
+                <a
+                  href="https://interviews-at-iiit.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Interviews-at-IIIT Web Portal
+                </a>
+              </ListGroup.Item>
+              <ListGroup.Item>
                 <Link href="/recruitment-procedure">
                   <a>Recruitment Procedure</a>
                 </Link>
-              </ListGroup.Item> */}
+              </ListGroup.Item>
               <ListGroup.Item>
                 <Link href="/JAF_2020.doc">
                   <a>JAF form</a>
@@ -155,7 +162,7 @@ export default function Home({ data }) {
                 <Link href="/faculty.pdf">
                   <a>Faculty Profile</a>
                 </Link>
-              </ListGroup.Item> */}
+              </ListGroup.Item>
             </ListGroup>
           </Card>
         </Col>
@@ -163,7 +170,7 @@ export default function Home({ data }) {
       <div className="mt-5">
         <div className="row my-5">
           <h1>About Us</h1>
-          <div className="">
+          <div className="col-md-8  col-12 ">
             <p className="fw-normal">
               The Training and Placement Cell, IIIT Bhubaneswar aims at creating
               a link between the students and the corporate sectors. It works to
@@ -180,33 +187,24 @@ export default function Home({ data }) {
               in industry and academia.
             </p>
           </div>
+          <div className="col-12 col-md-4 text-center">
+            <Carousel>{carouselComponents}</Carousel>
+          </div>
         </div>
         <div className="row my-5 ">
-          <h1 className="mb-4">Director&apos;s Message</h1>
-          <div className="col-md-3 col-12 mb-4">
+          <h1 className="mb-4">Registrar&apos;s Message</h1>
+          <div className="col-md-3 col-12 ">
             <Image
-              src="/tpcell/director.png"
-              alt="Director"
+              src="/tpcell/registrar.jpeg"
+              alt="Registrar"
               className="Image-fluid"
               width={100}
-              height={135}
+              height={100}
               layout="responsive"
               objectFit="cover"
             />
           </div>
 
-          <div className="col-md-9 col-12">
-            <p className="fw-normal fst-italic ">
-              <div className="fw-bold mb-2">Greetings Recruiters, </div>Greetings from IIIT Bhubaneswar, I am honored to welcome you to our esteemed institution dedicated to providing a world-class education in information technology. Since our establishment in 2006, IIIT Bhubaneswar has relentlessly pursued excellence in education and research. Over fifteen years, we&apos;ve become a prominent force in IT, guided by a vision to offer top-notch technical education and serve as a hub for cutting-edge research. Our mission is to unlock the full potential of our students and faculty. With a stellar record in academics, we stand poised to contribute significantly to technology solutions and sustainability research. Our diverse student body and meticulously designed programs instill qualities like innovation, leadership, teamwork, and a global perspective. IIIT Bhubaneswar is committed to academic excellence, reflected in our constant review and enhancement of programs, incorporating the latest technological theories. We leverage state-of-the-art technologies for effective course delivery, emphasizing practical applications, and positioning ourselves globally. Our environment fosters innovation, creativity, and academic excellence. We endorse interdisciplinary research, benefiting both industry and society. Committed to nurturing well-rounded leadership skills, we anticipate remarkable achievements in the broader academic community. Stakeholders are invited to engage and mutually benefit. I encourage you to visit our lush green campus, witness the potential of our talented students and faculty, and experience our commitment to excellence. Welcome to IIIT Bhubaneswar!
-              <div>Best Regards,</div>
-              <blockquote className="fw-bold">
-              Dr. Ashish Ghosh, Director IIIT Bhubaneswar
-              </blockquote>
-            </p>
-          </div>
-        </div>
-        <div className="row my-5 ">
-          <h1 className="mb-4">Registrar&apos;s Message</h1>
           <div className="col-md-9 col-12">
             <p className="fw-normal fst-italic ">
               <div className="fw-bold mb-2">Greetings recruiter,</div> In the
@@ -228,19 +226,6 @@ export default function Home({ data }) {
               </blockquote>
             </p>
           </div>
-
-          <div className="col-md-3 col-12 ">
-            <Image
-              src="/tpcell/registrar.jpeg"
-              alt="Registrar"
-              className="Image-fluid"
-              width={100}
-              height={100}
-              layout="responsive"
-              objectFit="cover"
-            />
-          </div>
-
         </div>
         <div className="row align-middle my-5">
           <h1>Placement Highlights {CURRENT_YEAR} Batch</h1>

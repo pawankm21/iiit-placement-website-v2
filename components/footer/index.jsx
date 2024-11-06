@@ -32,7 +32,7 @@ export default function BaseFooter() {
                 >
                   {" "}
                   <PhoneIcon className={styles.footerIcon} /> Phone:
-                  +91-674-2653300
+                  +91-674-2653310
                 </p>
                 <p
                   className={`d-flex align-items-start text-break text-lowercase ${styles.footerText}`}
@@ -64,18 +64,6 @@ export default function BaseFooter() {
                     >
                       <a className={styles.footerLink}>
                         Click Here-Download JAF for Recruiters
-                      </a>
-                    </Link>
-                  </li>
-                    <li>
-                    <Link
-                      href={`/ib.pdf`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <a className={styles.footerLink}>
-                        Click Here-Download the Information Brochure-
-                        {CURRENT_YEAR}
                       </a>
                     </Link>
                   </li>
@@ -116,7 +104,8 @@ export default function BaseFooter() {
                       <a className={styles.footerLink}>About IIIT-Bh</a>
                     </Link>
                   </li>
-                  <li>
+                  {/* Removing Faculty Profile form the footer */}
+                  {/* <li>
                     <Link
                       href={`/faculty.pdf`}
                       target="_blank"
@@ -126,7 +115,7 @@ export default function BaseFooter() {
                         Click Here-Download Faculty Profile
                       </a>
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
                       href={`https://sites.google.com/iiit-bh.ac.in/alumni`}
@@ -151,7 +140,7 @@ export default function BaseFooter() {
                         height={20}
                         layout="fixed"
                       />
-                      Twitter
+                       Twitter
                     </a>
                   </Link>
                 </p>
@@ -166,7 +155,22 @@ export default function BaseFooter() {
                         height={20}
                         layout="fixed"
                       />
-                      Facebook
+                       Facebook
+                    </a>
+                  </Link>
+                </p>
+                <p className={`mt-3 ${styles.footerText}`}>
+                  <Link href={"https://www.instagram.com/iiitbhubaneswar/"}>
+                    <a className={styles.footerLink}>
+                      {" "}
+                      <Image
+                        src="/icons/instagram.svg"
+                        alt="instagram"
+                        width={20}
+                        height={20}
+                        layout="fixed"
+                      />
+                       Instagram
                     </a>
                   </Link>
                 </p>

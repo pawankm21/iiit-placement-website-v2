@@ -1,4 +1,4 @@
-export const CURRENT_YEAR=2023
+export const CURRENT_YEAR=2024
 export const COLORS = {
   GREEN: "#049C33",
   ORANGE: "#FC9324",
@@ -15,11 +15,6 @@ export const BRANCHES = {
   EEE: "EEE",
 };
 export const placementCellImages = [
-  {
-    src: "/tpcell/1.jpeg",
-    alt: "Placement",
-    caption: `Placement Cell ${CURRENT_YEAR}`,
-  },
   {
     src: "/tpcell/professor_incharge.jpeg",
     alt: "Professor Incharge",
